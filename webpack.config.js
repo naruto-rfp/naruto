@@ -37,8 +37,8 @@ module.exports = (env, argv) => {
               loader: 'sass-loader',
               options: {
                 implementation: sass,
-              }
-            }
+              },
+            },
           ],
         },
         {
@@ -46,12 +46,12 @@ module.exports = (env, argv) => {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
-          }
+          },
         },
-      ]
+      ],
     },
     resolve: {
-      extensions: ['.js','.jsx'],
+      extensions: ['.js', '.jsx'],
     },
     plugins: [
       new webpack.ProvidePlugin({
@@ -78,5 +78,5 @@ module.exports = (env, argv) => {
         },
       },
     },
-  }
-}
+  };
+};
