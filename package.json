@@ -71,14 +71,18 @@
       "node_modules"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/client/tests/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/client/tests/__mocks__/styleMock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/client/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/client/__mocks__/styleMock.js"
     },
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!(axios)/)"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules"
+    ],
+    "testMatch": [
+      "<rootDir>/**/*.test.(js|jsx)",
+      "<rootDir>/(tests/unit/**/*.spec.(js|jsx)|**/__tests__/*.(js|jsx))"
     ],
     "transform": {
       "^.+\\.[tj]sx?$": "babel-jest"
