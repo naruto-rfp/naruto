@@ -13,5 +13,6 @@ module.exports = {
     quotes: ['error', 'single', 'avoid-escape'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/forbid-prop-types': 0,
+    'no-console': 'off',
   },
 };
