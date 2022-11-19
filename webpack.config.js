@@ -55,7 +55,7 @@ module.exports = (env, argv) => {
         },
       ],
     },
-    optimizations: {
+    optimization: {
       minimize: prod,
       minimizer: [
         new TerserPlugin({
