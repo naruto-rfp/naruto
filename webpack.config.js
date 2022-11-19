@@ -3,6 +3,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const sass = require('sass');
+const { resolve } = require('path');
 
 module.exports = (env, argv) => {
   const prod = argv.mode === 'production';
@@ -14,7 +15,7 @@ module.exports = (env, argv) => {
     output: {
       publicPath: '/',
       path: path.join(__dirname, 'client/dist'),
-      filename: 'bundle.[hash].js',
+      filename: 'bundle.[fullhash].js',
       clean: true,
     },
     module: {
@@ -66,6 +67,10 @@ module.exports = (env, argv) => {
     },
     resolve: {
       extensions: ['.js', '.jsx'],
+      modules: ['node_modules'],
+      alias: {
+        '@': resolve(__dirname, './client/src'),
+      },
     },
     plugins: [
       new webpack.ProvidePlugin({
