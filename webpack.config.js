@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const sass = require('sass');
@@ -15,6 +15,7 @@ module.exports = (env, argv) => {
       publicPath: '/',
       path: path.join(__dirname, 'client/dist'),
       filename: 'bundle.[hash].js',
+      clean: true,
     },
     module: {
       rules: [
@@ -45,9 +46,22 @@ module.exports = (env, argv) => {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader',
+            loader: 'esbuild-loader',
+            options: {
+              loader: 'jsx',
+              target: 'es2021',
+            },
           },
         },
+      ],
+    },
+    optimizations: {
+      minimize: prod,
+      minimizer: [
+        new TerserPlugin({
+          parallel: true,
+          minify: TerserPlugin.esbuildMinify,
+        }),
       ],
     },
     resolve: {
@@ -64,7 +78,6 @@ module.exports = (env, argv) => {
           removeComments: true,
         } : false,
       }),
-      new CleanWebpackPlugin(),
     ],
     devServer: {
       open: true,
