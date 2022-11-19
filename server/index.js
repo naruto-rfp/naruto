@@ -7,6 +7,9 @@ require('dotenv').config();
 const app = express();
 const router = require('./router');
 
+const db = require('./database');
+db.sequelize.sync();
+
 const port = process.env.PORT || 3000;
 
 app.use(cors());
