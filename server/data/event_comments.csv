@@ -1,0 +1,1001 @@
+id,event_id,user_id,content
+1,509,160,"Toxic effect of venom of other North and South American snake, intentional self-harm, subsequent encounter"
+2,932,960,"Unspecified fracture of T11-T12 vertebra, initial encounter for closed fracture"
+3,142,317,"Infection of amniotic sac and membranes, unspecified, second trimester, fetus 2"
+4,542,874,"Rheumatoid arthritis without rheumatoid factor, unspecified knee"
+5,955,925,"Fall from burning building or structure in uncontrolled fire, initial encounter"
+6,175,640,Cutaneous abscess of left upper limb
+7,626,915,"Other specified multiple gestation with two or more monoamniotic fetuses, third trimester"
+8,797,570,"Strain of flexor muscle, fascia and tendon of left ring finger at forearm level, sequela"
+9,546,176,Squamous cell carcinoma of skin of other part of trunk
+10,866,440,Pedal cycle driver injured in collision with two- or three-wheeled motor vehicle in nontraffic accident
+11,232,366,"Nondisplaced fracture of triquetrum [cuneiform] bone, left wrist, subsequent encounter for fracture with delayed healing"
+12,783,366,"Nondisplaced oblique fracture of shaft of right radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+13,454,669,Fall into swimming pool striking water surface causing drowning and submersion
+14,569,695,"Pathological fracture in neoplastic disease, unspecified site"
+15,803,81,Secondary malignant neoplasm of left lung
+16,896,526,"Other secondary osteonecrosis, right finger(s)"
+17,417,357,"Other mechanical complication of internal fixation device of vertebrae, sequela"
+18,845,342,Maternal exhaustion complicating labor and delivery
+19,312,1000,"Effusion, unspecified wrist"
+20,672,419,Anterior subluxation of left ulnohumeral joint
+21,753,699,"Laceration of popliteal artery, left leg, sequela"
+22,193,266,"Rupture of synovium, hand and fingers"
+23,464,749,"Intermittent hydrarthrosis, left hip"
+24,145,349,Instability of internal right knee prosthesis
+25,362,409,"Slipping, tripping and stumbling without falling due to stepping into hole or opening"
+26,500,179,"Fracture of unspecified metatarsal bone(s), unspecified foot, subsequent encounter for fracture with nonunion"
+27,245,739,"Other contact with steam and other hot vapors, initial encounter"
+28,434,847,Personal history of malignant neoplasm of breast
+29,293,742,Animal-rider or occupant of animal-drawn vehicle injured in collision with two- or three-wheeled motor vehicle
+30,485,664,"Other congenital malformations of spine, not associated with scoliosis"
+31,934,20,Reduced mobility
+32,541,595,Urinary tract infection following (induced) termination of pregnancy
+33,276,18,"Postdysenteric arthropathy, unspecified shoulder"
+34,41,480,"Other specified injuries of pelvis, initial encounter"
+35,877,317,"Poisoning by other antiepileptic and sedative-hypnotic drugs, accidental (unintentional), initial encounter"
+36,731,81,"Nevus, non-neoplastic"
+37,611,19,Physeal fracture of phalanx of toe
+38,862,726,"Dislocation of distal interphalangeal joint of right index finger, initial encounter"
+39,606,529,Open bite of right cheek and temporomandibular area
+40,621,165,"Aneurysmal bone cyst, unspecified lower leg"
+41,105,265,"Toxic effect of other mycotoxin food contaminants, undetermined, sequela"
+42,275,470,"Maternal care for Anti-A sensitization, unspecified trimester, fetus 1"
+43,519,753,"Person boarding or alighting a motorcycle injured in collision with two- or three-wheeled motor vehicle, sequela"
+44,193,298,"Glaucomatous flecks (subcapsular), right eye"
+45,773,41,"Open bite of unspecified great toe without damage to nail, initial encounter"
+46,506,521,"Nondisplaced fracture of medial phalanx of right ring finger, subsequent encounter for fracture with nonunion"
+47,949,822,"Nondisplaced fracture of olecranon process with intraarticular extension of left ulna, subsequent encounter for open fracture type I or II with nonunion"
+48,500,218,Type 2 diabetes mellitus with skin complications
+49,198,844,"Hit by object from burning building or structure in controlled fire, initial encounter"
+50,982,463,"Salter-Harris Type III physeal fracture of lower end of radius, right arm, initial encounter for closed fracture"
+51,795,641,"Poisoning by unspecified drugs acting on muscles, undetermined, subsequent encounter"
+52,560,502,"Corrosion of first degree of unspecified upper arm, subsequent encounter"
+53,58,764,"Disseminated chorioretinal inflammation, peripheral"
+54,687,632,"Laceration of extensor muscle, fascia and tendon of left middle finger at wrist and hand level, sequela"
+55,276,656,"Partial traumatic amputation of female external genital organs, subsequent encounter"
+56,320,581,"Osteonecrosis due to previous trauma, humerus"
+57,644,82,Scarlet fever with other complications
+58,234,87,Family history of malignant neoplasm of testis
+59,561,364,Acute recurrent maxillary sinusitis
+60,302,672,"Nondisplaced fracture of proximal phalanx of right ring finger, subsequent encounter for fracture with routine healing"
+61,714,758,"Pedestrian on foot injured in collision with two- or three-wheeled motor vehicle in nontraffic accident, sequela"
+62,597,670,Unspecified appendicitis
+63,46,262,"Driver of pick-up truck or van injured in collision with other nonmotor vehicle in nontraffic accident, subsequent encounter"
+64,34,22,"Laceration of muscle, fascia and tendon of the posterior muscle group at thigh level, unspecified thigh, subsequent encounter"
+65,984,11,"Unspecified disseminated chorioretinal inflammation, bilateral"
+66,332,841,"Other mechanical complication of surgically created arteriovenous shunt, initial encounter"
+67,393,423,"Displaced supracondylar fracture with intracondylar extension of lower end of left femur, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+68,60,792,"Pathological fracture in other disease, right tibia, subsequent encounter for fracture with delayed healing"
+69,342,184,Encounter for examination and observation for other specified reasons
+70,902,750,"Open bite of other part of head, subsequent encounter"
+71,110,930,"Displacement of other urinary stents, sequela"
+72,852,510,"Drowning and submersion due to falling or jumping from burning merchant ship, subsequent encounter"
+73,86,550,Traumatic rupture of unspecified ligament of unspecified finger at metacarpophalangeal and interphalangeal joint
+74,753,183,"Other fracture of head and neck of unspecified femur, subsequent encounter for open fracture type I or II with malunion"
+75,634,54,"Unspecified subluxation of right patella, sequela"
+76,167,287,Rheumatoid arthritis of unspecified shoulder with involvement of other organs and systems
+77,665,903,"Toxic effect of other metals, intentional self-harm, initial encounter"
+78,588,889,"Corrosion of third degree of multiple sites of left lower limb, except ankle and foot, subsequent encounter"
+79,98,530,"Explosion and rupture of air tank, subsequent encounter"
+80,246,679,"Other contact with cat, sequela"
+81,304,139,"Displaced fracture of neck of other metacarpal bone, subsequent encounter for fracture with delayed healing"
+82,914,107,"Displaced intertrochanteric fracture of left femur, subsequent encounter for open fracture type I or II with malunion"
+83,760,212,"Open bite, right elbow, subsequent encounter"
+84,738,253,"Salter-Harris Type III physeal fracture of lower end of right tibia, subsequent encounter for fracture with routine healing"
+85,768,855,Burn of other parts of respiratory tract
+86,121,653,"Other streptococcal arthritis, unspecified ankle and foot"
+87,511,874,"Corrosion of second degree of multiple sites of right wrist and hand, initial encounter"
+88,658,872,Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity
+89,979,766,"Tuberculosis complicating pregnancy, second trimester"
+90,581,717,"Other specified disorders of bone density and structure, right lower leg"
+91,743,723,"Driver of heavy transport vehicle injured in collision with fixed or stationary object in nontraffic accident, subsequent encounter"
+92,491,932,Driver of bus injured in collision with fixed or stationary object in traffic accident
+93,31,856,"Corrosion of first degree of multiple right fingers (nail), including thumb, subsequent encounter"
+94,193,837,"Contusion of body of pancreas, subsequent encounter"
+95,459,255,"Unspecified occipital condyle fracture, subsequent encounter for fracture with routine healing"
+96,800,526,"Amniotic fluid embolism in pregnancy, second trimester"
+97,454,552,Assault by pushing or placing victim in front of (subway) train
+98,733,383,"Strain of muscle, fascia and tendon of unspecified hip, subsequent encounter"
+99,99,448,Anemia due to enzyme disorders
+100,490,734,Other disorders of gingiva and edentulous alveolar ridge
+101,606,149,Unspecified disturbances of skin sensation
+102,3,820,"Toxic effect of other metals, accidental (unintentional), initial encounter"
+103,621,448,"Nondisplaced transverse fracture of shaft of left femur, subsequent encounter for open fracture type I or II with nonunion"
+104,254,139,"Erosion of implanted ureteral bulking agent to surrounding organ or tissue, subsequent encounter"
+105,407,203,"Human immunodeficiency virus [HIV] disease complicating pregnancy, second trimester"
+106,489,925,"Drowning and submersion due to other accident to unspecified watercraft, subsequent encounter"
+107,523,919,Other female intestinal-genital tract fistulae
+108,331,559,"Breakdown (mechanical) of internal fixation device of bone of left forearm, subsequent encounter"
+109,137,647,"Laceration of intrinsic muscle, fascia and tendon of left thumb at wrist and hand level, sequela"
+110,782,524,"Open bite of unspecified lesser toe(s) with damage to nail, initial encounter"
+111,981,809,"Pauciarticular juvenile rheumatoid arthritis, left elbow"
+112,220,283,Open bite of thigh
+113,766,286,"Displaced comminuted supracondylar fracture without intercondylar fracture of left humerus, subsequent encounter for fracture with nonunion"
+114,961,107,Syndrome of infant of a diabetic mother
+115,862,163,"Displaced oblique fracture of shaft of left ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+116,270,486,"Torus fracture of upper end of unspecified humerus, subsequent encounter for fracture with malunion"
+117,780,19,Spontaneous rupture of extensor tendons
+118,378,12,"Nondisplaced fracture of base of second metacarpal bone, right hand, initial encounter for closed fracture"
+119,531,313,"Pathological fracture in neoplastic disease, right foot, sequela"
+120,866,2,"Nondisplaced fracture of olecranon process with intraarticular extension of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+121,933,335,"Pedestrian on skateboard injured in collision with heavy transport vehicle or bus in nontraffic accident, subsequent encounter"
+122,435,495,"Nondisplaced segmental fracture of shaft of unspecified femur, sequela"
+123,243,568,"Displaced transverse fracture of shaft of left femur, subsequent encounter for open fracture type I or II with routine healing"
+124,594,820,"Poisoning by, adverse effect of and underdosing of unspecified fibrinolysis-affecting drugs"
+125,370,362,"Laceration without foreign body, left knee, sequela"
+126,992,894,"Traumatic ischemia of muscle, initial encounter"
+127,936,911,"Puncture wound with foreign body of left ring finger without damage to nail, initial encounter"
+128,92,510,"Crushing injury of unspecified hip, sequela"
+129,108,7,"Fall from other furniture, initial encounter"
+130,476,336,"Burn of third degree of unspecified single finger (nail) except thumb, sequela"
+131,778,431,"Crushed between sailboat and other watercraft or other object due to collision, initial encounter"
+132,459,575,Other and unspecified effects of other external causes
+133,212,166,"Unspecified fracture of third lumbar vertebra, subsequent encounter for fracture with delayed healing"
+134,658,309,"Unspecified fracture of shaft of left radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+135,603,469,Malignant neoplasm of other and unspecified female genital organs
+136,214,598,"Punctate keratitis, bilateral"
+137,764,269,"Focal chorioretinal inflammation, macular or paramacular, right eye"
+138,649,863,"Corrosion of unspecified degree of right scapular region, subsequent encounter"
+139,71,499,"Fall due to uncontrolled fire, not in building or structure, initial encounter"
+140,9,27,"Other fracture of head and neck of unspecified femur, subsequent encounter for closed fracture with nonunion"
+141,758,152,"Displaced fracture of cuboid bone of right foot, subsequent encounter for fracture with nonunion"
+142,607,525,Foreign body granuloma of the skin and subcutaneous tissue
+143,204,840,"Unspecified car occupant injured in collision with other nonmotor vehicle in nontraffic accident, initial encounter"
+144,88,904,"Rupture in Descemet's membrane, left eye"
+145,654,108,"Nondisplaced spiral fracture of shaft of humerus, right arm, sequela"
+146,439,810,"Sprain of the superior tibiofibular joint and ligament, right knee, subsequent encounter"
+147,203,919,Other specified malignant neoplasm of skin of breast
+148,537,396,"Person boarding or alighting a car injured in collision with pedal cycle, sequela"
+149,145,338,"Undescended testicle, unilateral"
+150,332,716,Displaced fracture of distal pole of navicular [scaphoid] bone of left wrist
+151,48,424,"Other specified osteochondropathies, left upper arm"
+152,151,642,"Minor contusion of right kidney, sequela"
+153,892,857,"Abrasion of left thumb, subsequent encounter"
+154,152,217,"Nondisplaced fracture of base of fourth metacarpal bone, left hand, sequela"
+155,320,171,"Nondisplaced comminuted fracture of shaft of radius, left arm, subsequent encounter for closed fracture with nonunion"
+156,268,265,"Abrasion of left elbow, initial encounter"
+157,662,387,Toxic effect of venom of other venomous lizard
+158,289,767,"Corrosion of second degree of multiple sites of left shoulder and upper limb, except wrist and hand, initial encounter"
+159,808,17,Chronic embolism and thrombosis of deep veins of left upper extremity
+160,207,688,"Congenital ichthyosis, unspecified"
+161,747,686,"Breakdown (mechanical) of other gastrointestinal prosthetic devices, implants and grafts, initial encounter"
+162,739,399,"Psychological abuse complicating pregnancy, third trimester"
+163,902,149,Nondisplaced fracture of lower epiphysis (separation) of unspecified femur
+164,126,482,"Other specified injury of unspecified blood vessel at ankle and foot level, right leg, initial encounter"
+165,801,569,"Unspecified superficial injury of left thigh, initial encounter"
+166,615,783,Type 2 diabetes mellitus with other circulatory complications
+167,35,295,Other diseases of vocal cords
+168,770,532,"Corrosion of mouth and pharynx, subsequent encounter"
+169,36,732,"Postprocedural shock unspecified, sequela"
+170,742,509,"Nondisplaced fracture of right tibial tuberosity, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+171,20,486,"Sprain of posterior cruciate ligament of right knee, initial encounter"
+172,250,277,Crowding of fully erupted teeth
+173,596,799,"Injury of femoral nerve at hip and thigh level, left leg, initial encounter"
+174,600,934,"Unspecified injury of extensor muscle, fascia and tendon of right index finger at wrist and hand level, initial encounter"
+175,936,837,"Pathological fracture in other disease, other site, sequela"
+176,601,210,"Cholesteatoma of attic, left ear"
+177,961,68,"Abrasion of right ring finger, sequela"
+178,449,758,"Malar fracture, right side"
+179,61,761,"Cortical blindness, left side of brain"
+180,690,135,Salter-Harris Type I physeal fracture of upper end of left femur
+181,72,268,Encounter for fitting and adjustment of unspecified right artificial leg
+182,254,712,"Osteochondropathy, unspecified, left ankle and foot"
+183,472,425,"Other superficial bite of vagina and vulva, initial encounter"
+184,716,728,"Fibrous dysplasia (monostotic), right lower leg"
+185,16,260,Dislocation of unspecified parts of right shoulder girdle
+186,206,783,"Toxic effect of methanol, intentional self-harm"
+187,795,141,"Salter-Harris Type II physeal fracture of upper end of unspecified tibia, initial encounter for closed fracture"
+188,191,467,"Poisoning by hemostatic drug, accidental (unintentional)"
+189,300,620,Mild intermittent asthma
+190,286,741,"Poisoning by unspecified systemic anti-infective and antiparasitics, accidental (unintentional)"
+191,162,703,"Stable burst fracture of first thoracic vertebra, subsequent encounter for fracture with routine healing"
+192,364,34,Rheumatoid arthritis with rheumatoid factor of shoulder without organ or systems involvement
+193,535,508,"Rheumatoid arthritis without rheumatoid factor, elbow"
+194,450,106,Gonococcal heart infection
+195,781,364,"Stress fracture, hip, unspecified"
+196,939,426,Laceration without foreign body of right great toe with damage to nail
+197,999,490,"Juvenile rheumatoid arthritis with systemic onset, left ankle and foot"
+198,620,73,"Nondisplaced bimalleolar fracture of right lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+199,901,147,"Nondisplaced fracture of head of unspecified radius, subsequent encounter for closed fracture with routine healing"
+200,127,983,"Pressure ulcer of sacral region, stage 1"
+201,862,692,"Other superficial bite of left thumb, subsequent encounter"
+202,305,531,"Other foreign object in trachea causing other injury, initial encounter"
+203,559,176,Laceration with foreign body of left lesser toe(s) with damage to nail
+204,789,543,Neoplasm of uncertain behavior of female genital organs
+205,169,89,"Displaced transverse fracture of shaft of humerus, left arm, subsequent encounter for fracture with nonunion"
+206,83,349,Atypical squamous cells of undetermined significance on cytologic smear of vagina (ASC-US)
+207,675,148,"Military firearm discharge, undetermined intent"
+208,329,418,"Lymphocyte depleted Hodgkin lymphoma, extranodal and solid organ sites"
+209,247,992,Other fracture of left patella
+210,757,860,"Unspecified occupant of heavy transport vehicle injured in collision with railway train or railway vehicle in nontraffic accident, subsequent encounter"
+211,549,73,Alcoholic hepatitis
+212,607,143,"Nondisplaced fracture of head of left radius, subsequent encounter for closed fracture with nonunion"
+213,275,344,"Other specified injury of radial artery at wrist and hand level of unspecified arm, sequela"
+214,737,975,"Burn of first degree of multiple sites of shoulder and upper limb, except wrist and hand"
+215,628,328,"Salter-Harris Type IV physeal fracture of upper end of radius, left arm, subsequent encounter for fracture with malunion"
+216,182,161,"Pedestrian with other conveyance injured in collision with heavy transport vehicle or bus in traffic accident, subsequent encounter"
+217,370,916,"Other fracture of fifth metacarpal bone, left hand, subsequent encounter for fracture with nonunion"
+218,847,170,Displacement of unspecified cardiac and vascular devices and implants
+219,212,300,"Motorcycle passenger injured in collision with heavy transport vehicle or bus in traffic accident, initial encounter"
+220,316,711,"Dislocation of unspecified interphalangeal joint of left thumb, initial encounter"
+221,993,256,"Embolism due to internal orthopedic prosthetic devices, implants and grafts, subsequent encounter"
+222,601,599,"Leakage of intraperitoneal dialysis catheter, sequela"
+223,470,372,Non-pressure chronic ulcer of other part of left foot with necrosis of muscle
+224,383,334,"Burn of third degree of unspecified thigh, sequela"
+225,465,684,"Legal intervention involving other explosives, law enforcement official injured, subsequent encounter"
+226,541,232,Physeal fracture of lower end of ulna
+227,803,293,"Unspecified injury of external genitals, subsequent encounter"
+228,850,758,"Amenorrhea, unspecified"
+229,822,946,"Salter-Harris Type IV physeal fracture of lower end of radius, right arm"
+230,97,103,Other congenital malformations of penis
+231,411,975,"Displaced fracture of body of right calcaneus, subsequent encounter for fracture with routine healing"
+232,768,464,"Nondisplaced transverse fracture of left patella, subsequent encounter for closed fracture with delayed healing"
+233,196,226,Contusion of left index finger with damage to nail
+234,838,832,"Unspecified fracture of lower end of unspecified tibia, subsequent encounter for open fracture type I or II with delayed healing"
+235,433,1000,Fracture of ischium
+236,53,495,"Nondisplaced fracture of olecranon process with intraarticular extension of right ulna, subsequent encounter for closed fracture with malunion"
+237,531,364,Disorders of glossopharyngeal nerve
+238,921,3,Accidental puncture or laceration of dura during a procedure
+239,992,761,"Displaced spiral fracture of shaft of right fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+240,897,441,"Occupant (driver) (passenger) of pick-up truck or van injured in unspecified nontraffic accident, subsequent encounter"
+241,935,378,Abnormal electroretinogram [ERG]
+242,648,553,"Nondisplaced supracondylar fracture with intracondylar extension of lower end of unspecified femur, subsequent encounter for open fracture type I or II with nonunion"
+243,454,405,"Unspecified superficial injury of lower back and pelvis, sequela"
+244,211,620,"Burn of second degree of unspecified site of lower limb, except ankle and foot"
+245,11,449,"Pedestrian on roller-skates injured in collision with car, pick-up truck or van in nontraffic accident, initial encounter"
+246,543,528,"Peripheral opacity of cornea, left eye"
+247,917,208,"Aneurysmal bone cyst, left thigh"
+248,965,219,"Displaced oblique fracture of shaft of left fibula, subsequent encounter for open fracture type I or II with nonunion"
+249,584,632,"Sibling, perpetrator of maltreatment and neglect"
+250,33,32,"Corrosion of third degree of unspecified elbow, initial encounter"
+251,899,972,"Leakage of insulin pump, initial encounter"
+252,913,356,"Strain of flexor muscle, fascia and tendon of right thumb at forearm level"
+253,39,231,"Poisoning by androgens and anabolic congeners, assault, initial encounter"
+254,193,367,"Salter-Harris Type II physeal fracture of unspecified calcaneus, sequela"
+255,395,270,"Unspecified injury of blood vessel of other finger, initial encounter"
+256,93,281,Major contusion of unspecified kidney
+257,27,436,"Idiopathic chronic gout, left knee, without tophus (tophi)"
+258,395,281,"Nondisplaced fracture of greater tuberosity of left humerus, sequela"
+259,99,809,"Toxic effect of contact with venomous frog, accidental (unintentional), initial encounter"
+260,817,471,"Corrosion of unspecified degree of trunk, unspecified site, subsequent encounter"
+261,570,879,"Other mechanical complication of internal right hip prosthesis, sequela"
+262,997,748,"Pedestrian with other conveyance injured in collision with railway train or railway vehicle in nontraffic accident, initial encounter"
+263,726,797,Person on outside of special construction vehicle injured in nontraffic accident
+264,84,232,Other specified disorders of central nervous system
+265,521,407,Other inherited spinal muscular atrophy
+266,818,217,"Pathological fracture in neoplastic disease, right femur"
+267,979,274,"Scleral ectasia, left eye"
+268,887,279,"Contusion of breast, unspecified breast, initial encounter"
+269,401,978,"War operation involving other effects of nuclear weapons, civilian, initial encounter"
+270,259,185,"Displaced fracture of olecranon process without intraarticular extension of right ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+271,692,610,"Nondisplaced fracture of shaft of first metacarpal bone, left hand, sequela"
+272,515,403,"Toxic effect of glycols, intentional self-harm, initial encounter"
+273,114,501,"Toxic effect of detergents, intentional self-harm, subsequent encounter"
+274,927,628,Epithelial (juvenile) corneal dystrophy
+275,108,222,"Other complications specific to multiple gestation, third trimester, other fetus"
+276,173,1,"Other specified injuries of unspecified thigh, initial encounter"
+277,673,890,"Unspecified injury of blood vessel of other finger, sequela"
+278,767,210,"Retained (nonmagnetic) (old) foreign body in vitreous body, unspecified eye"
+279,798,868,"Displaced fracture of medial condyle of unspecified tibia, subsequent encounter for open fracture type I or II with malunion"
+280,462,245,"Fall on same level from slipping, tripping and stumbling with subsequent striking against unspecified sharp object, initial encounter"
+281,478,439,"Major laceration of right internal jugular vein, initial encounter"
+282,258,909,"Corrosion of third degree of buttock, subsequent encounter"
+283,706,960,"Laceration of intrinsic muscle, fascia and tendon of right little finger at wrist and hand level, sequela"
+284,328,369,Hypertrophy of vulva
+285,764,763,"Displaced comminuted fracture of left patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+286,169,823,"Nondisplaced fracture of head of unspecified radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+287,659,114,"Frostbite with tissue necrosis of abdominal wall, lower back and pelvis, initial encounter"
+288,153,133,"Nondisplaced unspecified condyle fracture of lower end of unspecified femur, subsequent encounter for closed fracture with nonunion"
+289,947,937,Carcinoma in situ of other female genital organs
+290,642,358,"Injury of left internal carotid artery, intracranial portion, not elsewhere classified with loss of consciousness greater than 24 hours with return to pre-existing conscious level"
+291,754,663,"Nondisplaced transcondylar fracture of unspecified humerus, initial encounter for closed fracture"
+292,500,7,"Villonodular synovitis (pigmented), left knee"
+293,837,760,"Adult neglect or abandonment, confirmed, subsequent encounter"
+294,827,457,"Other chromosome abnormalities, not elsewhere classified"
+295,675,406,"Infection and inflammatory reaction due to implanted urinary sphincter, subsequent encounter"
+296,310,294,"Toxic effect of venom of bees, accidental (unintentional), initial encounter"
+297,757,819,"Intentional self-harm by sword or dagger, initial encounter"
+298,877,343,Stenosis of lacrimal canaliculi
+299,947,986,"Injury of trochlear nerve, unspecified side"
+300,18,361,Fracture of medial condyle of tibia
+301,863,112,Contusion of oral cavity
+302,220,923,"Stable burst fracture of first cervical vertebra, subsequent encounter for fracture with nonunion"
+303,991,811,"Localized swelling, mass and lump, right lower limb"
+304,980,373,"Surgical operation with implant of artificial internal device as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure"
+305,744,471,"Other fracture of left femur, subsequent encounter for closed fracture with routine healing"
+306,575,883,"Other specified item causing external constriction, sequela"
+307,103,620,"Toxic effect of venom of gila monster, intentional self-harm, initial encounter"
+308,750,791,"Displacement of other nervous system device, implant or graft, subsequent encounter"
+309,298,532,"Walked into furniture, sequela"
+310,927,906,"Other subluxation of left foot, initial encounter"
+311,859,390,Displacement of cranial or spinal infusion catheter
+312,567,627,"Poisoning by cocaine, assault"
+313,425,667,"Military operations involving fragments from weapons, civilian, initial encounter"
+314,284,287,Hallux rigidus
+315,790,852,Atherosclerosis of nonautologous biological bypass graft(s) of the extremities with gangrene
+316,826,14,"Nondisplaced fracture of lunate [semilunar], right wrist, initial encounter for closed fracture"
+317,158,809,"Superficial frostbite of thorax, subsequent encounter"
+318,979,796,Other diseases of pericardium
+319,726,180,"Nondisplaced articular fracture of head of right femur, subsequent encounter for closed fracture with nonunion"
+320,581,983,Cytomegaloviral disease
+321,256,114,"Corrosion of unspecified degree of left elbow, sequela"
+322,226,163,"Poisoning by appetite depressants, accidental (unintentional)"
+323,210,238,"Poisoning by, adverse effect of and underdosing of unspecified topical agent"
+324,17,568,Traumatic rupture of unspecified ligament of unspecified finger at metacarpophalangeal and interphalangeal joint
+325,275,745,"War operations involving fragments from munitions, civilian, subsequent encounter"
+326,738,460,"Nondisplaced fracture of intermediate cuneiform of right foot, subsequent encounter for fracture with routine healing"
+327,961,297,"Helicopter collision injuring occupant, subsequent encounter"
+328,711,849,"Labor and delivery complicated by vascular lesion of cord, other fetus"
+329,378,1,"Adult neglect or abandonment, confirmed, subsequent encounter"
+330,225,311,Pedestrian injured in other and unspecified transport accidents
+331,782,643,"Unspecified trochanteric fracture of unspecified femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+332,32,965,Laceration without foreign body of left middle finger with damage to nail
+333,752,858,"External constriction, unspecified foot, subsequent encounter"
+334,185,492,"Multiple endocrine neoplasia [MEN] syndrome, unspecified"
+335,982,268,Observation and evaluation of newborn for suspected neurological condition ruled out
+336,187,923,"Puncture wound without foreign body, right thigh"
+337,757,833,"Laceration of unspecified urinary and pelvic organ, subsequent encounter"
+338,571,485,"Laceration with foreign body of left index finger without damage to nail, initial encounter"
+339,379,568,"Diffuse follicle center lymphoma, extranodal and solid organ sites"
+340,821,133,"Other physeal fracture of lower end of radius, right arm, subsequent encounter for fracture with delayed healing"
+341,366,733,"Person on outside of car injured in collision with van in nontraffic accident, initial encounter"
+342,310,180,Cellulitis of groin
+343,977,439,Other superficial injuries of other fingers
+344,481,72,"Toxic effect of venom of other African and Asian snake, intentional self-harm"
+345,748,634,Shigellosis due to Shigella boydii
+346,97,964,"Poisoning by iminostilbenes, assault"
+347,715,904,(Idiopathic) normal pressure hydrocephalus
+348,738,406,"Legal intervention involving other sharp objects, suspect injured, initial encounter"
+349,333,863,Diseases of Bartholin's gland
+350,763,758,"Other specified injury of anterior tibial artery, unspecified leg, initial encounter"
+351,615,35,"Laceration of bronchus, bilateral, sequela"
+352,353,25,Mesothelioma of pleura
+353,813,224,"Displaced fracture of body of scapula, right shoulder, initial encounter for open fracture"
+354,628,92,"Poisoning by otorhinolaryngological drugs and preparations, intentional self-harm"
+355,674,437,Cocaine abuse with unspecified cocaine-induced disorder
+356,140,249,"Unspecified fracture of lower end of unspecified ulna, subsequent encounter for open fracture type I or II with delayed healing"
+357,129,988,"Nondisplaced transverse fracture of shaft of unspecified femur, subsequent encounter for open fracture type I or II with nonunion"
+358,478,542,"Unspecified fracture of lower end of left ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+359,677,261,"Contusion of lung, unilateral"
+360,707,766,"Poisoning by peripheral vasodilators, assault, subsequent encounter"
+361,330,828,"Post-traumatic urethral stricture, female"
+362,297,559,Unspecified acute myringitis
+363,369,157,"Mixed cellularity Hodgkin lymphoma, lymph nodes of axilla and upper limb"
+364,135,443,"Other contact with parrot, initial encounter"
+365,646,501,"Salter-Harris Type III physeal fracture of lower end of ulna, right arm, subsequent encounter for fracture with routine healing"
+366,978,239,"Nondisplaced longitudinal fracture of left patella, subsequent encounter for open fracture type I or II with nonunion"
+367,752,464,"Other calcification of muscle, left upper arm"
+368,235,194,"Trisomy 18, nonmosaicism (meiotic nondisjunction)"
+369,650,951,"Unspecified injury of thoracic trachea, initial encounter"
+370,606,365,Corrosion of unspecified degree of unspecified ankle
+371,628,716,"Mosquito-borne viral fever, unspecified"
+372,304,633,"Displaced segmental fracture of shaft of ulna, unspecified arm, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+373,520,898,"Displaced fracture of medial condyle of right tibia, subsequent encounter for open fracture type I or II with nonunion"
+374,821,354,"Interstitial myositis, left forearm"
+375,956,493,"Salter-Harris Type II physeal fracture of unspecified calcaneus, subsequent encounter for fracture with malunion"
+376,392,928,"Other sprain of sternum, subsequent encounter"
+377,322,893,"Nondisplaced comminuted fracture of shaft of right tibia, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+378,931,752,"Other injury of fallopian tube, unspecified, initial encounter"
+379,802,906,Other interstitial pulmonary diseases
+380,582,26,Other physeal fracture of calcaneus
+381,119,206,"Burn due to other unpowered watercraft on fire, sequela"
+382,991,79,"Periprosthetic fracture around internal prosthetic left shoulder joint, initial encounter"
+383,50,275,"Other specified complication of vascular prosthetic devices, implants and grafts, subsequent encounter"
+384,214,624,"Insect bite (nonvenomous), right hip, sequela"
+385,448,793,"Strain of muscle and tendon of long flexor muscle of toe at ankle and foot level, left foot, initial encounter"
+386,137,23,Trimalleolar fracture of lower leg
+387,613,727,"Other infective bursitis, unspecified ankle and foot"
+388,382,363,Other disorders of puberty
+389,465,942,"Poisoning by, adverse effect of and underdosing of other agents primarily affecting gastrointestinal system"
+390,27,434,"Struck by basketball, sequela"
+391,941,650,Subluxation of metacarpophalangeal joint of right ring finger
+392,582,329,Fall into swimming pool striking bottom causing other injury
+393,49,579,Benign neoplasm of scapula and long bones of unspecified upper limb
+394,446,276,"Displaced fracture of distal phalanx of right ring finger, subsequent encounter for fracture with delayed healing"
+395,65,358,Perianal venous thrombosis
+396,826,854,Hypovolemic shock
+397,314,830,"Nondisplaced fracture of base of fifth metacarpal bone, right hand, initial encounter for open fracture"
+398,886,312,"Laceration of unspecified blood vessel at ankle and foot level, unspecified leg"
+399,76,261,"Foreign body in uterus, initial encounter"
+400,489,446,Passenger in three-wheeled motor vehicle injured in collision with heavy transport vehicle or bus in nontraffic accident
+401,62,748,"Nondisplaced fracture of posterior process of left talus, subsequent encounter for fracture with nonunion"
+402,183,11,"Other specified joint disorders, left ankle and foot"
+403,93,316,"Nondisplaced comminuted fracture of shaft of right tibia, initial encounter for closed fracture"
+404,192,42,"Fatigue fracture of vertebra, lumbosacral region"
+405,2,389,"Anterior cord syndrome at C1 level of cervical spinal cord, subsequent encounter"
+406,187,151,"Fall on same level from slipping, tripping and stumbling with subsequent striking against other sharp object, sequela"
+407,965,854,"Poisoning by, adverse effect of and underdosing of other parasympathomimetics [cholinergics]"
+408,377,263,"Unspecified injury of axillary or brachial vein, unspecified side, initial encounter"
+409,337,217,"Poisoning by unspecified systemic anti-infective and antiparasitics, undetermined, subsequent encounter"
+410,792,703,"Toxic effect of dichloromethane, accidental (unintentional), sequela"
+411,819,309,"Corrosion of first degree of back of unspecified hand, initial encounter"
+412,313,197,"Intentional self-harm by other specified means, initial encounter"
+413,60,60,Other fracture of second thoracic vertebra
+414,59,311,"Contusion of unspecified eyelid and periocular area, sequela"
+415,225,267,"Laceration of intrinsic muscle, fascia and tendon of left index finger at wrist and hand level"
+416,734,684,"Poisoning by unspecified agents primarily acting on the respiratory system, undetermined, sequela"
+417,696,871,"Nondisplaced fracture of body of scapula, left shoulder, subsequent encounter for fracture with malunion"
+418,318,322,"Twin pregnancy, monochorionic/diamniotic"
+419,893,390,"Person on outside of heavy transport vehicle injured in collision with railway train or railway vehicle in traffic accident, subsequent encounter"
+420,29,752,"Unspecified injury of unspecified muscles, fascia and tendons at forearm level, left arm, sequela"
+421,420,720,"Salter-Harris Type IV physeal fracture of phalanx of right toe, initial encounter for closed fracture"
+422,968,579,"Other specified injury of intrinsic muscle and tendon at ankle and foot level, left foot"
+423,988,523,Exposure to rapid changes in air pressure during descent
+424,963,11,"Unspecified occupant of heavy transport vehicle injured in collision with fixed or stationary object in nontraffic accident, sequela"
+425,440,988,"Legal intervention involving other explosives, suspect injured, initial encounter"
+426,192,764,"Age-related osteoporosis with current pathological fracture, unspecified femur"
+427,218,65,"Corrosion of third degree of right hand, unspecified site, sequela"
+428,506,458,"Contusion and laceration of cerebrum, unspecified, with loss of consciousness of 30 minutes or less, initial encounter"
+429,590,482,Ascariasis with intestinal complications
+430,40,938,Cerebral infarction due to thrombosis of unspecified cerebellar artery
+431,355,863,"Person boarding or alighting a car injured in collision with pedal cycle, initial encounter"
+432,351,561,"Toxic effect of other metals, accidental (unintentional)"
+433,537,647,"Other specified disorders of bone density and structure, hand"
+434,678,894,"Toxic effect of hydrogen sulfide, assault, subsequent encounter"
+435,248,699,"Other displaced fracture of base of first metacarpal bone, unspecified hand"
+436,110,517,"Pedal cycle driver injured in collision with pedestrian or animal in traffic accident, sequela"
+437,231,522,"Fall on same level from slipping, tripping and stumbling with subsequent striking against power tool or machine, sequela"
+438,787,874,"Poisoning by unspecified antidepressants, undetermined"
+439,732,30,Fecal incontinence
+440,1,638,"Displaced fracture (avulsion) of lateral epicondyle of unspecified humerus, subsequent encounter for fracture with routine healing"
+441,90,451,Unspecified injury at C8 level of cervical spinal cord
+442,366,362,Inappropriate (excessive) parental pressure
+443,294,535,"Chronic gout due to renal impairment, shoulder"
+444,635,679,"Other secondary chronic gout, left knee"
+445,646,53,"Sprain of right coracohumeral (ligament), sequela"
+446,838,911,"Other physeal fracture of lower end of humerus, unspecified arm, initial encounter for closed fracture"
+447,687,649,"Corrosion of first degree of right forearm, initial encounter"
+448,621,269,"Prolonged stay in weightless environment, subsequent encounter"
+449,460,249,Car driver injured in collision with fixed or stationary object in nontraffic accident
+450,458,635,"Traumatic arthropathy, knee"
+451,519,30,"Corrosion of second degree of unspecified foot, sequela"
+452,413,118,"Chronic myelomonocytic leukemia, in remission"
+453,999,75,"Displaced transverse fracture of shaft of unspecified fibula, subsequent encounter for open fracture type I or II with routine healing"
+454,869,711,"Laceration without foreign body of right forearm, initial encounter"
+455,353,623,Other specified nutritional deficiencies
+456,352,801,Unspecified complication of intestine transplant
+457,712,243,"Contusion of unspecified thumb without damage to nail, sequela"
+458,189,669,"Drowning and submersion due to falling or jumping from burning canoe or kayak, subsequent encounter"
+459,49,249,"Fracture of superior rim of unspecified pubis, subsequent encounter for fracture with nonunion"
+460,680,161,"Poisoning by barbiturates, assault, initial encounter"
+461,769,783,"Other specified injury of muscle and tendon of long extensor muscle of toe at ankle and foot level, unspecified foot, sequela"
+462,809,602,"Poisoning by unspecified fibrinolysis-affecting drugs, undetermined"
+463,751,265,Subluxation of metacarpophalangeal joint of left index finger
+464,965,984,"Other disorders of bone development and growth, left humerus"
+465,669,762,"Toxic effect of petroleum products, assault, sequela"
+466,236,9,"Nondisplaced bimalleolar fracture of right lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+467,618,460,Palsy (spasm) of conjugate gaze
+468,392,640,"Superficial foreign body of unspecified forearm, subsequent encounter"
+469,606,234,"Corrosion of first degree of unspecified upper arm, subsequent encounter"
+470,937,453,"Displaced transverse fracture of shaft of right ulna, subsequent encounter for closed fracture with malunion"
+471,856,989,"Sezary disease, lymph nodes of inguinal region and lower limb"
+472,463,879,"Osteochondropathy, unspecified, right lower leg"
+473,507,265,"Burn of unspecified degree of unspecified site of left lower limb, except ankle and foot, initial encounter"
+474,976,341,"Burn of third degree of chin, initial encounter"
+475,372,364,Malignant neoplasm of body of penis
+476,278,166,Contact with unspecified machinery
+477,995,672,"Nondisplaced fracture of intermediate cuneiform of left foot, subsequent encounter for fracture with nonunion"
+478,84,479,Other transepidermal elimination disorders
+479,75,936,"Muscle wasting and atrophy, not elsewhere classified, left upper arm"
+480,252,591,Animal-rider or occupant of animal-drawn vehicle injured in collision with fixed or stationary object
+481,756,532,"Unspecified injury of other extensor muscle, fascia and tendon at forearm level, right arm"
+482,786,32,"Persistent migraine aura with cerebral infarction, intractable, with status migrainosus"
+483,40,817,"Non-ABO incompatibility with acute hemolytic transfusion reaction, initial encounter"
+484,35,937,Burn of third degree of wrist and hand
+485,497,359,"Insect bite (nonvenomous) of right forearm, subsequent encounter"
+486,292,511,"Puncture wound without foreign body of right elbow, sequela"
+487,968,146,"Pathological fracture in neoplastic disease, left hand"
+488,124,969,"Adult neglect or abandonment, suspected"
+489,701,715,"Nondisplaced comminuted fracture of shaft of right tibia, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+490,824,278,"Partial traumatic amputation of foot, level unspecified"
+491,689,740,"Scleritis with corneal involvement, bilateral"
+492,141,451,"Phlebitis and thrombophlebitis of tibial vein, bilateral"
+493,544,779,Other acute paralytic poliomyelitis
+494,694,334,Toxic effects of unspecified organic solvent
+495,526,857,"Corrosion of unspecified degree of multiple sites of unspecified lower limb, except ankle and foot, initial encounter"
+496,781,514,"Poisoning by other synthetic narcotics, undetermined, initial encounter"
+497,223,13,Traumatic rupture of palmar ligament of left middle finger at metacarpophalangeal and interphalangeal joint
+498,39,871,Middle cerebral artery syndrome
+499,170,39,"Poisoning by opium, assault, subsequent encounter"
+500,804,92,"Burn of first degree of multiple sites of left shoulder and upper limb, except wrist and hand, initial encounter"
+501,79,778,"Laceration of other muscles, fascia and tendons at forearm level, left arm, initial encounter"
+502,825,201,"Laceration with foreign body of right ring finger with damage to nail, sequela"
+503,227,493,Other dental procedure status
+504,733,863,"Nondisplaced transverse fracture of shaft of unspecified fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+505,178,877,"Pathological fracture in neoplastic disease, unspecified humerus, sequela"
+506,273,565,"Focal chorioretinal inflammation, juxtapapillary, unspecified eye"
+507,14,888,"Pathological fracture, right finger(s), subsequent encounter for fracture with routine healing"
+508,640,670,Observation and evaluation of newborn for suspected connective tissue condition ruled out
+509,405,837,Adverse effect of antipruritics
+510,439,761,"Strain of other specified muscles, fascia and tendons at thigh level, right thigh, sequela"
+511,253,596,"Intentional self-harm by drowning and submersion in natural water, sequela"
+512,244,92,Infection and inflammatory reaction due to internal left hip prosthesis
+513,975,66,Underdosing of unspecified anesthetics
+514,276,836,"Torsion of ovary and ovarian pedicle, unspecified side"
+515,823,688,Atheroembolism of upper extremity
+516,357,303,"Displaced avulsion fracture of left ischium, subsequent encounter for fracture with delayed healing"
+517,19,835,"Thrombosis due to vascular prosthetic devices, implants and grafts, initial encounter"
+518,682,654,"Other specified rheumatoid arthritis, left shoulder"
+519,39,899,Benign neoplasm of descending colon
+520,363,83,"War operations involving rubber bullets, military personnel"
+521,580,240,Unspecified blood donor
+522,419,380,"Chronic gout due to renal impairment, right wrist"
+523,857,439,"Other articular cartilage disorders, right ankle"
+524,769,196,External constriction of other specified part of neck
+525,71,185,"Pressure ulcer of left buttock, stage 2"
+526,65,899,"War operations involving explosion of marine mine, military personnel, subsequent encounter"
+527,625,287,"Staphylococcal arthritis, left shoulder"
+528,810,571,Immunization not carried out because of other contraindication
+529,582,877,"Fall into natural body of water striking side causing other injury, subsequent encounter"
+530,270,870,Hypervitaminosis D
+531,603,495,Unspecified car occupant injured in collision with other type car in traffic accident
+532,320,138,"Dislocation of distal radioulnar joint of unspecified wrist, subsequent encounter"
+533,415,305,"Abrasion of other specified part of neck, sequela"
+534,507,195,Motorcycle driver injured in collision with two- or three-wheeled motor vehicle in traffic accident
+535,794,947,"Postural kyphosis, thoracic region"
+536,837,632,Monoplegia of upper limb affecting right nondominant side
+537,518,330,"Frostbite with tissue necrosis of left finger(s), sequela"
+538,961,706,"Burn with resulting rupture and destruction of right eyeball, initial encounter"
+539,581,539,"Incomplete lesion of L5 level of lumbar spinal cord, subsequent encounter"
+540,824,56,Anorectal fistula
+541,884,990,"Corrosion of third degree of right toe(s) (nail), initial encounter"
+542,70,658,"Nondisplaced fracture of proximal phalanx of right thumb, subsequent encounter for fracture with delayed healing"
+543,978,119,"Age-related cataract, morgagnian type, right eye"
+544,721,916,"Burn of second degree of right knee, initial encounter"
+545,507,469,"Person on outside of heavy transport vehicle injured in collision with two- or three-wheeled motor vehicle in nontraffic accident, sequela"
+546,952,913,"Other physeal fracture of upper end of unspecified fibula, subsequent encounter for fracture with routine healing"
+547,331,432,"Person injured in collision between car and bus (traffic), subsequent encounter"
+548,817,930,Mallet finger of left finger(s)
+549,566,930,"Dislocation of jaw, left side, initial encounter"
+550,760,526,"Nondisplaced Rolando's fracture, right hand, subsequent encounter for fracture with malunion"
+551,961,447,"Maternal care for known or suspected placental insufficiency, first trimester, not applicable or unspecified"
+552,597,222,"Corrosion of unspecified degree of left thigh, initial encounter"
+553,703,969,"Chronic tension-type headache, intractable"
+554,892,977,"Struck by other hit or thrown ball, initial encounter"
+555,819,304,Toxic effect of other specified inorganic substances
+556,134,553,"Adverse effect of unspecified drugs, medicaments and biological substances"
+557,170,664,Traumatic rupture of ligament of finger at metacarpophalangeal and interphalangeal joint(s)
+558,438,977,"Follicular lymphoma grade III, unspecified, extranodal and solid organ sites"
+559,171,548,"Pathological fracture in other disease, unspecified hand, subsequent encounter for fracture with delayed healing"
+560,74,499,"Toxic effect of dichloromethane, assault"
+561,465,654,Polyphagia
+562,952,86,"Idiopathic chronic gout, right hip, without tophus (tophi)"
+563,389,449,"Other disorders of continuity of bone, unspecified tibia and fibula"
+564,245,3,Puncture wound without foreign body of left index finger without damage to nail
+565,348,123,"Displacement of artificial heart, sequela"
+566,198,667,"Displaced transverse fracture of shaft of unspecified radius, subsequent encounter for closed fracture with routine healing"
+567,70,76,"Displaced fracture of lesser trochanter of unspecified femur, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+568,102,736,Chronic embolism and thrombosis of right popliteal vein
+569,541,803,"Toxic effect of contact with venomous frog, accidental (unintentional), subsequent encounter"
+570,96,811,"Osteochondropathy, unspecified, left upper arm"
+571,750,148,"Birth injury to scalp, unspecified"
+572,474,264,Periprosthetic fracture around internal prosthetic hip joint
+573,781,204,"Disorder of prostate, unspecified"
+574,465,711,"Other cervical disc degeneration, unspecified cervical region"
+575,103,128,"Contusion of left middle finger with damage to nail, sequela"
+576,815,480,"Melanocytic nevi, unspecified"
+577,572,201,"Corrosion of third degree back of unspecified hand, sequela"
+578,265,543,"Other articular cartilage disorders, unspecified foot"
+579,786,418,Personal history of other specified conditions
+580,719,644,"Displaced bicondylar fracture of unspecified tibia, subsequent encounter for closed fracture with routine healing"
+581,852,984,"Nondisplaced fracture of first metatarsal bone, unspecified foot, subsequent encounter for fracture with malunion"
+582,350,165,Lesion of lateral popliteal nerve
+583,240,227,"Skeletal fluorosis, upper arm"
+584,737,228,Adverse effect of other topical agents
+585,204,918,"Partial traumatic amputation of penis, subsequent encounter"
+586,579,743,"Displaced avulsion fracture of tuberosity of left calcaneus, sequela"
+587,19,725,Stenosis of left lacrimal sac
+588,221,471,"Nondisplaced articular fracture of head of right femur, subsequent encounter for open fracture type I or II with nonunion"
+589,919,449,"Other mechanical complication of other bone devices, implants and grafts, initial encounter"
+590,783,54,Open bite of right breast
+591,641,667,"Pathological fracture, left fibula, subsequent encounter for fracture with malunion"
+592,667,596,"Puncture wound with foreign body of unspecified toe(s) with damage to nail, subsequent encounter"
+593,683,949,Sexual aversion disorder
+594,256,419,"Posterior subluxation of unspecified radial head, initial encounter"
+595,200,643,"Flail joint, unspecified hip"
+596,825,484,"Poisoning by other narcotics, undetermined, subsequent encounter"
+597,800,534,Other stimulant dependence with other stimulant-induced disorder
+598,172,533,"Person on outside of pick-up truck or van injured in collision with two- or three-wheeled motor vehicle in nontraffic accident, sequela"
+599,766,748,"Subluxation of C2/C3 cervical vertebrae, subsequent encounter"
+600,471,211,Other fracture of third thoracic vertebra
+601,947,959,Other disorders of branched-chain amino-acid metabolism
+602,29,501,"Fibrous dysplasia (monostotic), left ankle and foot"
+603,647,540,"Poisoning by other drug primarily affecting the autonomic nervous system, intentional self-harm, sequela"
+604,928,481,"Unspecified injury of other flexor muscle, fascia and tendon at forearm level, right arm, sequela"
+605,337,976,"Contusion and laceration of left cerebrum with loss of consciousness of 31 minutes to 59 minutes, subsequent encounter"
+606,951,188,"Corrosion of third degree of abdominal wall, subsequent encounter"
+607,902,27,"Other specified injury of unspecified blood vessel at ankle and foot level, unspecified leg"
+608,346,581,Right upper quadrant pain
+609,814,359,"Poisoning by oral contraceptives, assault, subsequent encounter"
+610,171,657,"Nondisplaced spiral fracture of shaft of ulna, left arm, subsequent encounter for closed fracture with delayed healing"
+611,65,131,"Displaced fracture of head of right radius, subsequent encounter for closed fracture with routine healing"
+612,92,103,Elephantiasis of eyelid
+613,937,739,"Superficial foreign body of left front wall of thorax, sequela"
+614,6,592,"Nondisplaced fracture of lower epiphysis (separation) of right femur, subsequent encounter for closed fracture with routine healing"
+615,673,600,Unspecified ptosis of right eyelid
+616,417,364,"Syphilis complicating pregnancy, second trimester"
+617,617,471,Necrosis of artery
+618,363,722,"Balloon crash injuring occupant, initial encounter"
+619,473,585,"Decreased fetal movements, third trimester, fetus 3"
+620,504,305,"Displaced associated transverse-posterior fracture of unspecified acetabulum, initial encounter for open fracture"
+621,944,967,Encounter for prophylactic surgery
+622,454,329,"Other injury of unspecified muscle, fascia and tendon at shoulder and upper arm level, left arm, subsequent encounter"
+623,297,460,"Corrosion of third degree of multiple sites of unspecified ankle and foot, initial encounter"
+624,203,797,"Contusion of right thigh, subsequent encounter"
+625,579,792,Sprain of radiocarpal joint
+626,630,576,Presence of artificial knee joint
+627,44,657,Dysarthria following nontraumatic subarachnoid hemorrhage
+628,194,177,"Pathological fracture in other disease, right shoulder"
+629,954,54,"Retained (nonmagnetic) (old) foreign body in posterior wall of globe, right eye"
+630,785,642,Adverse effect of predominantly beta-adrenoreceptor agonists
+631,386,268,"Carcinoma in situ of skin of unspecified eyelid, including canthus"
+632,463,53,"Blister (nonthermal) of unspecified front wall of thorax, initial encounter"
+633,64,4,"Unspecified injury of abdomen, initial encounter"
+634,778,454,"Nondisplaced bicondylar fracture of right tibia, subsequent encounter for open fracture type I or II with delayed healing"
+635,119,237,"Displaced fracture of acromial process, unspecified shoulder, subsequent encounter for fracture with routine healing"
+636,303,464,"Driver of pick-up truck or van injured in collision with car, pick-up truck or van in nontraffic accident, subsequent encounter"
+637,337,104,"Other specified injury of other specified blood vessels at shoulder and upper arm level, unspecified arm, initial encounter"
+638,957,757,"Struck by tennis racquet, sequela"
+639,400,182,"Nondisplaced fracture of coracoid process, unspecified shoulder, subsequent encounter for fracture with malunion"
+640,570,579,"Partial loss of teeth, unspecified cause, class II"
+641,880,521,Displacement of prosthetic orbit of right eye
+642,811,623,"Unspecified motorcycle rider injured in noncollision transport accident in traffic accident, sequela"
+643,720,300,Hormone resistant malignancy status
+644,361,651,"Pathological fracture, unspecified shoulder, subsequent encounter for fracture with nonunion"
+645,777,556,"Chronic periodontitis, generalized, severe"
+646,918,342,"Derangement of other medial meniscus due to old tear or injury, left knee"
+647,11,49,Sprain of other specified parts of unspecified knee
+648,310,322,"Nondisplaced fracture of base of fifth metacarpal bone, right hand, subsequent encounter for fracture with routine healing"
+649,512,767,Intentional self-harm by drowning and submersion
+650,273,564,"Foreign body in cornea, right eye"
+651,574,477,"Other specified osteochondropathies, left upper arm"
+652,790,619,"Unspecified fracture of the lower end of unspecified radius, subsequent encounter for closed fracture with nonunion"
+653,820,177,"Terrorism involving fires, conflagration and hot substances"
+654,936,34,"Underdosing of local antifungal, anti-infective and anti-inflammatory drugs, initial encounter"
+655,398,571,"Displaced fracture of posterior process of unspecified talus, initial encounter for open fracture"
+656,492,725,Dislocation of unspecified parts of left shoulder girdle
+657,895,194,"Nondisplaced pilon fracture of unspecified tibia, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+658,399,194,"Other specified injury of unspecified Achilles tendon, sequela"
+659,727,328,Hemiplegia and hemiparesis following nontraumatic subarachnoid hemorrhage affecting right dominant side
+660,693,813,"Unspecified fracture of shaft of left femur, subsequent encounter for closed fracture with routine healing"
+661,956,474,"Puncture wound without foreign body, right ankle"
+662,992,650,Morbidly adherent placenta
+663,354,202,"Crushed between unspecified watercraft and other watercraft or other object due to collision, subsequent encounter"
+664,121,625,"Injury of trochlear nerve, left side, sequela"
+665,810,283,"Other nondisplaced fracture of fourth cervical vertebra, subsequent encounter for fracture with nonunion"
+666,163,650,"Toxic liver disease with hepatic necrosis, without coma"
+667,697,847,"Subluxation of distal interphalangeal joint of right middle finger, sequela"
+668,85,834,"Other fracture of unspecified femur, initial encounter for closed fracture"
+669,122,603,"Nondisplaced pilon fracture of left tibia, subsequent encounter for open fracture type I or II with delayed healing"
+670,194,261,"Pathological fracture, left humerus, subsequent encounter for fracture with routine healing"
+671,859,786,"Nondisplaced comminuted fracture of shaft of unspecified tibia, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+672,745,759,"Maternal care for excessive fetal growth, first trimester, fetus 3"
+673,865,390,Other and unspecified effects of high altitude
+674,282,49,Corrosions involving 30-39% of body surface with 10-19% third degree corrosion
+675,965,39,"Fracture of orbital floor, unspecified side, initial encounter for open fracture"
+676,344,61,Open bite of right hand
+677,419,693,Other specified injury of unspecified blood vessel at ankle and foot level
+678,496,198,"Poisoning by, adverse effect of and underdosing of local astringents and local detergents"
+679,300,915,"Traumatic rupture of unspecified ligament of unspecified wrist, sequela"
+680,534,591,"Wedge compression fracture of first thoracic vertebra, subsequent encounter for fracture with routine healing"
+681,352,985,Acquired ichthyosis
+682,966,411,Traumatic subcutaneous emphysema
+683,308,945,"Prosthetic and other implants, materials and accessory general hospital and personal-use devices associated with adverse incidents"
+684,216,446,"Burn due to localized fire on board fishing boat, sequela"
+685,305,478,"Displaced comminuted fracture of shaft of right tibia, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+686,465,408,"Unspecified occupant of bus injured in collision with pedestrian or animal in nontraffic accident, sequela"
+687,762,375,"Displaced fracture of lesser trochanter of left femur, initial encounter for open fracture type I or II"
+688,602,732,Unspecified subluxation and dislocation of toe
+689,547,637,Neonatal jaundice from other hepatocellular damage
+690,272,808,"Nondisplaced transverse fracture of shaft of right femur, subsequent encounter for open fracture type I or II with routine healing"
+691,536,640,"War operations involving other destruction of aircraft, military personnel"
+692,15,680,"Pain, unspecified"
+693,863,179,"Keratoconus, unstable"
+694,154,443,"Subacute osteomyelitis, humerus"
+695,783,969,"Nondisplaced fracture of coronoid process of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+696,520,971,Choleperitonitis
+697,763,604,Secondary syphilitic hepatitis
+698,721,308,"Pathological fracture, left fibula, sequela"
+699,855,677,Other dislocation of left wrist and hand
+700,458,272,"Infantile idiopathic scoliosis, thoracolumbar region"
+701,677,362,"Other fracture of T5-T6 vertebra, subsequent encounter for fracture with delayed healing"
+702,187,462,Tuberculosis of bones and joints
+703,46,125,Kidney transplant status
+704,391,777,"Nondisplaced osteochondral fracture of left patella, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+705,313,392,"Myopathy, unspecified"
+706,903,431,"Abrasion of left front wall of thorax, initial encounter"
+707,938,259,"Injury of optic tract and pathways, left eye, sequela"
+708,575,832,Paragonimiasis
+709,558,827,"Superficial foreign body, right thigh, subsequent encounter"
+710,150,434,Benign neoplasm of vagina
+711,857,555,"Other injury due to other accident to other unpowered watercraft, subsequent encounter"
+712,751,678,"Nondisplaced fracture of distal phalanx of right lesser toe(s), subsequent encounter for fracture with nonunion"
+713,455,519,"External constriction of right shoulder, initial encounter"
+714,827,124,Lichen sclerosus et atrophicus
+715,963,122,"Laceration of axillary or brachial vein, left side"
+716,549,947,"Poisoning by other opioids, assault, subsequent encounter"
+717,865,147,"Accidental discharge of paintball gun, initial encounter"
+718,551,81,Other porphyria
+719,594,240,"Unspecified injury of dorsal artery of unspecified foot, subsequent encounter"
+720,381,229,"Laceration with foreign body of right lesser toe(s) without damage to nail, subsequent encounter"
+721,278,744,Hypertensive heart disease without heart failure
+722,909,388,War operations involving unspecified weapon of mass destruction [WMD]
+723,291,391,Corrosion of right eyelid and periocular area
+724,137,514,"Type 3 fracture of sacrum, sequela"
+725,381,186,"Poisoning by succinimides and oxazolidinediones, assault"
+726,279,306,"Animal-rider injured in collision with fixed or stationary object, subsequent encounter"
+727,918,729,"Osteonecrosis due to previous trauma, left foot"
+728,985,263,"Acquired absence of limb, unspecified"
+729,629,889,"Obstructed labor due to compound presentation, fetus 5"
+730,743,707,"War operations involving explosion of depth-charge, civilian, initial encounter"
+731,706,729,"Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs, sequela"
+732,381,872,"Burn of unspecified degree of multiple sites of unspecified wrist and hand, subsequent encounter"
+733,328,810,"Breakdown (mechanical) of cardiac electrode, sequela"
+734,344,649,"Toxic effect of venom of wasps, assault, initial encounter"
+735,844,413,Viral pericarditis
+736,265,412,Person on outside of bus injured in collision with heavy transport vehicle or bus in nontraffic accident
+737,258,358,"Obstructed labor due to malposition and malpresentation, unspecified, fetus 2"
+738,331,203,"Displaced fracture of distal phalanx of right little finger, sequela"
+739,683,716,"Other injury of extensor muscle, fascia and tendon of unspecified finger at forearm level"
+740,332,134,Complete traumatic transphalangeal amputation of right index finger
+741,749,951,"Other specified injury of extensor muscle, fascia and tendon of right thumb at wrist and hand level, initial encounter"
+742,410,266,"Displaced intraarticular fracture of unspecified calcaneus, initial encounter for open fracture"
+743,464,57,"Fracture of condylar process of left mandible, initial encounter for open fracture"
+744,55,536,"Contusion of unspecified intra-abdominal organ, subsequent encounter"
+745,172,461,Complete traumatic amputation at level between unspecified shoulder and elbow
+746,874,250,"Strain of intrinsic muscle, fascia and tendon of unspecified finger at wrist and hand level"
+747,869,721,"Superficial foreign body of breast, right breast, sequela"
+748,282,627,"Nondisplaced oblique fracture of shaft of right femur, initial encounter for closed fracture"
+749,23,82,"Drug-induced chronic gout, right wrist, with tophus (tophi)"
+750,131,123,"Maternal care for excessive fetal growth, first trimester, fetus 5"
+751,13,353,"Salter-Harris Type I physeal fracture of upper end of right tibia, initial encounter for closed fracture"
+752,153,951,Tenonitis of left orbit
+753,555,156,Avulsion of eye
+754,377,182,"War operations involving gasoline bomb, military personnel"
+755,433,798,Open wound of front wall of thorax without penetration into thoracic cavity
+756,622,961,"Other disorders of continuity of bone, right pelvic region and thigh"
+757,314,824,"Unspecified open wound of abdominal wall, epigastric region without penetration into peritoneal cavity, initial encounter"
+758,655,257,"Other synovitis and tenosynovitis, left lower leg"
+759,480,157,"Pathological fracture in other disease, unspecified site"
+760,918,147,"Orbital myositis, left orbit"
+761,235,44,"Anaplastic large cell lymphoma, ALK-positive"
+762,354,77,Abnormal electromyogram [EMG]
+763,186,43,Injury of esophagus (thoracic part)
+764,659,40,In-line roller-skate accident
+765,785,588,"Burn due to unspecified watercraft on fire, sequela"
+766,197,397,"Corrosion of third degree of unspecified single finger (nail) except thumb, subsequent encounter"
+767,895,338,"Unspecified fracture of shaft of right fibula, subsequent encounter for open fracture type I or II with routine healing"
+768,834,247,Intentional self-harm by jumping or lying in front of motor vehicle
+769,224,302,"Drowning and submersion due to being thrown overboard by motion of canoe or kayak, sequela"
+770,550,760,"Displaced Maisonneuve's fracture of left leg, subsequent encounter for open fracture type I or II with nonunion"
+771,8,336,"Unspecified open wound of pharynx and cervical esophagus, subsequent encounter"
+772,611,904,Central subluxation of right hip
+773,302,676,Unspecified complication of kidney transplant
+774,491,27,Recurrent pterygium of left eye
+775,859,300,"Failed or difficult intubation, subsequent encounter"
+776,612,923,"Pathological fracture in other disease, unspecified hand, subsequent encounter for fracture with routine healing"
+777,47,60,Cholelithiasis
+778,757,141,"Lead-induced chronic gout, left hip, without tophus (tophi)"
+779,984,364,"Nondisplaced Zone I fracture of sacrum, sequela"
+780,444,65,"Other subluxation of right foot, initial encounter"
+781,72,471,"Subluxation of metacarpophalangeal joint of left index finger, sequela"
+782,866,682,"Unspecified fracture of unspecified forearm, subsequent encounter for closed fracture with malunion"
+783,710,970,"Spontaneous rupture of extensor tendons, right ankle and foot"
+784,582,950,Benign neoplasm of left conjunctiva
+785,982,726,"Juvenile osteochondrosis, hand"
+786,535,762,"Open bite, right elbow, initial encounter"
+787,308,194,"Nondisplaced fracture of unspecified tibial spine, subsequent encounter for open fracture type I or II with nonunion"
+788,618,250,"Passenger in three-wheeled motor vehicle injured in collision with pedal cycle in nontraffic accident, sequela"
+789,291,67,"Passenger in heavy transport vehicle injured in collision with car, pick-up truck or van in nontraffic accident, initial encounter"
+790,36,330,"Other injury of other specified muscles, fascia and tendons at wrist and hand level, unspecified hand, subsequent encounter"
+791,356,921,Left ventricular failure
+792,964,188,"Other psychoactive substance dependence with withdrawal, uncomplicated"
+793,35,394,"Displaced dome fracture of right acetabulum, sequela"
+794,917,14,"Other specified disorders of cartilage, other site"
+795,947,515,Non-pressure chronic ulcer of back
+796,791,935,"Other acute osteomyelitis, right shoulder"
+797,908,314,"Unspecified injury of other muscle(s) and tendon(s) of posterior muscle group at lower leg level, left leg, sequela"
+798,72,385,Unspecified anomaly of tooth position of fully erupted tooth or teeth
+799,206,520,"Stress fracture, right fibula, subsequent encounter for fracture with delayed healing"
+800,759,875,Injury of other urinary and pelvic organs
+801,42,72,"Corrosion of first degree of right ear [any part, except ear drum], sequela"
+802,799,471,Corrosion of unspecified degree of unspecified knee
+803,836,648,Failed attempted termination of pregnancy without complication
+804,443,477,"Superficial foreign body of left index finger, initial encounter"
+805,96,511,Hematosalpinx
+806,512,867,"Charcot's joint, right shoulder"
+807,105,802,"Other migraine, intractable, with status migrainosus"
+808,537,101,"Person on outside of car injured in collision with other type car in traffic accident, subsequent encounter"
+809,939,36,"Adverse effect of beta-adrenoreceptor antagonists, sequela"
+810,26,643,Partial traumatic amputation at left hip joint
+811,369,177,"Injury of other cranial nerves, right side, subsequent encounter"
+812,516,477,"Dislocation of jaw, left side, sequela"
+813,172,162,"Fatigue fracture of vertebra, cervical region, initial encounter for fracture"
+814,177,342,"Keratomalacia, right eye"
+815,775,860,"Unspecified injury of other muscle(s) and tendon(s) of posterior muscle group at lower leg level, left leg, subsequent encounter"
+816,501,773,"Displaced fracture of proximal third of navicular [scaphoid] bone of right wrist, subsequent encounter for fracture with routine healing"
+817,241,752,"Unspecified open wound, left knee, sequela"
+818,715,989,Leukemia of unspecified cell type
+819,671,902,"Acute (reversible) ischemia of intestine, part and extent unspecified"
+820,736,438,Machinery accident on board unspecified watercraft
+821,250,570,"Pathological fracture in neoplastic disease, right ankle, sequela"
+822,998,989,"Laceration of vein at forearm level, right arm, subsequent encounter"
+823,941,657,Inflammatory disorders of breast
+824,188,958,"Mediastinal (thymic) large B-cell lymphoma, intra-abdominal lymph nodes"
+825,632,232,"Chronic hepatitis, unspecified"
+826,21,517,Other specified rheumatoid arthritis
+827,476,887,"Pathological fracture in neoplastic disease, left ankle"
+828,728,899,"Contact with other hot fluids, initial encounter"
+829,117,206,Excessive and redundant skin and subcutaneous tissue
+830,429,150,Nonrheumatic mitral valve disorders
+831,541,100,"Displaced fracture of distal phalanx of right little finger, subsequent encounter for fracture with delayed healing"
+832,488,915,"Burn of third degree of multiple sites of unspecified shoulder and upper limb, except wrist and hand, subsequent encounter"
+833,376,354,"Leakage of heart valve prosthesis, subsequent encounter"
+834,784,965,"Unspecified displaced fracture of surgical neck of unspecified humerus, subsequent encounter for fracture with malunion"
+835,21,575,Pulmonary actinomycosis
+836,325,194,"Laceration of muscle and tendon of long extensor muscle of toe at ankle and foot level, unspecified foot, sequela"
+837,483,822,"Other low birth weight newborn, unspecified weight"
+838,590,588,"Injury of facial nerve, left side, subsequent encounter"
+839,10,663,"Diffuse follicle center lymphoma, spleen"
+840,89,407,"Unspecified occupant of pick-up truck or van injured in collision with two- or three-wheeled motor vehicle in traffic accident, sequela"
+841,252,89,"Stress fracture, right shoulder, sequela"
+842,457,245,"Burn of second degree of nose (septum), subsequent encounter"
+843,217,906,"Displaced fracture of head of right radius, initial encounter for open fracture type I or II"
+844,747,894,Occupant of railway train or railway vehicle injured in collision with motor vehicle in traffic accident
+845,872,482,"External constriction of vagina and vulva, sequela"
+846,431,267,"Juvenile osteochondrosis of hip and pelvis, unspecified, unspecified leg"
+847,537,226,"Conductive hearing loss, unilateral with unrestricted hearing on the contralateral side"
+848,869,767,"Burn of third degree of left thumb (nail), sequela"
+849,598,416,"Contusion of bladder, sequela"
+850,448,230,Other periradicular pathology associated with previous endodontic treatment
+851,962,449,Mechanical complication of respirator
+852,789,192,Fibrosis and cirrhosis of liver
+853,409,160,"Soemmering's ring, left eye"
+854,670,235,Measles with other complications
+855,113,249,Subluxation of unspecified interphalangeal joint of left little finger
+856,481,613,"Complication of unspecified artery following a procedure, not elsewhere classified, sequela"
+857,41,832,"Pedestrian on foot injured in collision with roller-skater, subsequent encounter"
+858,846,366,"Salter-Harris Type II physeal fracture of phalanx of right toe, subsequent encounter for fracture with routine healing"
+859,164,202,"Wedge compression fracture of unspecified thoracic vertebra, sequela"
+860,627,701,"Contusion of scrotum and testes, initial encounter"
+861,591,806,Procedure and treatment not carried out because of patient's decision for other reasons
+862,752,854,"Unspecified injury of left ankle, sequela"
+863,468,979,Open wound of right buttock
+864,479,327,"Laceration without foreign body, unspecified knee, initial encounter"
+865,647,543,"Contact with dry ice, sequela"
+866,611,5,"War operations involving other destruction of aircraft, civilian, subsequent encounter"
+867,142,698,"Other contact with rat, subsequent encounter"
+868,795,429,"Effusion, left elbow"
+869,165,297,"Pathological fracture, unspecified shoulder, subsequent encounter for fracture with nonunion"
+870,905,123,"Unspecified injury of right hip, subsequent encounter"
+871,306,511,"Other mechanical complication of implanted electronic neurostimulator, generator, initial encounter"
+872,600,974,"Displaced oblique fracture of shaft of left fibula, sequela"
+873,878,614,"Puncture wound without foreign body of left ring finger with damage to nail, sequela"
+874,337,852,"Displaced intraarticular fracture of unspecified calcaneus, subsequent encounter for fracture with delayed healing"
+875,824,756,Patulous Eustachian tube
+876,242,960,"Other specified fracture of right acetabulum, sequela"
+877,851,358,"Unspecified injury of bronchus, unilateral, sequela"
+878,815,371,"Broken internal joint prosthesis, other site"
+879,684,694,"Complete physeal arrest, right proximal humerus"
+880,66,920,"Local infection due to central venous catheter, sequela"
+881,171,473,Driver of special industrial vehicle injured in nontraffic accident
+882,126,810,Aphasia following unspecified cerebrovascular disease
+883,53,73,"Nondisplaced spiral fracture of shaft of radius, right arm, initial encounter for open fracture type I or II"
+884,331,898,"Poisoning by, adverse effect of and underdosing of other antihypertensive drugs"
+885,895,722,Failure of sterile precautions during surgical and medical care
+886,866,616,Displaced fracture of medial condyle of right femur
+887,314,189,Other congenital malformations of mouth
+888,450,142,"Stress fracture, unspecified ulna and radius"
+889,665,201,"Other intentional self-harm by crashing of motor vehicle, initial encounter"
+890,509,319,Foreign body in cornea
+891,231,935,"Pathological fracture, left shoulder, subsequent encounter for fracture with delayed healing"
+892,867,601,"Other injury of adductor muscle, fascia and tendon of left thigh"
+893,937,143,"Other specified fracture of right pubis, initial encounter for closed fracture"
+894,374,109,"Other traumatic displaced spondylolisthesis of fourth cervical vertebra, subsequent encounter for fracture with nonunion"
+895,400,364,"Struck by basketball, sequela"
+896,446,669,"Displaced fracture of trapezoid [smaller multangular], unspecified wrist"
+897,889,459,"Other osteoporosis with current pathological fracture, vertebra(e)"
+898,838,291,"Fistula, right hand"
+899,53,414,"Adverse effect of pyrazolone derivatives, subsequent encounter"
+900,611,695,Unspecified physeal fracture of upper end of fibula
+901,524,776,"Unspecified fracture of shaft of unspecified fibula, subsequent encounter for open fracture type I or II with routine healing"
+902,436,117,"Pigmentary glaucoma, unspecified eye, mild stage"
+903,147,407,Varicose veins of right lower extremities with pain
+904,204,964,"War operations involving other fires, conflagrations and hot substances, military personnel"
+905,347,273,"Displaced oblique fracture of shaft of right femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+906,271,390,"Maternal care for other rhesus isoimmunization, first trimester, fetus 2"
+907,372,759,"Unspecified fracture of shaft of unspecified radius, initial encounter for closed fracture"
+908,770,434,Cannabis abuse with unspecified cannabis-induced disorder
+909,589,95,Bitten by other nonvenomous reptiles
+910,9,520,"Pressure ulcer of head, unspecified stage"
+911,992,816,"Other fracture of second thoracic vertebra, initial encounter for closed fracture"
+912,373,999,"Torsion of ovary and ovarian pedicle, unspecified side"
+913,83,465,Heat exposure on board merchant ship
+914,794,469,"Puncture wound of abdominal wall without foreign body, right upper quadrant without penetration into peritoneal cavity, initial encounter"
+915,841,291,Other asthma
+916,7,797,"Unspecified superficial injury of left hand, initial encounter"
+917,208,565,"Greenstick fracture of shaft of radius, left arm, sequela"
+918,562,979,"Sixth [abducent] nerve palsy, left eye"
+919,590,683,"Unspecified open wound of right shoulder, subsequent encounter"
+920,654,442,"Burn of third degree of unspecified hand, unspecified site, initial encounter"
+921,566,143,"Poisoning by vitamins, accidental (unintentional), sequela"
+922,110,265,"Dislocation of distal interphalangeal joint of right ring finger, sequela"
+923,247,996,"Dislocation of proximal interphalangeal joint of right little finger, initial encounter"
+924,678,201,"Adult osteochondrosis of spine, thoracolumbar region"
+925,173,252,"Nondisplaced fracture of triquetrum [cuneiform] bone, right wrist"
+926,526,277,Varicose veins of unspecified lower extremity with ulcer
+927,308,733,"Fibrous dysplasia (monostotic), right thigh"
+928,41,671,"Other secondary chronic gout, unspecified wrist, with tophus (tophi)"
+929,738,232,Extravasation of urine
+930,993,120,"Chronic Eustachian salpingitis, left ear"
+931,157,506,"Nondisplaced spiral fracture of shaft of radius, unspecified arm, subsequent encounter for open fracture type I or II with routine healing"
+932,667,449,Unspecified dislocation of left shoulder joint
+933,6,94,Malignant neoplasm of middle ear
+934,271,601,Other diseases of appendix
+935,345,739,"Salter-Harris Type I physeal fracture of lower end of radius, right arm, subsequent encounter for fracture with malunion"
+936,173,644,"Sympathetic uveitis, unspecified eye"
+937,915,241,"Laceration without foreign body of unspecified shoulder, sequela"
+938,923,611,"Salter-Harris Type IV physeal fracture of lower end of radius, unspecified arm, subsequent encounter for fracture with delayed healing"
+939,546,759,"Abscess of external ear, bilateral"
+940,557,815,"Poisoning by skeletal muscle relaxants [neuromuscular blocking agents], intentional self-harm, sequela"
+941,990,971,"External constriction, unspecified ankle"
+942,325,19,"Laceration of other specified muscles, fascia and tendons at wrist and hand level, unspecified hand, sequela"
+943,566,690,"Displaced fracture of trapezoid [smaller multangular], unspecified wrist, subsequent encounter for fracture with routine healing"
+944,590,799,"Nondisplaced avulsion fracture (chip fracture) of left talus, initial encounter for closed fracture"
+945,28,843,Other disorders of cornea
+946,802,349,"Osteitis condensans, unspecified upper arm"
+947,718,285,Contact with mouse
+948,63,586,Other psychoactive substance abuse with psychoactive substance-induced sexual dysfunction
+949,533,225,Hypoplasia of aorta
+950,371,105,"Foreign body in small intestine, initial encounter"
+951,801,219,"Postdysenteric arthropathy, right ankle and foot"
+952,660,350,"Unspecified injury of unspecified blood vessel at forearm level, left arm, sequela"
+953,543,656,"Displaced fracture of proximal phalanx of left middle finger, sequela"
+954,829,920,"Burn of first degree of right wrist, initial encounter"
+955,758,172,Pedestrian on roller-skates injured in collision with railway train or railway vehicle in traffic accident
+956,96,114,"Neuromuscular scoliosis, lumbar region"
+957,959,883,"Nondisplaced oblique fracture of shaft of right femur, subsequent encounter for open fracture type I or II with malunion"
+958,428,839,"Other physeal fracture of upper end of unspecified femur, subsequent encounter for fracture with nonunion"
+959,959,497,Assault by unarmed brawl or fight
+960,436,432,Causalgia of unspecified lower limb
+961,905,882,"Nondisplaced comminuted fracture of right patella, subsequent encounter for closed fracture with routine healing"
+962,200,816,"Changes in retinal vascular appearance, unspecified eye"
+963,270,376,Other complications specific to multiple gestation
+964,122,77,Tuberculosis of genitourinary system
+965,577,158,Sandfly fever
+966,834,407,"Unspecified sprain of sternum, sequela"
+967,370,879,"Toxic effect of venom of other arthropod, accidental (unintentional), sequela"
+968,564,908,"Partial traumatic metacarpophalangeal amputation of unspecified thumb, sequela"
+969,661,455,"Other specified injury of unspecified blood vessel at ankle and foot level, right leg, initial encounter"
+970,594,794,"Laceration of other muscle(s) and tendon(s) of posterior muscle group at lower leg level, right leg, initial encounter"
+971,722,124,"Traumatic subarachnoid hemorrhage with loss of consciousness of 6 hours to 24 hours, subsequent encounter"
+972,907,161,"Injury of sciatic nerve at hip and thigh level, left leg, sequela"
+973,802,276,"Open bite of anus, subsequent encounter"
+974,16,999,"Infection and inflammatory reaction due to other internal prosthetic devices, implants and grafts, subsequent encounter"
+975,95,681,"Displaced spiral fracture of shaft of radius, left arm, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+976,59,256,"Secondary osteoarthritis, unspecified ankle and foot"
+977,85,146,"Laceration of dorsal artery of unspecified foot, subsequent encounter"
+978,908,363,"Other sprain of right index finger, initial encounter"
+979,862,795,"Strain of muscle and tendon of long extensor muscle of toe at ankle and foot level, left foot, initial encounter"
+980,17,121,"Simple chronic conjunctivitis, bilateral"
+981,520,488,"Child sexual abuse, suspected, initial encounter"
+982,396,242,Struck by falling object on other unpowered watercraft
+983,332,238,Person boarding or alighting a pedal cycle injured in collision with other pedal cycle
+984,139,314,"Nondisplaced segmental fracture of shaft of unspecified femur, subsequent encounter for open fracture type I or II with routine healing"
+985,794,59,"Toxic effect of unspecified substance, undetermined, subsequent encounter"
+986,407,97,Other symptoms and signs involving cognitive functions and awareness
+987,932,25,"Other incomplete lesion at C6 level of cervical spinal cord, subsequent encounter"
+988,556,912,"Malignant neoplasm of anterior two-thirds of tongue, part unspecified"
+989,978,218,"Displaced comminuted fracture of shaft of left tibia, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+990,716,130,"Legal intervention involving manhandling, suspect injured, initial encounter"
+991,668,576,"Other infective bursitis, left hip"
+992,896,430,"Posterior displaced fracture of sternal end of unspecified clavicle, subsequent encounter for fracture with nonunion"
+993,922,943,"Smith's fracture of right radius, sequela"
+994,501,260,"Other disorders of bone development and growth, shoulder"
+995,285,273,"Corrosion of first degree of unspecified forearm, initial encounter"
+996,366,560,"Fall on board sailboat, initial encounter"
+997,176,245,"Posterior dislocation of unspecified sternoclavicular joint, sequela"
+998,143,151,Stenosis and insufficiency of lacrimal passages
+999,154,637,Rheumatoid polyneuropathy with rheumatoid arthritis of right elbow
+1000,328,470,"Other subluxation of right patella, sequela"

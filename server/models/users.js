@@ -1,8 +1,8 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../database')
 
-module.exports = (sequelize, Sequelize) => {
-  const User = sequelize.define('user', {
+module.exports = (sequelize, DataTypes) => {
+  return sequelize.define('user', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -25,7 +25,20 @@ module.exports = (sequelize, Sequelize) => {
     email: DataTypes.STRING,
     about: DataTypes.STRING,
     profilePic: DataTypes.TEXT,
+    speed: {
+      type: DataTypes.INTEGER,
+    },
+    reliability: {
+      type: DataTypes.INTEGER,
+    },
+    strength: {
+      type: DataTypes.INTEGER,
+    },
+    jumping: {
+      type: DataTypes.INTEGER,
+    },
+    aerobic: {
+      type: DataTypes.INTEGER,
+    },
   });
-
-  return User;
 }

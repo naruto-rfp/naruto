@@ -7,4 +7,14 @@ const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, pr
   dialect: 'postgres',
 })
 
-module.exports = sequelize
+const db = {};
+
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+
+db.User = require('../models/users.js')(sequelize,Sequelize);
+db.Stats = require('../models/stats.js')(sequelize,Sequelize);
+
+db.User.hasOne(db.Stats);
+
+module.exports = db;
