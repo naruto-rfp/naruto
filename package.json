@@ -59,9 +59,12 @@
     "express-promise-router": "^4.1.1",
     "pg": "^8.8.0",
     "pg-format": "^1.0.4",
+    "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "sequelize": "^6.25.7",
+    "sequelize-cli": "^6.5.2"
   },
   "jest": {
     "moduleFileExtensions": [
