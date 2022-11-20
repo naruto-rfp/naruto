@@ -1,12 +1,11 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../database')
 
-
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define('Event', {
     id: {
       type: DataTypes.INTEGER,
-      primaryKey: true
+      primaryKey: true,
       autoIncrement: true
     },
     eventText: {

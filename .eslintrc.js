@@ -10,9 +10,19 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    eqeqeq: 'error',
+    'prettier/prettier': ['warn', { endOfLine: 'auto' }],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
     quotes: ['error', 'single', 'avoid-escape'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/forbid-prop-types': 0,
     'no-console': 'off',
   },
-};
+}
