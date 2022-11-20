@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize')
-const db = require('../database')
+const { sequelize } = require('../database')
 
-const Events = db.define('Events', {
+const Events = sequelize.define('Events', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
