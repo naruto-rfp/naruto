@@ -8,6 +8,9 @@ const app = express();
 const router = require('./router');
 
 const db = require('./database');
+
+const db = require('./database');
+db.sequelize.sync();
 db.sequelize.sync();
 
 const port = process.env.PORT || 3000;
