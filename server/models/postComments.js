@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize')
-const db = require('../database')
+const { sequelize } = require('../database')
 
-const PostComments = db.define('postComments', {
+const PostComments = sequelize.define('postComments', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -10,7 +10,7 @@ const PostComments = db.define('postComments', {
   userID: DataTypes.INTEGER,
   commentText: DataTypes.TEXT,
   postID: DataTypes.INTEGER,
-  date: DataTypes.Date,
+  date: DataTypes.DATE,
 })
 
 module.exports = PostComments

@@ -37,8 +37,8 @@ db.Posts.hasMany(db.PostComments)
 db.PostComments.belongsTo(db.Posts)
 
 // Users (primary key) has many Comments on Posts (foreign key)
-db.Users.hasMany(db.PostComments)
-db.PostComments.belongsTo(db.Users)
+db.User.hasMany(db.PostComments)
+db.PostComments.belongsTo(db.User)
 
 // EVENTS
 // Teams (primary key) has many Events (foreign key)

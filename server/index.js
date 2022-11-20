@@ -5,11 +5,11 @@ const compression = require('compression')
 require('dotenv').config()
 
 const app = express()
+const db = require('./database')
+require('./database/config')
 const router = require('./router')
 
-const db = require('./database')
-
-db.sync()
+db.sequelize.sync()
 
 const port = process.env.PORT || 3000
 
