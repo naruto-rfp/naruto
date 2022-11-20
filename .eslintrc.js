@@ -11,6 +11,7 @@ module.exports = {
   },
   rules: {
     eqeqeq: 'error',
+    semi: 'off',
     'prettier/prettier': ['warn', { endOfLine: 'auto' }],
     'space-before-function-paren': [
       'error',
@@ -24,5 +25,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/forbid-prop-types': 0,
     'no-console': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
+  ignorePatterns: ['node_modules/', 'dist/', 'coverage/'],
 }

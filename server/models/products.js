@@ -1,24 +1,24 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../database/db.js')
+const { DataTypes } = require('sequelize')
+const db = require('../database')
 
-module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('Product', {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true
-            autoIncrement: true
-        },
-        name: {
-            type: DataTypes.STRING
-        },
-        description: {
-            type: DataTypes.STRING
-        },
-        photos: {
-            DataTypes: DataTypes.TEXT
-        },
-        default_price: {
-            DataTypes: DataTypes.INTEGER
-        }
-    })
-}
+const Products = db.define('Products', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  name: {
+    type: DataTypes.STRING,
+  },
+  description: {
+    type: DataTypes.STRING,
+  },
+  photos: {
+    DataTypes: DataTypes.TEXT,
+  },
+  default_price: {
+    DataTypes: DataTypes.INTEGER,
+  },
+})
+
+module.exports = Products

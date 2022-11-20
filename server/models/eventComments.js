@@ -1,14 +1,14 @@
-const { Sequelize, DataTypes } = require('sequelize')
-const sequelize = require('../database')
+const { DataTypes } = require('sequelize')
+const db = require('../database')
 
-module.exports = (sequelize, DataTypes) => {
-  return sequelize.define('Comment', {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    event: DataTypes.INTEGER,
-    text: DataTypes.STRING,
-  })
-}
+const EventComments = db.define('eventComments', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  event: DataTypes.INTEGER,
+  text: DataTypes.STRING,
+})
+
+module.exports = EventComments

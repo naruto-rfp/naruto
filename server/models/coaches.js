@@ -1,29 +1,28 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../database');
-const User = require('../models/users.js');
-const Team = require('../models/teams.js');
+const { DataTypes } = require('sequelize')
+const db = require('../database')
+const User = require('./users')
+const Team = require('./teams')
 
-module.exports = (sequelize, DataTypes) => {
-  return sequelize.define('Coaches', {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true
+const Coaches = db.define('Coaches', {
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+  },
+  userID: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: User,
+      key: 'id',
     },
-    userID: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: User,
-        key: 'id'
-      }
+  },
+  teamID: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: Team,
+      key: 'id',
     },
-    teamID: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Team,
-        key: 'id'
-      }
-    }
-  });
-}
+  },
+})
 
+module.exports = Coaches

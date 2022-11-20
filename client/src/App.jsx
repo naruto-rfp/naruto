@@ -1,9 +1,5 @@
-import React from 'react';
-
 const App = function App() {
-  return (
-    <div>Hello world</div>
-  );
-};
+  return <main className="h-screen w-full flex justify-center items-center">Hello world</main>
+}
 
-export default App;
+export default App

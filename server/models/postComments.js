@@ -1,17 +1,16 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../database');
+const { DataTypes } = require('sequelize')
+const db = require('../database')
 
-module.exports = (sequelize, DataTypes) => {
+const PostComments = db.define('postComments', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  userID: DataTypes.INTEGER,
+  commentText: DataTypes.TEXT,
+  postID: DataTypes.INTEGER,
+  date: DataTypes.Date,
+})
 
-  return sequelize.define('postComments', {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
-    },
-    userID: DataTypes.INTEGER,
-    commentText: DataTypes.TEXT,
-    postID: DataTypes.INTEGER,
-    date: DataTypes.Date
-  });
-}
+module.exports = PostComments

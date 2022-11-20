@@ -1,14 +1,16 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const path = require('path');
-const webpack = require('webpack');
-const sass = require('sass');
-const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const sass = require('sass')
+const { resolve } = require('path')
 
 module.exports = (env, argv) => {
-  const prod = argv.mode === 'production';
+  const prod = argv.mode === 'production'
 
   return {
+    target: 'web',
     mode: prod ? 'production' : 'development',
     devtool: prod ? 'hidden-source-map' : 'eval',
     entry: path.join(__dirname, 'client/src/index.jsx'),
@@ -18,21 +20,32 @@ module.exports = (env, argv) => {
       filename: 'bundle.[fullhash].js',
       clean: true,
     },
+    devServer: {
+      open: false,
+      hot: true,
+      host: 'localhost',
+      historyApiFallback: true,
+      port: 8080,
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3000',
+          secure: false,
+        },
+      },
+    },
     module: {
       rules: [
         {
-          test: /\.s?css$/,
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+        },
+        {
+          test: /\.scss$/i,
           use: [
             {
               loader: 'style-loader',
               options: {
                 injectType: 'singletonStyleTag',
-              },
-            },
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
               },
             },
             {
@@ -68,33 +81,16 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.js', '.jsx'],
       modules: ['node_modules'],
-      alias: {
-        '@': resolve(__dirname, './client/src'),
-      },
     },
     plugins: [
+      new MiniCssExtractPlugin(),
       new webpack.ProvidePlugin({
         React: 'react',
       }),
       new HtmlWebpackPlugin({
-        template: './client/public/index.html',
-        minify: process.env.NODE_ENV === 'production' ? {
-          collapseWhitespace: true,
-          removeComments: true,
-        } : false,
+        inject: true,
+        template: resolve(__dirname, 'client/public/index.html'),
       }),
     ],
-    devServer: {
-      open: true,
-      host: 'localhost',
-      historyApiFallback: true,
-      port: 8080,
-      proxy: {
-        '/api': {
-          target: 'http://localhost:3000',
-          secure: false,
-        },
-      },
-    },
-  };
-};
+  }
+}
