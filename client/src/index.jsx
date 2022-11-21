@@ -6,7 +6,6 @@ import Profile from './Components/Profile/index'
 import Team from './Components/Team/index'
 import Shop from './Components/Shop/index'
 import Checkout from './Components/Checkout/index'
-import Login from './Components/Login/index'
 import './styles/index.css'
 
 const router = createBrowserRouter([
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
   {
     path: '/checkout',
     element: <Checkout />,
-  },
-  {
-    path: '/login',
-    element: <Login />,
   },
 ])
 
