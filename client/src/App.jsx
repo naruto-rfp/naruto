@@ -1,19 +1,43 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Components/Homepage'
-import Profile from './Components/Profile'
-import Shop from './Components/Shop'
-import Team from './Components/Team'
-import Login from './Components/Login'
-import PrivateRoutes from './utils/PrivateRoutes'
-import Checkout from './Components/Checkout'
-import Navbar from './Components/NavBar'
+import Home from './pages/Homepage'
+import Profile from './pages/Profile'
+import Shop from './pages/Shop'
+import Team from './pages/Team'
+import Login from './pages/Login'
+import Checkout from './pages/Checkout'
+import Navbar from './components/NavBar'
+import PrivateRoutes from './components/PrivateRoutes'
+import { useStore } from './lib/fastContext'
 
 const App = function App() {
+  const [session, setSession] = useStore('session')
+  const logout = async () => {
+    await fetch('/api/session', { method: 'DELETE' }).catch(console.error)
+    // Redirect to the login page after logging out to force a refresh
+    window.location.assign('/')
+    // If want to keep user on the app without hard refresh:
+    // setSession(null)
+    // ... use react-router-dom to navigate to the login or home page
+  }
+
+  // Get the user session on intial mounting
+  useEffect(() => {
+    fetch('/api/session')
+      .then((res) => res.json())
+      .then(setSession)
+      .catch((err) => {
+        console.error(err)
+        setSession(null)
+      })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar session={session} logout={logout} />
       <Routes>
-        <Route element={<PrivateRoutes />}>
+        <Route element={<PrivateRoutes session={session} />}>
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile/" />
           <Route element={<Shop />} path="/shop/" />

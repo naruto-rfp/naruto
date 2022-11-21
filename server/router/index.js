@@ -14,4 +14,7 @@ router.get('/user/:id', controllers.getUser)
 // Change the Stat of the athletes
 router.put('/user/:id/stats', controllers.changeStats)
 
+router.get('/session', controllers.getSession)
+router.post('/logout', controllers.logout)
+
 module.exports = router

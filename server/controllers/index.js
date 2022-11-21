@@ -61,3 +61,16 @@ exports.changeStats = (req, res) => {
       })
     })
 }
+
+exports.getSession = (req, res) => {
+  // Actual implementation will be done later
+  // res.json(req.session.user || null)
+  res.json({ id: 1, username: 'test' })
+}
+
+exports.logout = (req, res) => {
+  req.session.destroy((err) => {
+    if (err) console.error(err)
+  })
+  res.status(200).send('Session Destroyed')
+}

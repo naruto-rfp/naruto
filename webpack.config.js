@@ -85,6 +85,9 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.js', '.jsx'],
       modules: ['node_modules'],
+      alias: {
+        '@': resolve(__dirname, 'client/src'),
+      },
     },
     plugins: [
       new MiniCssExtractPlugin(),
