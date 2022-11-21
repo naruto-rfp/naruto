@@ -1,14 +1,26 @@
-import NavBar from './Components/NavBar'
-import Home from './Components/Homepage/index'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Components/Homepage'
+import Profile from './Components/Profile'
+import Shop from './Components/Shop'
+import Team from './Components/Team'
+import Login from './Components/Login'
+import PrivateRoutes from './utils/PrivateRoutes'
+import Navbar from './Components/NavBar'
 
 const App = function App() {
   return (
-    <main className="h-screen w-full flex justify-center items-center">
-      <NavBar />
-      <div>
-        <Home />
-      </div>
-    </main>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route element={<PrivateRoutes />}>
+          <Route element={<Home />} path="/" />
+          <Route element={<Profile />} path="/profile/" />
+          <Route element={<Shop />} path="/shop/" />
+          <Route element={<Team />} path="/team/" />
+        </Route>
+        <Route element={<Login />} path="/login/" />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
