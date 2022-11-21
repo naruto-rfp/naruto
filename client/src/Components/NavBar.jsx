@@ -29,6 +29,11 @@ export default function NavBar() {
             Checkout
           </Link>
         </li>
+        <li>
+          <Link className="text-black" to="/login">
+            Login
+          </Link>
+        </li>
       </ul>
     </nav>
   )
