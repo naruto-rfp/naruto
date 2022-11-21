@@ -8,9 +8,8 @@ const PostComments = sequelize.define('postComments', {
     autoIncrement: true,
   },
   userID: DataTypes.INTEGER,
-  commentText: DataTypes.TEXT,
   postID: DataTypes.INTEGER,
-  date: DataTypes.DATE,
+  commentText: DataTypes.TEXT,
 })
 
 module.exports = PostComments

@@ -1,5 +1,7 @@
 const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
+const User = require('./users')
+const Team = require('./teams')
 
 const Posts = sequelize.define('Posts', {
   id: {
@@ -7,12 +9,23 @@ const Posts = sequelize.define('Posts', {
     primaryKey: true,
     autoIncrement: true,
   },
-  username: DataTypes.INTEGER,
-  team: DataTypes.INTEGER,
+  userID: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: User,
+      key: 'id',
+    },
+  },
+  teamID: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: Team,
+      key: 'id',
+    },
+  },
   title: DataTypes.STRING,
   text: DataTypes.STRING,
   cheers: DataTypes.INTEGER,
-  date: DataTypes.DATE,
 })
 
 module.exports = Posts
