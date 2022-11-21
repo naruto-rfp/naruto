@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const cors = require('cors')
 const compression = require('compression')
+const session = require('express-session')
 require('dotenv').config()
 
 const app = express()
@@ -20,6 +21,20 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use(express.static(path.join(__dirname, '../client/dist')))
+
+// TODO: add session env variable
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || 'secret',
+    resave: false,
+    cookie: {
+      // Session cookie expires in 7 days
+      maxAge: 1000 * 60 * 60 * 24 * 7,
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+    },
+  })
+)
 
 app.use('/api', router)
 

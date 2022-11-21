@@ -26,6 +26,7 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'no-console': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
   },
   ignorePatterns: ['node_modules/', 'dist/', 'coverage/'],
 }
