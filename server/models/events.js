@@ -7,15 +7,19 @@ const Events = sequelize.define('Events', {
     primaryKey: true,
     autoIncrement: true,
   },
-  eventText: {
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  description: {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  eventDate: {
+  date: {
     type: DataTypes.DATE,
     allowNull: false,
   },
-  eventLocation: {
+  location: {
     type: DataTypes.TEXT,
     allowNull: false,
   },

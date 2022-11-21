@@ -1,6 +1,5 @@
 const db = require('../database')
 
-console.log('DB', db.User)
 const { User } = db
 
 exports.createUser = (req, res) => {
