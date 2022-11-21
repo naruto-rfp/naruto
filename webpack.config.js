@@ -36,12 +36,8 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
-          use: [
-            {
-              loader: 'url-loader',
-            },
-          ],
+          test: /\.(woff|woff2)$/,
+          type: 'asset/resource',
         },
         {
           test: /\.css$/,

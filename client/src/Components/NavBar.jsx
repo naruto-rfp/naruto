@@ -5,27 +5,27 @@ export default function NavBar() {
     <nav className="flex flex-row justify-between	items-center">
       <ul className="list-none">
         <li>
-          <Link className="text-black" to="/">
+          <Link className="text-green" to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link className="text-black" to="/profile">
+          <Link className="text-green" to="/profile">
             Profile
           </Link>
         </li>
         <li>
-          <Link className="text-black" to="/team">
+          <Link className="text-green" to="/team">
             Team
           </Link>
         </li>
         <li>
-          <Link className="text-black" to="/shop">
+          <Link className="text-green" to="/shop">
             Shop
           </Link>
         </li>
         <li>
-          <Link className="text-black" to="/checkout">
+          <Link className="text-green" to="/checkout">
             Checkout
           </Link>
         </li>
