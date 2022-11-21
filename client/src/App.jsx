@@ -15,10 +15,12 @@ const App = function App() {
   const logout = async () => {
     await fetch('/api/session', { method: 'DELETE' }).catch(console.error)
     // Redirect to the login page after logging out to force a refresh
-    window.location.assign('/')
+    // window.location.assign('/')
     // If want to keep user on the app without hard refresh:
-    // setSession(null)
     // ... use react-router-dom to navigate to the login or home page
+    //
+    // TEMP
+    setSession(null)
   }
 
   // Get the user session on intial mounting
