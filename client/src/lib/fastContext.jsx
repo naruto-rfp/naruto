@@ -163,13 +163,16 @@ export function useStore(key, selector) {
   }
   let stateSelector
   // If no key or selector is provided, return the entire store.
-  if (!key) {
+  // If no key or selector is provided, return the entire store.
+  if (!key && !selector) {
     stateSelector = (state) => state
+  } else if (!key && selector) {
+    stateSelector = (state) => selector(state)
     // If a selector is provided, return the value returned by the selector.
-  } else if (selector) {
+  } else if (key && selector) {
     stateSelector = (state) => selector(state[key])
     // Otherwise, set the selector to the key and return the value of the key.
-  } else {
+  } else if (key && !selector) {
     stateSelector = (state) => state[key]
   }
 
