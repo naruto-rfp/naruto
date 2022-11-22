@@ -16,7 +16,7 @@ const Products = sequelize.define('Products', {
   photos: {
     type: DataTypes.TEXT,
   },
-  default_price: {
+  defaultPrice: {
     type: DataTypes.INTEGER,
   },
 })
