@@ -69,10 +69,13 @@ function Login() {
                       The premier site to connect recreational sports teams and fans
                     </h4>
                     <p className="text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.
+                      Welcome to Community Sports, the best community for the recreational sports
+                      fan. We support recreational adult leagues, intramural leagues, and much more!
+                      Keep up to date with all the latest news on your favorite teams and shop our
+                      selection of local jerseys. In addition, our platform makes it easy for
+                      coaches to manage their teams through event creation, rsvp management, and
+                      posting team dues. A real one stop shop for all involved in your local sports
+                      community.
                     </p>
                   </div>
                 </div>
