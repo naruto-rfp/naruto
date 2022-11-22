@@ -29,7 +29,11 @@ const App = function App() {
   useEffect(() => {
     fetch('/api/session', { credentials: 'include' })
       .then((res) => res.json())
-      .then(setSession)
+      .then((ses) => {
+        // TEMP: remove logging
+        console.log(ses)
+        setSession(ses)
+      })
       .catch((err) => {
         console.error(err)
         setSession('session')
@@ -44,14 +48,14 @@ const App = function App() {
       <Routes>
         <Route element={<PrivateRoutes session={session} />}>
           <Route element={<Home />} path="/" />
-          <Route element={<Profile />} path="/profile/" />
-          <Route element={<Store />} path="/store/" />
-          <Route element={<Team />} path="/team/" />
-          <Route element={<Checkout />} path="/checkout/" />
-          <Route element={<Success />} path="/success/" />
-          <Route element={<Cancel />} path="/cancel/" />
+          <Route element={<Profile />} path="/profile" />
+          <Route element={<Store />} path="/store" />
+          <Route element={<Team />} path="/team" />
+          <Route element={<Checkout />} path="/checkout" />
+          <Route element={<Success />} path="/success" />
+          <Route element={<Cancel />} path="/cancel" />
         </Route>
-        <Route element={<Login />} path="/login/" />
+        <Route element={<Login />} path="/login" />
       </Routes>
     </BrowserRouter>
   )
