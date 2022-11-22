@@ -10,9 +10,9 @@ function Login() {
               <div className="lg:flex lg:flex-wrap g-0">
                 <div className="lg:w-6/12 px-4 md:px-0">
                   <div className="md:p-12 md:mx-6">
-                    <div className="text-center justify-center">
+                    <div className="text-center mx-auto">
                       <img
-                        className="max-w-full h-auto justify-center"
+                        className="mx-auto"
                         src="https://findicons.com/files/icons/1275/naruto_vol_1/128/uzumaki_naruto.png"
                         alt="logo"
                       />
