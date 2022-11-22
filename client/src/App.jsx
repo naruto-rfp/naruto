@@ -33,7 +33,7 @@ const App = function App() {
       .catch((err) => {
         console.error(err)
         setSession('session')
-        // setSession('null')
+        // setSession(null)
       })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
