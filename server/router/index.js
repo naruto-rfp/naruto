@@ -22,9 +22,14 @@ router.post('/logout', controllers.logout)
 router.get('/products', store.getProducts)
 // Add Product to Database
 router.post('/products', store.postProducts)
+// Delete Product from Database
+router.delete('/products/:id', store.deleteProduct)
 // Retrieve SKU information
 router.get('/skus', store.getSkus)
+router.get('/skus/id', store.getSkuById)
 // Add SKU info to Database
 router.post('/skus', store.postSkus)
+// Delete SKUs from Database
+router.delete('/skus/:id', store.deleteSkus)
 
 module.exports = router
