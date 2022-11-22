@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
   return {
     target: 'web',
     mode: prod ? 'production' : 'development',
-    devtool: prod ? 'hidden-source-map' : 'eval',
+    devtool: prod ? 'hidden-source-map' : 'source-map',
     entry: path.join(__dirname, 'client/src/index.jsx'),
     output: {
       publicPath: '/',
@@ -29,7 +29,7 @@ module.exports = (env, argv) => {
       proxy: {
         '/api': {
           target: 'http://localhost:3000',
-          secure: false,
+          changeOrigin: true,
         },
       },
     },
@@ -86,7 +86,7 @@ module.exports = (env, argv) => {
       extensions: ['.js', '.jsx'],
       modules: ['node_modules'],
       alias: {
-        '@': resolve(__dirname, 'client/src'),
+        '@': resolve(__dirname, './client/src'),
       },
     },
     plugins: [

@@ -1,15 +1,19 @@
 import { useRef, useEffect } from 'react'
-// eslint-disable-next-line import/no-unresolved, import/extensions
-import { useStore } from '@/lib/fastContext'
+import { useStore } from '../../lib/fastContext'
+import './modal.css'
 
 export default function Modal() {
   const modalRef = useRef(null)
   const modalOverlayRef = useRef(null)
-  const [modalContent, setModalContent] = useStore('modalContent')
+  const modalContentRef = useRef(null)
+  const [modal, setModal] = useStore('modal')
   // When clicking the modal overlay, close the modal and clear the modal content.
   const handleModalClick = (e) => {
     if (e.target === modalOverlayRef.current) {
-      setModalContent(null)
+      setModal({
+        ...modal,
+        content: null,
+      })
     }
   }
 
@@ -21,14 +25,19 @@ export default function Modal() {
   useEffect(() => {
     if (!modalRef.current) return
 
-    if (modalContent) {
-      modalRef.current.style.display = 'block'
+    if (modal.content) {
+      modalRef.current.style.display = 'flex'
       // Set the modal to the current scroll position to always be in view and centered
       modalRef.current.style.top = `${window.scrollY}px`
-      document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+
+      if (modal.scrollLock) {
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+      }
+
       window.addEventListener('click', handleModalClick)
     } else {
       modalRef.current.style.display = 'none'
+      // Resets scroll lock, if it was set
       document.getElementsByTagName('body')[0].style.overflow = 'auto'
       window.removeEventListener('click', handleModalClick)
     }
@@ -36,12 +45,19 @@ export default function Modal() {
     // eslint-disable-next-line consistent-return
     return () => window.removeEventListener('click', handleModalClick)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [modalRef, modalContent])
+  }, [modalRef, modal.content])
 
   return (
     <div ref={modalRef} className="modal">
-      <div ref={modalOverlayRef} className="modal-overlay">
-        <div className="modal-content">{modalContent}</div>
+      <div
+        ref={modalOverlayRef}
+        className={`modal-overlay ${
+          !modal.overlay ? '' : 'bg-[rgba(0,0,0,0.05)] backdrop-blur-[2px]'
+        }`}
+      >
+        <div ref={modalContentRef} className="modal-content">
+          {modal.content}
+        </div>
       </div>
     </div>
   )

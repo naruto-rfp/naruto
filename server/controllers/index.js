@@ -65,7 +65,11 @@ exports.changeStats = (req, res) => {
 exports.getSession = (req, res) => {
   // Actual implementation will be done later
   // res.json(req.session.user || null)
-  res.json({ id: 1, username: 'test' })
+  req.session.user = {
+    id: 1,
+    username: 'test',
+  }
+  res.json(req.session.user)
 }
 
 exports.logout = (req, res) => {

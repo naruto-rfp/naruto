@@ -8,7 +8,11 @@ const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 
 const { StoreProvider } = createFastContext({
-  modalContent: null,
+  modal: {
+    content: null,
+    overlay: true,
+    scrollLock: true,
+  },
   session: null,
 })
 
