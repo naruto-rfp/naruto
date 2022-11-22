@@ -62,6 +62,12 @@ exports.changeStats = (req, res) => {
     })
 }
 
+exports.login = (req, res) => {
+  const { username, password } = req.body
+
+  const user = User.findOne({})
+}
+
 exports.getSession = (req, res) => {
   // Actual implementation will be done later
   // res.json(req.session.user || null)
