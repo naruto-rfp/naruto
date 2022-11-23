@@ -7,7 +7,7 @@
     "dev:server": "nodemon server/index.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "build": "webpack --mode=production --progress",
-    "start": "node ./server/dist/index.js",
+    "start": "node ./server/index.js",
     "start:react": "webpack --mode=development",
     "test": "jest --watch",
     "lint": "npx eslint --cache --fix **/*.{js,jsx}",
@@ -69,6 +69,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
+    "recharts": "^2.1.16",
     "sequelize": "^6.25.7",
     "sequelize-cli": "^6.5.2"
   },
