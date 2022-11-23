@@ -11,6 +11,7 @@ require('./database/config')
 const router = require('./router')
 
 db.sequelize.sync()
+// db.sequelize.sync({ force: true, alter: true })
 
 const port = process.env.PORT || 3000
 

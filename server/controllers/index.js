@@ -3,14 +3,17 @@ const db = require('../database')
 const { User } = db
 
 exports.createUser = (req, res) => {
+  console.log(req.body)
   const { username, firstName, lastName, password, email } = req.body
+  const caseUsername = username.toLowerCase()
+  const caseEmail = email.toLowerCase()
 
   User.create({
-    username,
+    username: caseUsername,
     firstName,
     lastName,
     password,
-    email,
+    email: caseEmail,
   })
     .then((data) => {
       res.send(data)
@@ -59,6 +62,36 @@ exports.changeStats = (req, res) => {
       res.status(500).send({
         message: err.message || 'Internal Server Error',
       })
+    })
+}
+
+exports.login = async (req, res) => {
+  const { username, password } = req.body
+
+  User.findOne({
+    where: {
+      username,
+      password,
+    },
+  })
+    .then((data) => {
+      req.session.user = {
+        id: data.id,
+        username: data.username,
+        name: `${data.firstName} ${data.lastName}`,
+        email: data.email,
+        about: data.about,
+        profilePic: data.profilePic,
+        speed: data.speed,
+        reliability: data.reliability,
+        strength: data.strength,
+        jumping: data.jumping,
+        aerobic: data.aerobic,
+      }
+      res.status(200).send(req.session.user)
+    })
+    .catch((err) => {
+      res.status(400).send(`incorrect username or password ${err}`)
     })
 }
 
