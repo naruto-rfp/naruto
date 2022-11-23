@@ -48,7 +48,7 @@ export default function Profile() {
         <div className="flex justify-center items-center flex-wrap mb-10">
           <img
             className="h-64"
-            src="https://timelinecovers.pro/facebook-cover/download/manchester-united-fc-facebook-cover.jpg"
+            src="https://media.discordapp.net/attachments/1042931039699488860/1045026016264990740/Naruto_Banner.webp"
             alt=""
           />
         </div>
