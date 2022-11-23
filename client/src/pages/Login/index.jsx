@@ -1,10 +1,39 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 function Login() {
   const [showModal, setShowModal] = useState(false)
+  const [newUser, setNewUser] = useState({
+    username: '',
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+  })
+  // const [username, setUsername] = useState('')
+  // const [firstName, setFirstName] = useState('')
+  // const [lastName, setLastName] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [password, setPassword] = useState('')
 
-  const register = (event) => {
-    console.log(event)
+  const register = () => {
+    if (newUser.values.contains('')) {
+      window.alert('please fill in all necessary information!')
+    } else {
+      axios
+        .post('/user', newUser)
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err))
+
+      setShowModal(!showModal)
+      setNewUser({
+        username: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+      })
+    }
   }
 
   return (
@@ -110,12 +139,12 @@ function Login() {
       >
         <div className="modal-dialog relative w-auto pointer-events-none">
           <div className="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-            <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+            <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 rounded-t-md">
               <h5
                 className="text-xl font-medium leading-normal text-gray-800"
                 id="exampleModalLabel"
               >
-                Modal title
+                Register Here
               </h5>
               <button
                 type="button"
@@ -124,8 +153,59 @@ function Login() {
                 aria-label="Close"
               />
             </div>
-            <div className="modal-body relative p-4">Modal body text goes here.</div>
-            <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+            <form>
+              <div className="mb-4">
+                Username:
+                <input
+                  type="text"
+                  className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder="Username"
+                  onChange={(e) => setNewUser({ ...newUser, username: e.target.value })}
+                />
+              </div>
+              <div className="mb-4">
+                First Name:
+                <input
+                  type="text"
+                  className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder="First Name"
+                  onChange={(e) => setNewUser({ ...newUser, firstName: e.target.value })}
+                />
+              </div>
+              <div className="mb-4">
+                Last Name:
+                <input
+                  type="text"
+                  className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder="Last Name"
+                  onChange={(e) => setNewUser({ ...newUser, lastName: e.target.value })}
+                />
+              </div>
+              <div className="mb-4">
+                Email:
+                <input
+                  type="text"
+                  className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                  onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+                />
+              </div>
+              <div className="mb-4">
+                Password:
+                <input
+                  type="password"
+                  className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder="Password"
+                  onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
+                />
+              </div>
+            </form>
+            <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4  rounded-b-md">
               <button
                 type="button"
                 className="px-6
@@ -170,6 +250,9 @@ function Login() {
                   duration-150
                   ease-in-out
                   ml-1"
+                onClick={() => {
+                  register()
+                }}
               >
                 Save changes
               </button>
