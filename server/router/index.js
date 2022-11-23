@@ -14,6 +14,10 @@ router.post('/user', controllers.createUser)
 router.get('/user/:id', controllers.getUser)
 // Change the Stat of the athletes
 router.put('/user/:id/stats', controllers.changeStats)
+// Change Profile Picture of user
+router.put('/user/:id/profilePic', controllers.changeProfilePic)
+// Change About(bio) of user
+router.put('/user/:id/about', controllers.changeAbout)
 
 router.get('/session', controllers.getSession)
 router.post('/login', controllers.login)

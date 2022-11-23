@@ -65,6 +65,36 @@ exports.changeStats = (req, res) => {
     })
 }
 
+exports.changeProfilePic = (req, res) => {
+  const { profilePic } = req.body
+  const { id } = req.params
+
+  User.update({ profilePic }, { where: { id } })
+    .then(() => {
+      res.status(200).send('User Profile Picture changed')
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || 'Internal Server Error',
+      })
+    })
+}
+
+exports.changeAbout = (req, res) => {
+  const { about } = req.body
+  const { id } = req.params
+
+  User.update({ about }, { where: { id } })
+    .then(() => {
+      res.status(200).send('User Profile Picture changed')
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || 'Internal Server Error',
+      })
+    })
+}
+
 exports.login = async (req, res) => {
   const { username, password } = req.body
 
