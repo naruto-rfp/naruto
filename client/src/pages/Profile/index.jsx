@@ -22,9 +22,7 @@ export default function Profile() {
   })
 
   useEffect(() => {
-    // TODO: replace 1 to { id } in useParams
     axios.get('/api/user/1').then((results) => {
-      console.log(results)
       setUserData((prev) => ({
         ...prev,
         id,
