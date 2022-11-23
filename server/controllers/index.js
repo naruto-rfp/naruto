@@ -3,12 +3,12 @@ const db = require('../database')
 const { User } = db
 
 exports.createUser = (req, res) => {
-  const { username, firstname, lastname, password, email } = req.body
+  const { username, firstName, lastName, password, email } = req.body
 
   User.create({
     username,
-    firstname,
-    lastname,
+    firstName,
+    lastName,
     password,
     email,
   })
