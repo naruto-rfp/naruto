@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/NavBar'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
 import Store from './pages/Store'
 import Team from './pages/Team'
 import Login from './pages/Login'
 import Checkout from './pages/Checkout'
-import Navbar from './components/NavBar'
 import PrivateRoutes from './components/PrivateRoutes'
 import Success from './pages/Store/Success'
 import Cancel from './pages/Store/Cancel'
@@ -55,7 +55,7 @@ const App = function App() {
           <Route element={<Success />} path="/success" />
           <Route element={<Cancel />} path="/cancel" />
         </Route>
-        <Route element={<Login setSession={setSession} />} path="/login" />
+        <Route element={<Login />} path="/login" />
       </Routes>
     </BrowserRouter>
   )
