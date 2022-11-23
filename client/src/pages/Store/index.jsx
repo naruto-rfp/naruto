@@ -4,15 +4,24 @@ import Card from './Card'
 
 export default function Store() {
   const [products, setProducts] = useState([])
+  const [skus, setSkus] = useState([])
 
   useEffect(() => {
     axios
       .get('http://localhost:3000/api/products')
       .then((allProducts) => {
         setProducts(allProducts.data)
-        console.log('this is from the get request', allProducts.data)
+        console.log('this is all the products', allProducts.data)
       })
       .catch((err) => console.log(`Error in retrieving products: ${err}`))
+
+    axios
+      .get('http://localhost:3000/api/skus')
+      .then((allSkus) => {
+        setSkus(allSkus.data)
+        console.log('this is all the skus', allSkus.data)
+      })
+      .catch((err) => console.log(`Error in retrieving skus: ${err}`))
   }, [])
 
   return (
@@ -41,6 +50,7 @@ export default function Store() {
               photos={photos}
               price={defaultPrice}
               key={id}
+              skus={skus}
             />
           )
         })}
