@@ -12,8 +12,9 @@ function Login() {
   })
 
   const register = () => {
-    if (newUser.values.contains('')) {
-      window.alert('please fill in all necessary information!')
+    console.log(Object.values(newUser))
+    if (Object.values(newUser).includes('')) {
+      // window.alert('please fill in all necessary information!')
     } else {
       axios
         .post('/api/user', newUser)
