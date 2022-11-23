@@ -9,7 +9,6 @@ const Teams = sequelize.define('Teams', {
   },
   name: {
     type: DataTypes.STRING,
-    unique: true,
   },
   sport: {
     type: DataTypes.STRING,
