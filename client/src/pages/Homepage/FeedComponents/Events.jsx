@@ -1,7 +1,8 @@
 import React from 'react'
 import { useStore } from '../../../lib/fastContext'
 
-export default function Events() {  // team id is passed down
+// team id is passed down
+export default function Events() {
   const events = [{name: "Sunset Semi-Finals", status: "Public", date: "Nov 25 2022", location: "Sunset Recreation Center", description: "Come join us this coming Friday to cheer on your favorite team, the Sunset Oceans as they take on the Misson Blues in this year's community league semi-finals!"}]
 
   // axios request to get all the events related to the team id

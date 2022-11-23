@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function TeamsFollow() { //pass in teamsFollow
+//pass in teamsFollow as prop
+export default function TeamsFollow() {
 
   const testData = [{team: "49ers", banner: 'https://preview.redd.it/nasqgycd7q681.jpg?auto=webp&s=f060c836481a3aaae3bd1d6b29a3ae0529bcfc0b'}, {team: "Warriors", banner: 'https://external-preview.redd.it/x_O3ZIY_JM225HtAXfeEOGTYQR_dizhetHXZWxgTrDo.jpg?auto=webp&s=2f49ab329900cbfaccf22e086d52840fa32f2d8b'}, {team: "Giants", banner: 'http://images6.fanpop.com/image/photos/38000000/Naruto-banner-anime-38006985-851-315.png'}]
 

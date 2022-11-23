@@ -3,7 +3,8 @@ import Posts from './FeedComponents/Posts'
 import Events from './FeedComponents/Events'
 import axios from 'axios'
 
-export default function Feed({  }) { //pass in user id and team id
+//pass in user id and team id as props
+export default function Feed({ }) {
 
   const [activeTab, setActiveTab] = useState(1)
   const [userPost, setUserPosts] = useState([])

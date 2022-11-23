@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function SearchBar() {
   const [searchText, setSearchText] = useState('')
+  const navigate = useNavigate()
 
   const handleSearch = function (e) {
     e.preventDefault()
     // route the search to the team or profile page
-
-    setSearchText('')
+    if (searchText.trim()) {
+      navigate(`/team/${searchText}`)
+    } else {
+      navigate("/team")
+    }
   }
 
   return (
