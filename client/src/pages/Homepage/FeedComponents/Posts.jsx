@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useState } from 'react'
 
-export default function Posts({userId}) {
-  const [userPosts, setUserPosts] = useState(['testing number 1', 'testing number 2', 'testing number 3' ])
-  useEffect(() => {
-    axios
-      .get(`/post/${userId}`)
-      .then((resp) => setUserPosts(resp))
-      .catch((err) => console.log(err))
-  }, [])
+export default function Posts({userPosts}) {
+  const [userPostsTest, setUserPosts] = useState(['testing number 1', 'testing number 2', 'testing number 3' ])
 
   return (
     <div className="border-style: soild border-blackCoral">
-      {userPosts.map((post) => {
+      {userPostsTest.map((post) => {
         return (
           <div className="py-3">
             <div className="px-4 py-5 w-50 flex flex-col border-2 border-blackCoral/10 rounded-md drop-shadow-lg">

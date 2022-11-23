@@ -1,33 +1,26 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import Posts from './FeedComponents/Posts'
 import Events from './FeedComponents/Events'
-import axios from 'axios'
 
-//pass in user id and team id as props
-export default function Feed({ }) {
-
+export default function Feed({ userId }) {
   const [activeTab, setActiveTab] = useState(1)
-  const [userPost, setUserPosts] = useState([])
+  const [userPosts, setUserPosts] = useState([])
   const [userTeamsEvents, setUserTeamsEvents] = useState([])
-  // axios get request
 
-  // useEffect(() => {
-  //   axios.get(`/posts/${userId}`)
-  //     .then((resp) => setUserPosts(resp))
-  //     .catch((err) => console.log(err))
-  // })
+  useEffect(() => {
+    axios.get(`/posts/${userId}`)
+      .then((resp) => setUserPosts(resp))
+      .catch((err) => console.log(err))
+  })
 
+  // still need to implement
   const handleTabToggle = (tab) => {
-    // if userTeamsEvents is empty
-    if (!userTeamsEvents.length) {
-      axios.get(`/events/${teamId}`)
-        .then((resp) => setUserTeamsEvents(resp))
-        .catch((err) => console.log(err))
-      // axios get request for the events
-      // reset the active tab to input tab number
-    }
-    // otherwise
-      // reset the active tab to unput tab number
+    // reset the current active tab
+    // if userTeamEvents is empty
+     // get request to coaches, member, and fan to get all team id where the current userId exist
+    //  get all the events matching the teamid passed in as param
+    // set the userTeamEvents with the respond events
   }
 
   return (
@@ -62,11 +55,11 @@ export default function Feed({ }) {
           </ul>
           <div className="p-3 mt-6 bg-white h-full">
             <div className={activeTab === 1 ? 'block' : 'hidden'}>
-              <Posts />
+              <Posts userPosts={userPosts}/>
               {/* map once the backend is connected */}
             </div>
             <div className={activeTab === 2 ? 'block' : 'hidden'}>
-              <Events />
+              <Events userTeamsEvents={userTeamsEvents}/>
               {/* map once the backend is connected */}
             </div>
           </div>
@@ -74,6 +67,4 @@ export default function Feed({ }) {
       </div>
     </div>
   )
-  //map over all the post and creat a individual div for each post
-  //map over all the event comments and cheers and pass down the event to each individual event modal
 }

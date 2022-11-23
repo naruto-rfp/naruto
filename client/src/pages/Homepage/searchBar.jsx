@@ -6,12 +6,12 @@ export default function SearchBar() {
   const navigate = useNavigate()
 
   const handleSearch = function (e) {
+    // will need to route the search to the team or profile page
     e.preventDefault()
-    // route the search to the team or profile page
     if (searchText.trim()) {
       navigate(`/team/${searchText}`)
     } else {
-      navigate("/team")
+      navigate('/team')
     }
   }
 

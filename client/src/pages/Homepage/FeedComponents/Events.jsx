@@ -1,18 +1,16 @@
 import React from 'react'
 import { useStore } from '../../../lib/fastContext'
 
-// team id is passed down
-export default function Events() {
+export default function Events({ userTeamsEvents }) {
   const events = [{name: "Sunset Semi-Finals", status: "Public", date: "Nov 25 2022", location: "Sunset Recreation Center", description: "Come join us this coming Friday to cheer on your favorite team, the Sunset Oceans as they take on the Misson Blues in this year's community league semi-finals!"}]
 
-  // axios request to get all the events related to the team id
-    // set the events state with the result
+  //Will modulize modal content later
   const [modal, setModal] = useStore('modal')
   const handleClick = () => {
     setModal({
       ...modal,
       content: (
-        <div className="bg-black text-white py-2">
+        <div className=" text-black py-2">
           <h1>Cheers 100</h1>
 
           <div className="flex flex-row py-2">
