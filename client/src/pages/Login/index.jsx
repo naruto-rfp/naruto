@@ -3,6 +3,10 @@ import axios from 'axios'
 
 function Login() {
   const [showModal, setShowModal] = useState(false)
+  const [credentials, setCredentials] = useState({
+    username: '',
+    password: '',
+  })
   const [newUser, setNewUser] = useState({
     username: '',
     firstName: '',
@@ -30,6 +34,10 @@ function Login() {
         password: '',
       })
     }
+  }
+
+  const login = () => {
+    axios.post('/api/login')
   }
 
   return (
@@ -60,6 +68,9 @@ function Login() {
                             className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                             id="exampleFormControlInput1"
                             placeholder="Username"
+                            onChange={(e) =>
+                              setCredentials({ ...credentials, username: e.target.value })
+                            }
                           />
                         </div>
                         <div className="mb-4">
@@ -68,6 +79,9 @@ function Login() {
                             className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                             id="exampleFormControlInput1"
                             placeholder="Password"
+                            onChange={(e) =>
+                              setCredentials({ ...credentials, password: e.target.value })
+                            }
                           />
                         </div>
                         <div className="text-center pt-1 mb-12 pb-1">

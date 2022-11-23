@@ -5,13 +5,15 @@ const { User } = db
 exports.createUser = (req, res) => {
   console.log(req.body)
   const { username, firstName, lastName, password, email } = req.body
+  const caseUsername = username.toLowerCase()
+  const caseEmail = email.toLowerCase()
 
   User.create({
-    username,
+    username: caseUsername,
     firstName,
     lastName,
     password,
-    email,
+    email: caseEmail,
   })
     .then((data) => {
       res.send(data)
