@@ -8,49 +8,25 @@ import axios from 'axios'
 export default function Home({ userId }) {
   const [currentUser, setCurrentUser] = useState({})
 
-  useEffect(() => {
-    axios.get(`/user/${userId}`)
-      .then((resp) => {
-        setCurrentUser(resp)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [])
+  // useEffect(() => {
+  //   axios.get(`/user/${userId}`)
+  //     .then((resp) => {
+  //       setCurrentUser(resp)
+  //     })
+  //     .catch((err) => {
+  //       console.log(err)
+  //     })
+  // }, [])
 
   return (
-    <>
-    <div className="text-black">
-      <SearchBar />
-      <Feed />
-    </div>
-    <div>
-      <TeamsPlayFor/>
-      <teamsFollow/>
-    </div>
-    </>
-import { useStore } from '../../lib/fastContext'
-
-
-  const [modal, setModal] = useStore('modal')
-  const handleClick = () => {
-    setModal({
-      ...modal,
-      content: (
-        <div className="bg-black text-white">
-          <h1>Test</h1>
-        </div>
-      ),
-    })
-  }
-
-  return (
-    <div className="text-black">
-      <div>home page here</div>
-      <div>
-        <button type="button" onClick={handleClick} className="px-4 py-2 bg-sky-500">
-          Open Modal
-        </button>
+    <div className="flex flex-row">
+      <div className="text-black flex-col justify-center w-2/3 pl-10">
+        <SearchBar />
+        <Feed userId={userId}/>
+      </div>
+      <div className="flex-col justify-center w-1/3 pr-10">
+        <TeamsPlayFor />
+        <TeamsFollow />
       </div>
     </div>
   )

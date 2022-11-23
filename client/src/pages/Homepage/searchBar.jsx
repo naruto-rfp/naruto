@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SearchBar() {
   const [searchText, setSearchText] = useState('')
 
   const handleSearch = function (e) {
     e.preventDefault()
-    // route the search to the team name or user name
+    // route the search to the team or profile page
+
     setSearchText('')
   }
 
   return (
-    <div className="flex item-center justify-left">
-      <form className="relative" onSubmit={(e) => handleSearch(e)}>
+    <div className="flex justify-left">
+      <form className="relative w-2/3" onSubmit={(e) => handleSearch(e)}>
         <svg
           className="h-5 w-5 absolute right-0"
           xmlns="http://www.w3.org/2000/svg"
@@ -27,6 +29,7 @@ export default function SearchBar() {
           />
         </svg>
         <input
+          className="rounded-full bg-blackCoral/10 w-full"
           type="text"
           placeholder="Search..."
           value={searchText}

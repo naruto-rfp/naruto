@@ -1,126 +1,78 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Posts from './FeedComponents/Posts'
 import Events from './FeedComponents/Events'
+import axios from 'axios'
 
-export default function Feed({ userId }) {
+export default function Feed({  }) { //pass in user id and team id
 
-  const [activeTab, setActiveTab] = useState('posts')
-  const toggleTab = function(tab) {
-    setActiveTab(tab)
-  }
+  const [activeTab, setActiveTab] = useState(1)
+  const [userPost, setUserPosts] = useState([])
+  const [userTeamsEvents, setUserTeamsEvents] = useState([])
   // axios get request
+
+  // useEffect(() => {
+  //   axios.get(`/posts/${userId}`)
+  //     .then((resp) => setUserPosts(resp))
+  //     .catch((err) => console.log(err))
+  // })
+
+  const handleTabToggle = (tab) => {
+    // if userTeamsEvents is empty
+    if (!userTeamsEvents.length) {
+      axios.get(`/events/${teamId}`)
+        .then((resp) => setUserTeamsEvents(resp))
+        .catch((err) => console.log(err))
+      // axios get request for the events
+      // reset the active tab to input tab number
+    }
+    // otherwise
+      // reset the active tab to unput tab number
+  }
+
   return (
-  //   <div className='feed'>
-  //     <ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
-  // role="tablist">
-  //       <li className={activeTab === 'posts' ? 'active' : ''} onClick={() => toggleTab('posts')}>Posts</li>
-  //       <li className={activeTab === 'events' ? 'active' : ''} onClick={() => toggleTab('events')}>Events</li>
-  //     </ul>
-  //     <div className='content'>
-
-  //     </div>
-  //   </div>
-
-//   <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-//     <li className="mr-2" >
-//         <a href="#" aria-current="page" className="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500" >Posts</a>
-//     </li>
-//     <li className="mr-2">
-//         <a href="#" className="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Events</a>
-//     </li>
-// </ul>
-
     <div>
-      <ul
-        className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
-        id="tabs-tab"
-        role="tablist"
-      >
-        <li className="nav-item" role="presentation">
-          <a
-            href="#tabs-home"
-            className="
-          nav-link
-          block
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          border-x-0 border-t-0 border-b-2 border-transparent
-          px-6
-          py-3
-          my-2
-          hover:border-transparent hover:bg-gray-100
-          focus:border-transparent
-          active
-          "
-            id="tabs-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-home"
-            role="tab"
-            aria-controls="tabs-home"
-            aria-selected="true"
-          >
-            Posts
-          </a>
-        </li>
-        <li className="nav-item" role="presentation">
-          <a
-            href="#tabs-profile"
-            className="
-          nav-link
-          block
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          border-x-0 border-t-0 border-b-2 border-transparent
-          px-6
-          py-3
-          my-2
-          hover:border-transparent hover:bg-gray-100
-          focus:border-transparent
-          "
-            id="tabs-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-profile"
-            role="tab"
-            aria-controls="tabs-profile"
-            aria-selected="false"
-          >
-            Events
-          </a>
-        </li>
-      </ul>
-      <div className="tab-content" id="tabs-tabContent">
-        <div
-          className="tab-pane fade show active"
-          id="tabs-home"
-          role="tabpanel"
-          aria-labelledby="tabs-home-tab"
-        >
-          {/* {
-            posts.map((post) => {
-              <Posts post={post}/>
-            })
-          } */}
-        </div>
-        <div
-          className="tab-pane fade"
-          id="tabs-profile"
-          role="tabpanel"
-          aria-labelledby="tabs-profile-tab"
-        >
-          {/* <div>
-            {
-              events.map((event) => {
-                <Events event={event}/>
-              })
-            }
-          </div> */}
-          {/* pass down event comments and cheer for event modal */}
+      <div className="container mx-auto mt-12">
+        <div className="flex flex-col items-left justify-center max-w-xl">
+          <ul className="flex space-x-2">
+            <li>
+              <button
+                type="button"
+                href="#"
+                onClick={() => setActiveTab(1)}
+                className={`${
+                  activeTab === 1 ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white' : 'bg-blackCoral/10'
+                } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
+              >
+                Posts
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                href="#"
+                onClick={() => setActiveTab(2)}
+                className={`${
+                  activeTab === 2 ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white' : 'bg-blackCoral/10'
+                } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
+              >
+                Events
+              </button>
+            </li>
+          </ul>
+          <div className="p-3 mt-6 bg-white h-full">
+            <div className={activeTab === 1 ? 'block' : 'hidden'}>
+              <Posts />
+              {/* map once the backend is connected */}
+            </div>
+            <div className={activeTab === 2 ? 'block' : 'hidden'}>
+              <Events />
+              {/* map once the backend is connected */}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   )
+  //map over all the post and creat a individual div for each post
+  //map over all the event comments and cheers and pass down the event to each individual event modal
 }
