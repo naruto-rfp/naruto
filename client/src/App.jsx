@@ -34,8 +34,8 @@ const App = function App() {
       })
       .catch((err) => {
         console.error(err)
-        setSession('session')
-        // setSession(null)
+        // setSession('session')
+        setSession(null)
       })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -51,7 +51,7 @@ const App = function App() {
           <Route element={<Team />} path="/team" />
           <Route element={<Checkout />} path="/checkout" />
         </Route>
-        <Route element={<Login />} path="/login" />
+        <Route element={<Login setSession={setSession} />} path="/login" />
       </Routes>
     </BrowserRouter>
   )

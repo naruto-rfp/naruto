@@ -65,11 +65,35 @@ exports.changeStats = (req, res) => {
     })
 }
 
-// exports.login = (req, res) => {
-//   const { username, password } = req.body
+exports.login = async (req, res) => {
+  const { username, password } = req.body
 
-//   const user = User.findOne({})
-// }
+  User.findOne({
+    where: {
+      username,
+      password,
+    },
+  })
+    .then((data) => {
+      req.session.user = {
+        id: data.id,
+        username: data.username,
+        name: `${data.firstName} ${data.lastName}`,
+        email: data.email,
+        about: data.about,
+        profilePic: data.profilePic,
+        speed: data.speed,
+        reliability: data.reliability,
+        strength: data.strength,
+        jumping: data.jumping,
+        aerobic: data.aerobic,
+      }
+      res.status(200).send(req.session.user)
+    })
+    .catch((err) => {
+      res.status(400).send(`incorrect username or password ${err}`)
+    })
+}
 
 exports.getSession = (req, res) => {
   // Actual implementation will be done later

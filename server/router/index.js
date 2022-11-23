@@ -15,6 +15,7 @@ router.get('/user/:id', controllers.getUser)
 router.put('/user/:id/stats', controllers.changeStats)
 
 router.get('/session', controllers.getSession)
+router.post('/login', controllers.login)
 router.post('/logout', controllers.logout)
 
 module.exports = router

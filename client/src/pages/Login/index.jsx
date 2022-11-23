@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-function Login() {
+function Login({ setSession }) {
   const [showModal, setShowModal] = useState(false)
   const [credentials, setCredentials] = useState({
     username: '',
@@ -37,7 +37,17 @@ function Login() {
   }
 
   const login = () => {
-    axios.post('/api/login')
+    axios
+      .post('/api/login', credentials)
+      .then((data) => {
+        console.log('DATA', data)
+        setSession(data)
+      })
+      .catch((err) => console.log('Err', err))
+    setCredentials({
+      username: '',
+      password: '',
+    })
   }
 
   return (
@@ -90,6 +100,7 @@ function Login() {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
+                            onClick={() => login()}
                           >
                             Log in
                           </button>
