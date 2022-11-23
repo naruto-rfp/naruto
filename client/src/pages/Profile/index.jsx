@@ -36,7 +36,8 @@ export default function Profile() {
         speed: results.data.speed,
         reliability: results.data.reliability,
         strength: results.data.strength,
-        jumping: results.data.aerobic,
+        jumping: results.data.jumping,
+        aerobic: results.data.aerobic,
       }))
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -61,7 +62,13 @@ export default function Profile() {
             />
           </div>
           <div className="border-solid border-2 border-indigo-600 items-center text-center h-96">
-            <RadarChart />
+            <RadarChart
+              speed={userData.speed}
+              reliability={userData.reliability}
+              strength={userData.strength}
+              jumping={userData.jumping}
+              aerobic={userData.aerobic}
+            />
           </div>
           <div className="items-center text-center h-96">Followers</div>
           <div className="items-center text-center h-96">Members</div>

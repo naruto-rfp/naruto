@@ -7,31 +7,30 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 
-const data = [
-  {
-    stats: 'speed',
-    value: 86,
-  },
-  {
-    stats: 'reliability',
-    value: 77,
-  },
-  {
-    stats: 'strength',
-    value: 95,
-  },
-  {
-    stats: 'jumping',
-    value: 55,
-  },
-  {
-    stats: 'aerobic',
-    value: 66,
-  },
-]
-
-export default function Radarchart() {
-  // TODO: Fetch statistic data from user
+export default function Radarchart({ reliability, speed, strength, jumping, aerobic }) {
+  const data = [
+    {
+      stats: 'reliability',
+      value: parseInt(reliability, 10),
+    },
+    {
+      stats: 'speed',
+      value: parseInt(speed, 10),
+    },
+    {
+      stats: 'strength',
+      value: parseInt(strength, 10),
+    },
+    {
+      stats: 'jumping',
+      value: parseInt(jumping, 10),
+    },
+    {
+      stats: 'aerobic',
+      value: parseInt(aerobic, 10),
+    },
+  ]
+  console.log(data);
 
   return (
     <ResponsiveContainer>
