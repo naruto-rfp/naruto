@@ -18,10 +18,10 @@ This project was built with:
 - [Blue Ocean](#blue-ocean)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
+  - [Getting Started](#getting-started)
   - [Contributors](#contributors)
 
-# Getting Started
+## Getting Started
 
 1. Clone the repo
    ```bash

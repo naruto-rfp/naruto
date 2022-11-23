@@ -22,7 +22,7 @@ db.SKUs = require('../models/skus')
 // ASSOCIATIONS
 // Products (primary key) and SKUs (foreign key) association
 db.Products.hasMany(db.SKUs)
-db.SKUs.belongsTo(db.Products, { onDelete: 'cascade' })
+db.SKUs.belongsTo(db.Products)
 
 // Roles userID to teamID for coaches/users/fans https://sequelize.org/docs/v6/core-concepts/assocs/
 db.User.belongsToMany(db.Teams, { through: db.Coaches, onDelete: 'cascade' })

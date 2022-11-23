@@ -2,12 +2,14 @@ import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
-import Shop from './pages/Shop'
+import Store from './pages/Store'
 import Team from './pages/Team'
 import Login from './pages/Login'
 import Checkout from './pages/Checkout'
 import Navbar from './components/NavBar'
 import PrivateRoutes from './components/PrivateRoutes'
+import Success from './pages/Store/Success'
+import Cancel from './pages/Store/Cancel'
 import { useStore } from './lib/fastContext'
 
 const App = function App() {
@@ -25,7 +27,7 @@ const App = function App() {
 
   // Get the user session on intial mounting
   useEffect(() => {
-    fetch('/api/session')
+    fetch('/api/session', { credentials: 'include' })
       .then((res) => res.json())
       .then((ses) => {
         // TEMP: remove logging
@@ -34,8 +36,8 @@ const App = function App() {
       })
       .catch((err) => {
         console.error(err)
-        setSession('session')
-        // setSession(null)
+        // setSession('session')
+        setSession(null)
       })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -47,11 +49,13 @@ const App = function App() {
         <Route element={<PrivateRoutes session={session} />}>
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile" />
-          <Route element={<Shop />} path="/shop" />
+          <Route element={<Store />} path="/store" />
           <Route element={<Team />} path="/team" />
           <Route element={<Checkout />} path="/checkout" />
+          <Route element={<Success />} path="/success" />
+          <Route element={<Cancel />} path="/cancel" />
         </Route>
-        <Route element={<Login />} path="/login" />
+        <Route element={<Login setSession={setSession} />} path="/login" />
       </Routes>
     </BrowserRouter>
   )
