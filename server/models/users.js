@@ -22,7 +22,7 @@ const Users = sequelize.define('Users', {
     allowNull: false,
   },
   email: DataTypes.STRING,
-  about: DataTypes.STRING,
+  about: DataTypes.TEXT,
   profilePic: DataTypes.TEXT,
   speed: {
     type: DataTypes.INTEGER,

@@ -10,18 +10,13 @@ function Login() {
     email: '',
     password: '',
   })
-  // const [username, setUsername] = useState('')
-  // const [firstName, setFirstName] = useState('')
-  // const [lastName, setLastName] = useState('')
-  // const [email, setEmail] = useState('')
-  // const [password, setPassword] = useState('')
 
   const register = () => {
     if (newUser.values.contains('')) {
       window.alert('please fill in all necessary information!')
     } else {
       axios
-        .post('/user', newUser)
+        .post('/api/user', newUser)
         .then((data) => console.log(data))
         .catch((err) => console.log(err))
 
