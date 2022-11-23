@@ -61,6 +61,15 @@ module.exports = (env, argv) => {
           ],
         },
         {
+          test: /\.(png|jpe?g|gif|webp)$/i,
+          use: 'file-loader',
+        },
+        {
+          test: /\.svg$/i,
+          issuer: /\.jsx?$/,
+          use: ['@svgr/webpack'],
+        },
+        {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: {
