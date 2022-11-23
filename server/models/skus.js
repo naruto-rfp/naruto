@@ -1,8 +1,6 @@
 const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
 
-// \COPY "Skus" (id, size, quantity, "ProductId") FROM 'absolute filepath/skus.csv' DELIMITER ',' CSV HEADER;
-
 const SKUs = sequelize.define(
   'Skus',
   {

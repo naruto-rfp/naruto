@@ -1,201 +1,1001 @@
-id,name,sport,coaches,members,fans,about
-1,Regrant,Crimson,"[{},{},{}]",[],"[{},{},{}]","Bypass Hemiazygos Vein to Upper Vein with Synthetic Substitute, Open Approach"
-2,Alpha,Crimson,"[{},{},{},{},{}]",[],[],"Extirpation of Matter from Vagus Nerve, Open Approach"
-3,Tresom,Teal,"[{},{},{},{}]",[],"[{},{},{},{}]","Dilation of Inferior Mesenteric Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-4,Tresom,Khaki,"[{},{},{}]",[{}],"[{},{},{},{}]","Repair Right Abdomen Muscle, Percutaneous Endoscopic Approach"
-5,Domainer,Green,"[{},{},{},{}]","[{},{},{},{},{}]",[],"Bypass Splenic Vein to Lower Vein, Percutaneous Endoscopic Approach"
-6,Stringtough,Fuscia,"[{},{}]","[{},{},{},{},{}]","[{},{},{},{}]","Removal of External Fixation Device from Left Ankle Joint, Open Approach"
-7,Cardify,Purple,"[{},{},{},{},{}]","[{},{},{},{}]",[],"Restriction of Esophageal Vein, Open Approach"
-8,Y-Solowarm,Purple,[],[],"[{},{},{}]","Revision of Autologous Tissue Substitute in Mouth and Throat, Via Natural or Artificial Opening"
-9,Lotlux,Mauv,"[{},{},{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]","Removal of Drainage Device from Kidney, Open Approach"
-10,Y-find,Yellow,[{}],"[{},{},{},{},{}]","[{},{},{},{},{}]","Repair Right Tympanic Membrane, Percutaneous Endoscopic Approach"
-11,It,Fuscia,"[{},{}]",[],[],"Removal of Synthetic Substitute from Right Femoral Shaft, Percutaneous Approach"
-12,Flowdesk,Maroon,"[{},{},{},{},{}]","[{},{},{}]",[{}],"Drainage of Left Maxillary Sinus with Drainage Device, Percutaneous Approach"
-13,Prodder,Puce,[{}],"[{},{}]","[{},{},{}]","Repair Head Muscle, Open Approach"
-14,Bamity,Puce,[],"[{},{}]",[{}],"Bypass Left Common Iliac Artery to Celiac Artery, Open Approach"
-15,Prodder,Crimson,[{}],[{}],[],"Revision of Drainage Device in Testis, Percutaneous Endoscopic Approach"
-16,Bitwolf,Blue,"[{},{},{}]","[{},{},{},{}]","[{},{}]","Removal of Nonautologous Tissue Substitute from Right Acromioclavicular Joint, Percutaneous Endoscopic Approach"
-17,Rank,Puce,[{}],"[{},{},{},{}]","[{},{}]",Beam Radiation of Mouth using Photons 1 - 10 MeV
-18,Overhold,Crimson,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{}]","Bypass Esophagus to Cutaneous, Open Approach"
-19,Bitwolf,Teal,[{}],[],[{}],"Repair Cystic Duct, Open Approach"
-20,Ventosanzap,Turquoise,"[{},{},{},{},{}]",[],[],"Excision of Right Radial Artery, Percutaneous Approach, Diagnostic"
-21,Fintone,Maroon,"[{},{},{},{},{}]","[{},{},{},{}]",[{}],"Removal of Intraluminal Device from Upper Intestinal Tract, Via Natural or Artificial Opening"
-22,Andalax,Orange,[],[{}],"[{},{},{},{}]","Monitoring of Arterial Pulse, Peripheral, External Approach"
-23,Daltfresh,Mauv,"[{},{},{}]",[],"[{},{},{},{},{}]",Positron Emission Tomographic (PET) Imaging of Myocardium using Nitrogen 13 (N-13)
-24,Lotstring,Goldenrod,[{}],"[{},{},{}]","[{},{},{}]","Release Right Ethmoid Sinus, Percutaneous Endoscopic Approach"
-25,Bitchip,Khaki,"[{},{},{},{}]",[],"[{},{},{},{},{}]","Replacement of Nasal Turbinate with Autologous Tissue Substitute, Open Approach"
-26,Fintone,Puce,"[{},{}]","[{},{},{},{}]",[],"Occlusion of Middle Esophagus, Via Natural or Artificial Opening Endoscopic"
-27,Voltsillam,Aquamarine,"[{},{},{},{}]","[{},{},{},{},{}]",[],"Excision of Esophagogastric Junction, Via Natural or Artificial Opening Endoscopic"
-28,Stringtough,Turquoise,"[{},{},{},{},{}]",[],"[{},{},{},{}]","Revision of Autologous Tissue Substitute in Left Carpal, Percutaneous Endoscopic Approach"
-29,Sub-Ex,Goldenrod,"[{},{}]","[{},{},{}]","[{},{},{},{},{}]","Dilation of Innominate Artery with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-30,Regrant,Fuscia,[],[{}],[{}],"Supplement Right Cephalic Vein with Nonautologous Tissue Substitute, Percutaneous Approach"
-31,Domainer,Red,[],"[{},{},{},{},{}]",[],Low Dose Rate (LDR) Brachytherapy of Pituitary Gland using Cesium 137 (Cs-137)
-32,Home Ing,Red,"[{},{},{}]","[{},{},{},{},{}]","[{},{}]","Excision of Left Fibula, Percutaneous Approach, Diagnostic"
-33,Span,Fuscia,"[{},{},{},{}]",[{}],"[{},{},{},{}]","Supplement Right Lower Eyelid with Autologous Tissue Substitute, Open Approach"
-34,Lotlux,Blue,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{}]","Extirpation of Matter from Left Hand Muscle, Percutaneous Endoscopic Approach"
-35,Ventosanzap,Pink,[{}],[],[{}],"Drainage of Splenic Artery, Open Approach, Diagnostic"
-36,Aerified,Crimson,"[{},{}]",[],"[{},{}]",Removal of Intermittent Pressure Device on Left Hand
-37,Toughjoyfax,Aquamarine,"[{},{},{},{},{}]",[{}],[{}],"Revision of Extraluminal Device in Lower Artery, External Approach"
-38,Rank,Mauv,[{}],"[{},{},{}]",[{}],"Repair Hepatic Vein, Percutaneous Endoscopic Approach"
-39,Subin,Purple,"[{},{},{},{}]","[{},{},{}]",[{}],"Extirpation of Matter from Inferior Mesenteric Artery, Bifurcation, Open Approach"
-40,Vagram,Indigo,"[{},{},{},{},{}]",[{}],"[{},{},{}]","Bypass Left Hepatic Duct to Stomach with Intraluminal Device, Open Approach"
-41,Holdlamis,Yellow,[],[{}],"[{},{}]","Dilation of Lower Artery, Bifurcation, with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-42,Transcof,Green,"[{},{},{},{},{}]",[{}],[{}],"Repair Right 2nd Toe, External Approach"
-43,Konklux,Red,[{}],"[{},{},{},{}]","[{},{}]","Bypass Ascending Colon to Ascending Colon with Synthetic Substitute, Via Natural or Artificial Opening Endoscopic"
-44,Span,Teal,"[{},{}]","[{},{}]","[{},{},{}]","Extirpation of Matter from Right Hip Tendon, Percutaneous Approach"
-45,Sonsing,Goldenrod,[{}],"[{},{}]","[{},{},{},{},{}]","Revision of Autologous Tissue Substitute in Left Sternoclavicular Joint, Percutaneous Approach"
-46,Stim,Khaki,"[{},{},{},{}]","[{},{},{},{},{}]","[{},{},{}]","Dilation of Coronary Artery, Three Arteries with Intraluminal Device, Open Approach"
-47,Pannier,Green,[],[{}],[],"Removal of Nonautologous Tissue Substitute from Right Metatarsal, Open Approach"
-48,Mat Lam Tam,Puce,"[{},{},{}]","[{},{},{},{}]","[{},{},{}]","Drainage of Left Lacrimal Bone with Drainage Device, Percutaneous Endoscopic Approach"
-49,Greenlam,Blue,[{}],"[{},{},{},{}]","[{},{}]","Reposition Right Shoulder Tendon, Open Approach"
-50,Domainer,Turquoise,"[{},{}]","[{},{},{},{},{}]","[{},{},{}]","Reposition Left Lacrimal Duct, Via Natural or Artificial Opening"
-51,Stronghold,Turquoise,"[{},{},{},{}]",[],"[{},{},{},{}]","Transfer Right Hand Bursa and Ligament, Open Approach"
-52,Voyatouch,Turquoise,"[{},{},{},{},{}]",[{}],"[{},{},{}]","Release Chest Skin, External Approach"
-53,Regrant,Green,"[{},{}]",[{}],"[{},{},{},{}]","Drainage of Right Upper Arm Muscle, Percutaneous Endoscopic Approach, Diagnostic"
-54,Zaam-Dox,Goldenrod,[{}],"[{},{}]","[{},{},{}]","Repair Left Iris, Percutaneous Approach"
-55,Domainer,Goldenrod,"[{},{},{}]","[{},{},{}]","[{},{},{},{},{}]","Transfer Cervical Nerve to Phrenic Nerve, Percutaneous Endoscopic Approach"
-56,Kanlam,Indigo,"[{},{},{}]","[{},{},{}]",[],"Imaging, Anatomical Regions, Ultrasonography"
-57,Gembucket,Yellow,"[{},{}]","[{},{}]",[],"Evoked Otoacoustic Emissions, Screening Assessment"
-58,Lotlux,Red,[],"[{},{}]","[{},{},{},{},{}]","Drainage of Left Lower Leg Tendon, Open Approach, Diagnostic"
-59,Stim,Blue,[{}],[],"[{},{},{},{},{}]","Insertion of Other Device into Respiratory Tract, Via Natural or Artificial Opening"
-60,Bamity,Indigo,"[{},{}]",[],"[{},{},{},{}]","Excision of Trochlear Nerve, Percutaneous Approach, Diagnostic"
-61,Hatity,Violet,[],"[{},{},{},{},{}]","[{},{},{},{}]","Removal of External Fixation Device from Right Metacarpal, Percutaneous Approach"
-62,Mat Lam Tam,Goldenrod,[{}],"[{},{},{},{},{}]","[{},{},{},{}]",Beam Radiation of Pelvis Lymphatics using Neutron Capture
-63,Zaam-Dox,Teal,[{}],"[{},{},{},{},{}]","[{},{},{},{}]","Inspection of Nose, Percutaneous Endoscopic Approach"
-64,Zathin,Puce,"[{},{},{},{}]",[{}],[{}],"Repair Right Frontal Sinus, Open Approach"
-65,Home Ing,Blue,"[{},{}]","[{},{},{},{}]","[{},{},{},{},{}]","Excision of Right Orbit, Percutaneous Approach"
-66,Alpha,Orange,"[{},{}]",[{}],"[{},{}]","Revision of Nonautologous Tissue Substitute in Cervicothoracic Vertebral Disc, Percutaneous Endoscopic Approach"
-67,Bigtax,Red,"[{},{},{}]","[{},{},{},{},{}]","[{},{},{},{}]","Reposition Facial Muscle, Open Approach"
-68,Namfix,Blue,"[{},{},{},{}]","[{},{},{}]","[{},{},{}]","Revision of Drainage Device in Stomach, External Approach"
-69,Bytecard,Violet,"[{},{},{},{}]","[{},{},{}]","[{},{},{},{},{}]","Release Left External Jugular Vein, Open Approach"
-70,Opela,Blue,"[{},{}]","[{},{},{},{}]",[{}],"Replacement of Left Parietal Bone with Nonautologous Tissue Substitute, Percutaneous Approach"
-71,Stringtough,Turquoise,"[{},{},{},{},{}]","[{},{},{},{}]","[{},{},{},{}]","Removal of Extraluminal Device from Fallopian Tube, Open Approach"
-72,Tres-Zap,Puce,[{}],[{}],[{}],High Dose Rate (HDR) Brachytherapy of Chest Wall using Cesium 137 (Cs-137)
-73,Bitwolf,Puce,"[{},{},{},{}]",[],"[{},{},{},{}]","Repair Left Vas Deferens, Open Approach"
-74,Zamit,Indigo,"[{},{}]","[{},{}]",[{}],"Removal of Nonautologous Tissue Substitute from Vagina and Cul-de-sac, Percutaneous Endoscopic Approach"
-75,Konklab,Maroon,"[{},{},{}]",[{}],"[{},{}]","Reposition Right Upper Femur with External Fixation Device, Percutaneous Approach"
-76,Flowdesk,Pink,"[{},{},{}]",[],"[{},{},{}]","Drainage of Left External Auditory Canal, External Approach, Diagnostic"
-77,Y-find,Violet,[{}],"[{},{},{},{}]","[{},{},{},{},{}]","Extraction of Ova, Percutaneous"
-78,Bitchip,Turquoise,[],[{}],"[{},{},{},{}]","Removal of Autologous Tissue Substitute from Right Carpal, Percutaneous Approach"
-79,Flowdesk,Crimson,"[{},{}]",[],"[{},{},{}]","Insertion of External Fixation Device into Right Humeral Head, Percutaneous Approach"
-80,Solarbreeze,Green,"[{},{},{},{},{}]",[],"[{},{},{}]","Inspection of Vas Deferens, External Approach"
-81,Zathin,Goldenrod,"[{},{},{}]",[],[],"Destruction of Anus, External Approach"
-82,Sonsing,Red,"[{},{},{},{}]","[{},{},{},{},{}]",[],Plain Radiography of Other Bypass Graft using Low Osmolar Contrast
-83,Duobam,Aquamarine,"[{},{},{}]",[{}],[],"Release Left Knee Tendon, External Approach"
-84,Zoolab,Orange,"[{},{}]","[{},{},{},{},{}]","[{},{},{}]","Destruction of Bilateral Lungs, Percutaneous Endoscopic Approach"
-85,It,Orange,[],[],"[{},{},{},{},{}]","Dilation of Right Brachial Artery with Three Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach"
-86,Zontrax,Goldenrod,"[{},{}]","[{},{},{},{},{}]","[{},{},{},{}]","Mental Health, Family Psychotherapy"
-87,Zoolab,Green,"[{},{}]","[{},{},{},{}]","[{},{},{}]","Control Bleeding in Respiratory Tract, Percutaneous Approach"
-88,Alpha,Orange,"[{},{},{},{}]","[{},{},{},{}]",[{}],"Excision of Left Upper Lung Lobe, Via Natural or Artificial Opening Endoscopic, Diagnostic"
-89,Y-find,Crimson,"[{},{},{},{},{}]",[{}],"[{},{}]","Magnetic Resonance Imaging (MRI) of Lumbar Spine using Other Contrast, Unenhanced and Enhanced"
-90,Greenlam,Teal,"[{},{}]","[{},{},{},{}]",[],"Removal of External Fixation Device from Left Metatarsal, External Approach"
-91,Pannier,Turquoise,[],"[{},{},{}]","[{},{},{}]",Magnetic Resonance Imaging (MRI) of Left Upper Extremity Veins using Other Contrast
-92,Voltsillam,Red,"[{},{},{}]","[{},{},{}]","[{},{},{},{},{}]","Drainage of Cervical Vertebra, Open Approach"
-93,Quo Lux,Goldenrod,"[{},{},{},{},{}]","[{},{},{}]","[{},{},{},{},{}]","Supplement Left Hip Bursa and Ligament with Nonautologous Tissue Substitute, Open Approach"
-94,Stringtough,Goldenrod,"[{},{},{}]","[{},{},{},{}]","[{},{},{}]","Excision of Right Upper Leg Subcutaneous Tissue and Fascia, Open Approach"
-95,Biodex,Mauv,"[{},{},{},{}]",[{}],"[{},{},{}]","Supplement of Left Upper Arm Subcutaneous Tissue and Fascia with Nonautologous Tissue Substitute, Open Approach"
-96,Overhold,Maroon,"[{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]",Contact Radiation of Hypopharynx
-97,Duobam,Purple,"[{},{},{},{},{}]",[],"[{},{},{},{}]","Excision of Spleen, Open Approach, Diagnostic"
-98,Quo Lux,Fuscia,"[{},{},{}]","[{},{}]","[{},{}]",Computerized Tomography (CT Scan) of Right Patella
-99,Redhold,Crimson,[{}],"[{},{},{},{}]",[{}],"Occlusion of Right Anterior Tibial Artery with Intraluminal Device, Open Approach"
-100,Holdlamis,Purple,[{}],"[{},{},{},{}]","[{},{},{},{},{}]","Drainage of Left Temporal Artery, Open Approach"
-101,It,Turquoise,"[{},{},{}]","[{},{},{}]",[{}],"Drainage of Left Knee Region, Percutaneous Approach"
-102,Domainer,Orange,"[{},{},{},{}]",[{}],"[{},{},{},{}]","Dilation of Coronary Artery, Two Arteries, Bifurcation, with Three Intraluminal Devices, Percutaneous Approach"
-103,Redhold,Puce,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{},{},{}]","Dilation of Right Subclavian Artery, Bifurcation, with Two Intraluminal Devices, Percutaneous Endoscopic Approach"
-104,Wrapsafe,Crimson,[],"[{},{},{},{}]","[{},{}]","Removal of Radioactive Element from Uterus and Cervix, Percutaneous Endoscopic Approach"
-105,Fixflex,Violet,"[{},{},{},{}]","[{},{},{},{}]",[],"Dilation of Left Hand Artery, Bifurcation, with Three Drug-eluting Intraluminal Devices, Percutaneous Approach"
-106,Bitchip,Goldenrod,"[{},{}]","[{},{}]","[{},{},{},{}]",Removal of Bandage on Right Upper Leg
-107,Konklux,Purple,"[{},{},{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]","Resection of Accessory Sinus, Open Approach"
-108,Zamit,Khaki,"[{},{},{}]","[{},{},{}]","[{},{},{}]","Excision of Right Hand Muscle, Percutaneous Approach, Diagnostic"
-109,Wrapsafe,Crimson,"[{},{},{},{},{}]",[],"[{},{},{},{},{}]","Repair Lumbar Vertebral Joint, External Approach"
-110,Zathin,Turquoise,[{}],"[{},{},{}]",[{}],"Bypass Esophagus to Cutaneous with Autologous Tissue Substitute, Open Approach"
-111,Flexidy,Orange,[{}],"[{},{},{},{}]","[{},{},{}]","Drainage of Right Hepatic Duct, Percutaneous Approach"
-112,Konklab,Violet,"[{},{},{}]",[{}],[],"Removal of Monitoring Device from Cranial Nerve, Percutaneous Endoscopic Approach"
-113,Hatity,Crimson,"[{},{},{}]","[{},{}]","[{},{},{},{},{}]","Drainage of Right Vas Deferens, Percutaneous Endoscopic Approach"
-114,Redhold,Puce,"[{},{}]",[{}],[],"Dilation of Bilateral Fallopian Tubes, Via Natural or Artificial Opening Endoscopic"
-115,Tin,Blue,[],"[{},{},{},{},{}]","[{},{}]",Low Dose Rate (LDR) Brachytherapy of Right Breast using Californium 252 (Cf-252)
-116,Kanlam,Indigo,"[{},{}]",[],[],"Detachment at Left Index Finger, Low, Open Approach"
-117,Lotstring,Indigo,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{},{}]","Supplement Right Cephalic Vein with Nonautologous Tissue Substitute, Percutaneous Approach"
-118,Quo Lux,Indigo,"[{},{}]",[],"[{},{}]","Reattachment of Left Shoulder Muscle, Open Approach"
-119,Cookley,Khaki,"[{},{},{},{}]","[{},{},{}]",[{}],"Excision of Left Lower Lobe Bronchus, Via Natural or Artificial Opening, Diagnostic"
-120,Cookley,Maroon,"[{},{},{},{}]","[{},{},{},{},{}]","[{},{}]","Destruction of Left Foot Bursa and Ligament, Percutaneous Approach"
-121,Wrapsafe,Yellow,[],"[{},{},{},{}]","[{},{},{}]","Dilation of Coronary Artery, Two Arteries with Two Drug-eluting Intraluminal Devices, Percutaneous Approach"
-122,Alphazap,Crimson,"[{},{},{}]","[{},{}]","[{},{},{},{}]","Insertion of Intraluminal Device into Right Renal Vein, Percutaneous Endoscopic Approach"
-123,Alphazap,Goldenrod,[{}],[],"[{},{},{},{},{}]","Drainage of Cervical Vertebral Disc with Drainage Device, Percutaneous Approach"
-124,Rank,Puce,"[{},{},{},{}]",[],[],"Dilation of Right Popliteal Artery using Drug-Coated Balloon, Percutaneous Approach"
-125,Trippledex,Teal,"[{},{},{},{}]",[],"[{},{}]","Transplantation of Musculoskeletal System into Products of Conception, Percutaneous Endoscopic Approach"
-126,Biodex,Yellow,[{}],[{}],"[{},{},{}]","Bypass Coronary Artery, Four or More Arteries from Coronary Artery with Nonautologous Tissue Substitute, Open Approach"
-127,Matsoft,Green,"[{},{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]","Removal of Autologous Tissue Substitute from Right Metatarsal-Tarsal Joint, Percutaneous Endoscopic Approach"
-128,Konklab,Teal,[{}],"[{},{},{}]","[{},{},{},{},{}]","Bypass Left Anterior Chamber to Sclera, Percutaneous Approach"
-129,Job,Teal,[],"[{},{}]","[{},{},{},{}]","Insertion of Internal Fixation Device into Left Tibia, Open Approach"
-130,Biodex,Green,[],[],[{}],"Supplement of Scalp Subcutaneous Tissue and Fascia with Nonautologous Tissue Substitute, Percutaneous Approach"
-131,Viva,Violet,"[{},{},{}]",[{}],[],"Destruction of Right Femoral Vein, Percutaneous Approach"
-132,Viva,Yellow,[{}],[{}],"[{},{},{},{},{}]","Restriction of Cystic Duct, Via Natural or Artificial Opening"
-133,Alpha,Orange,[],[{}],"[{},{},{}]","Introduction of Liquid Brachytherapy Radioisotope into Respiratory Tract, Via Natural or Artificial Opening"
-134,Rank,Khaki,[],"[{},{}]",[{}],"Release Pharynx, Open Approach"
-135,Y-find,Purple,[{}],"[{},{}]","[{},{},{}]","Excision of Left Inferior Parathyroid Gland, Percutaneous Endoscopic Approach, Diagnostic"
-136,Stronghold,Teal,[{}],"[{},{},{}]","[{},{}]","Occlusion of Left Temporal Artery with Extraluminal Device, Percutaneous Endoscopic Approach"
-137,Cardguard,Red,[{}],"[{},{}]","[{},{},{},{},{}]","Revision of Monitoring Device in Lower Artery, Open Approach"
-138,Holdlamis,Mauv,"[{},{},{}]","[{},{},{},{}]",[{}],"Supplement Left Knee Joint with Autologous Tissue Substitute, Open Approach"
-139,Sub-Ex,Orange,"[{},{},{},{},{}]",[],"[{},{},{},{}]","Dilation of Right Internal Carotid Artery, Bifurcation, with Intraluminal Device, Open Approach"
-140,Treeflex,Fuscia,[{}],[],"[{},{}]","Removal of Nonautologous Tissue Substitute from Left Upper Extremity, Percutaneous Approach"
-141,Treeflex,Yellow,"[{},{}]","[{},{},{},{}]",[{}],"Fluoroscopy of Inferior Vena Cava, Guidance"
-142,Duobam,Goldenrod,"[{},{},{}]",[],"[{},{}]","Restriction of Left Ureter, Percutaneous Approach"
-143,Keylex,Violet,"[{},{}]","[{},{},{},{},{}]",[{}],"Excision of Right Temporal Artery, Percutaneous Endoscopic Approach, Diagnostic"
-144,Y-find,Turquoise,[{}],[],[{}],"Bypass Right External Iliac Artery to Right Internal Iliac Artery with Nonautologous Tissue Substitute, Percutaneous Endoscopic Approach"
-145,Biodex,Khaki,"[{},{}]","[{},{},{}]","[{},{},{},{}]",Beam Radiation of Radius/Ulna using Neutrons
-146,Voyatouch,Fuscia,"[{},{}]","[{},{},{},{}]","[{},{},{}]","Reposition Left Elbow Joint with Internal Fixation Device, Percutaneous Approach"
-147,Gembucket,Teal,[],"[{},{}]","[{},{},{}]","Excision of Left Lung, Via Natural or Artificial Opening"
-148,Quo Lux,Red,[],"[{},{}]","[{},{}]","Removal of Internal Fixation Device from Cervical Vertebra, Percutaneous Endoscopic Approach"
-149,Vagram,Khaki,[{}],"[{},{},{},{}]","[{},{},{},{},{}]",Change Splint on Left Upper Arm
-150,Fintone,Pink,[],"[{},{},{}]","[{},{}]","Bypass Right Subclavian Artery to Lower Arm Vein with Autologous Arterial Tissue, Open Approach"
-151,Voyatouch,Puce,"[{},{}]","[{},{},{},{},{}]","[{},{},{}]","Drainage of Right Adrenal Gland, Open Approach, Diagnostic"
-152,Konklab,Blue,"[{},{},{}]",[],"[{},{},{}]","Supplement Left External Jugular Vein with Autologous Tissue Substitute, Percutaneous Approach"
-153,Pannier,Pink,"[{},{}]",[{}],"[{},{},{},{}]","Destruction of Left Lower Arm Subcutaneous Tissue and Fascia, Open Approach"
-154,Bamity,Mauv,"[{},{},{}]","[{},{}]","[{},{},{},{},{}]","Drainage of Ulnar Nerve, Percutaneous Approach"
-155,Tampflex,Goldenrod,"[{},{}]","[{},{},{},{},{}]","[{},{},{}]","Bypass Pancreas to Small Intestine with Intraluminal Device, Open Approach"
-156,Bytecard,Violet,"[{},{}]",[],[],"Supplement Left Hand Vein with Synthetic Substitute, Percutaneous Approach"
-157,Cardguard,Puce,[{}],[{}],"[{},{},{},{}]","Extirpation of Matter from Left Elbow Bursa and Ligament, Percutaneous Approach"
-158,Temp,Pink,"[{},{},{},{},{}]",[{}],"[{},{},{},{}]","Excision of Oculomotor Nerve, Percutaneous Endoscopic Approach"
-159,Matsoft,Crimson,[{}],"[{},{},{}]","[{},{},{},{}]","Repair Upper Esophagus, Via Natural or Artificial Opening"
-160,Flexidy,Fuscia,[],[],"[{},{}]","Excision of Radial Nerve, Open Approach"
-161,Cookley,Orange,[{}],"[{},{},{},{}]","[{},{},{}]","Release Right Metatarsal-Tarsal Joint, External Approach"
-162,Biodex,Aquamarine,"[{},{},{},{}]",[{}],"[{},{},{}]","Extirpation of Matter from Left Foot Vein, Open Approach"
-163,Pannier,Blue,"[{},{}]",[],"[{},{},{},{},{}]","Supplement Left Finger Phalangeal Joint with Nonautologous Tissue Substitute, Open Approach"
-164,Cookley,Crimson,"[{},{},{}]","[{},{}]","[{},{},{},{}]","Dilation of Coronary Artery, One Artery with Two Intraluminal Devices, Percutaneous Approach"
-165,Flexidy,Puce,"[{},{},{},{},{}]","[{},{}]","[{},{},{},{},{}]","Bypass Right External Iliac Artery to Right Internal Iliac Artery, Open Approach"
-166,Duobam,Khaki,[{}],"[{},{},{},{},{}]",[{}],"Revision of Synthetic Substitute in Right Knee Joint, Tibial Surface, Open Approach"
-167,Rank,Fuscia,"[{},{}]",[{}],"[{},{},{},{}]","Restriction of Right Parotid Duct, Open Approach"
-168,Stringtough,Blue,[],[],"[{},{},{}]","Supplement Left Rib with Synthetic Substitute, Percutaneous Approach"
-169,Lotlux,Orange,"[{},{},{},{}]","[{},{},{}]","[{},{}]","Drainage of Coccygeal Joint, Percutaneous Endoscopic Approach"
-170,Prodder,Fuscia,"[{},{},{},{},{}]","[{},{}]",[],"Detachment at Right Index Finger, Low, Open Approach"
-171,Sub-Ex,Purple,"[{},{}]","[{},{},{},{}]",[{}],"Group Counseling for Substance Abuse Treatment, Cognitive-Behavioral"
-172,Ventosanzap,Turquoise,"[{},{}]","[{},{},{},{},{}]","[{},{},{}]","Revision of Synthetic Substitute in Prostate and Seminal Vesicles, Via Natural or Artificial Opening Endoscopic"
-173,Y-Solowarm,Orange,"[{},{},{}]","[{},{},{}]",[{}],"Release Sternum, Percutaneous Approach"
-174,Y-Solowarm,Mauv,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{},{},{},{}]","Supplement Right Humeral Head with Autologous Tissue Substitute, Percutaneous Approach"
-175,Aerified,Blue,[],"[{},{}]",[],"Therapeutic Exercise Treatment of Neurological System - Whole Body using Assistive, Adaptive, Supportive or Protective Equipment"
-176,Flexidy,Aquamarine,"[{},{}]",[],"[{},{},{}]","Revision of External Fixation Device in Left Tarsal Joint, External Approach"
-177,Quo Lux,Maroon,"[{},{},{},{}]",[{}],[{}],"Excision of Left Tarsal, Percutaneous Approach"
-178,Wrapsafe,Green,[],"[{},{},{},{},{}]",[],"Monitoring of Products of Conception, Nervous Pressure, Via Natural or Artificial Opening"
-179,Duobam,Blue,"[{},{},{},{},{}]",[],[],Postural Control Treatment of Integumentary System - Whole Body using Orthosis
-180,Namfix,Goldenrod,"[{},{},{},{}]",[],[{}],Motor Speech Assessment using Biosensory Feedback Equipment
-181,Job,Teal,"[{},{}]","[{},{},{},{}]","[{},{},{},{}]",Low Dose Rate (LDR) Brachytherapy of Pineal Body using Californium 252 (Cf-252)
-182,Toughjoyfax,Teal,[],[{}],"[{},{}]","Dilation of Anus with Intraluminal Device, Via Natural or Artificial Opening"
-183,Sub-Ex,Yellow,"[{},{},{},{},{}]","[{},{},{},{},{}]","[{},{},{},{},{}]",Fluoroscopy of Left Renal Artery using Low Osmolar Contrast
-184,Lotlux,Aquamarine,"[{},{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]",Range of Motion and Joint Integrity Assessment of Integumentary System - Lower Back / Lower Extremity using Other Equipment
-185,Prodder,Purple,[{}],"[{},{}]",[{}],"Excision of Upper Back, External Approach, Diagnostic"
-186,Cardguard,Green,"[{},{},{},{}]","[{},{},{}]","[{},{},{},{}]","Repair Left Hip Tendon, Open Approach"
-187,Y-Solowarm,Mauv,"[{},{},{},{},{}]",[{}],"[{},{},{}]","Bypass Left Renal Vein to Lower Vein with Autologous Tissue Substitute, Percutaneous Endoscopic Approach"
-188,Flexidy,Orange,[],"[{},{},{},{}]",[],"Introduction of Destructive Agent into Lower GI, Via Natural or Artificial Opening"
-189,Subin,Green,"[{},{},{},{},{}]","[{},{},{}]",[{}],"Drainage of Right Metatarsal-Phalangeal Joint, Percutaneous Endoscopic Approach"
-190,Pannier,Mauv,[{}],[],"[{},{},{},{}]","Release Left Trunk Tendon, Percutaneous Approach"
-191,Alphazap,Pink,"[{},{},{},{},{}]","[{},{},{},{}]","[{},{},{},{},{}]","Imaging, Eye, Ultrasonography"
-192,Ventosanzap,Blue,"[{},{},{},{},{}]","[{},{}]","[{},{},{},{},{}]","Occlusion of Right Cephalic Vein with Intraluminal Device, Percutaneous Approach"
-193,Otcom,Crimson,[],[{}],"[{},{},{}]",Fluoroscopy of Bilateral Vertebral Arteries using High Osmolar Contrast
-194,Stronghold,Teal,"[{},{},{},{},{}]","[{},{},{}]",[],"Reattachment of Sigmoid Colon, Percutaneous Endoscopic Approach"
-195,Latlux,Maroon,"[{},{},{}]","[{},{},{}]",[{}],"Reposition Right Shoulder Tendon, Open Approach"
-196,Viva,Fuscia,[],"[{},{},{},{}]",[],"Occlusion of Jejunum, Via Natural or Artificial Opening"
-197,Mat Lam Tam,Turquoise,"[{},{},{},{},{}]",[],"[{},{},{},{},{}]","Supplement Left Patella with Autologous Tissue Substitute, Percutaneous Endoscopic Approach"
-198,Y-find,Goldenrod,"[{},{}]","[{},{}]","[{},{},{},{},{}]","Replacement of Right Hip Joint, Femoral Surface with Ceramic Synthetic Substitute, Cemented, Open Approach"
-199,Bitchip,Red,"[{},{},{}]","[{},{}]","[{},{},{}]","Occlusion of Lower Artery with Intraluminal Device, Open Approach"
-200,Voyatouch,Blue,[{}],"[{},{}]",[{}],"Dilation of Splenic Artery with Intraluminal Device, Percutaneous Approach"
+id,name,sport,about
+1,Fix San,Wrapsafe,"Unspecified occupant of three-wheeled motor vehicle injured in collision with railway train or railway vehicle in nontraffic accident, sequela"
+2,Pannier,Tampflex,"Burn of first degree of unspecified multiple fingers (nail), not including thumb, sequela"
+3,Daltfresh,Kanlam,"Adverse effect of antifungal antibiotics, systemically used, subsequent encounter"
+4,Subin,Job,"Other specified injury of extensor muscle, fascia and tendon of thumb at wrist and hand level"
+5,Cardify,Regrant,"Immersion foot, left foot, sequela"
+6,Gembucket,Zathin,"Poisoning by other nonopioid analgesics and antipyretics, not elsewhere classified, intentional self-harm, subsequent encounter"
+7,Aerified,Tampflex,"Other physeal fracture of lower end of ulna, right arm, subsequent encounter for fracture with malunion"
+8,Zontrax,Home Ing,"Opioid abuse with opioid-induced psychotic disorder, unspecified"
+9,Zaam-Dox,Tin,Carcinoma in situ of larynx
+10,Quo Lux,Fix San,"Barton's fracture of left radius, sequela"
+11,Rank,Lotstring,"Acute gingivitis, non-plaque induced"
+12,Bitwolf,Prodder,"Poisoning by antiviral drugs, undetermined"
+13,Span,Zontrax,"Benign neoplasm of respiratory system, unspecified"
+14,Duobam,Job,"Displaced oblique fracture of shaft of humerus, right arm"
+15,Lotlux,Mat Lam Tam,"Struck by basketball, sequela"
+16,Greenlam,Stringtough,"Encounter for pregnancy test, result positive"
+17,Quo Lux,Namfix,Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+18,Tempsoft,Alpha,Borderline personality disorder
+19,Quo Lux,Viva,Folliculitis decalvans
+20,Opela,Prodder,Benign neoplasm of left ciliary body
+21,Y-Solowarm,Sonsing,"Other mechanical complication of bile duct prosthesis, initial encounter"
+22,It,Zaam-Dox,Scar conditions and fibrosis of skin
+23,Treeflex,Alphazap,"Laceration without foreign body of scalp, subsequent encounter"
+24,Ventosanzap,Duobam,Chronic follicular conjunctivitis
+25,Cardguard,Rank,"Assault by being hit or run over by motor vehicle, subsequent encounter"
+26,Solarbreeze,Span,Unspecified injury of intrinsic muscle and tendon at ankle and foot level
+27,Lotstring,Solarbreeze,"Leakage of balloon (counterpulsation) device, subsequent encounter"
+28,Fix San,Prodder,"Abnormal level of other drugs, medicaments and biological substances in specimens from other organs, systems and tissues"
+29,Sonsing,Aerified,"Laceration of muscle, fascia and tendon of the posterior muscle group at thigh level, unspecified thigh, initial encounter"
+30,Flowdesk,Viva,"Unspecified injury of popliteal artery, unspecified leg, sequela"
+31,Voyatouch,Y-find,"Fracture of femur following insertion of orthopedic implant, joint prosthesis, or bone plate, right leg"
+32,Solarbreeze,Sub-Ex,"Displaced fracture of epiphysis (separation) (upper) of unspecified femur, subsequent encounter for closed fracture with nonunion"
+33,Bytecard,Holdlamis,"Unspecified injury of muscle and tendon of head, subsequent encounter"
+34,Keylex,Bigtax,"Other fracture of upper end of right tibia, subsequent encounter for closed fracture with delayed healing"
+35,Bigtax,Fixflex,Fracture of proximal third of navicular [scaphoid] bone of wrist
+36,Latlux,Treeflex,"Poisoning by inhaled anesthetics, assault"
+37,Fintone,Lotlux,"Laceration of blood vessel of right little finger, subsequent encounter"
+38,Stringtough,Bamity,"Displaced comminuted fracture of shaft of ulna, left arm, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+39,Alphazap,Y-find,"Other physeal fracture of unspecified calcaneus, subsequent encounter for fracture with routine healing"
+40,Kanlam,Home Ing,"Unspecified juvenile rheumatoid arthritis, unspecified knee"
+41,Quo Lux,Otcom,"Unspecified pedal cyclist injured in collision with fixed or stationary object in traffic accident, subsequent encounter"
+42,Redhold,Zoolab,"Unspecified fracture of lower end of unspecified tibia, subsequent encounter for open fracture type I or II with delayed healing"
+43,Quo Lux,Tres-Zap,"Poisoning by other antiepileptic and sedative-hypnotic drugs, intentional self-harm"
+44,Fix San,Bamity,"Crushing injury of left ankle, initial encounter"
+45,Ventosanzap,Zamit,"Unspecified occupant of heavy transport vehicle injured in collision with two- or three-wheeled motor vehicle in traffic accident, initial encounter"
+46,Wrapsafe,Tres-Zap,"Unspecified fracture of lower end of right femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+47,Gembucket,Zamit,Secondary lactase deficiency
+48,Domainer,Veribet,"Pressure ulcer of right lower back, stage 3"
+49,Konklux,Zamit,"Pregnancy with inconclusive fetal viability, fetus 1"
+50,Solarbreeze,Latlux,"Myopia, unspecified eye"
+51,Stim,Stronghold,"Stress fracture, humerus"
+52,Duobam,Stim,"Swimmer's ear, bilateral"
+53,Fix San,Voyatouch,"Paralytic calcification and ossification of muscle, ankle and foot"
+54,Flowdesk,Toughjoyfax,"Scotoma of blind spot area, bilateral"
+55,Biodex,Zathin,"Wedge compression fracture of second thoracic vertebra, sequela"
+56,Keylex,Sonsing,Other acquired abnormalities of ear ossicles
+57,Konklux,Kanlam,Other disorders of teeth and supporting structures
+58,Overhold,Veribet,"Infectious mononucleosis, unspecified with other complication"
+59,Andalax,Latlux,"Explosion of mine placed during war operations but exploding after cessation of hostilities, civilian, sequela"
+60,Bitwolf,Voltsillam,"Other mechanical complication of internal fixation device of bone of left lower leg, initial encounter"
+61,Sonair,Lotlux,"War operations involving intentional restriction of air and airway, military personnel, sequela"
+62,Konklux,Regrant,"Nodular sclerosis Hodgkin lymphoma, intrathoracic lymph nodes"
+63,Konklux,Wrapsafe,"Fracture of base of skull, left side, sequela"
+64,Treeflex,Tresom,"Complete traumatic amputation at knee level, unspecified lower leg, sequela"
+65,Ronstring,Fixflex,"Other contact with orca, sequela"
+66,Voltsillam,Otcom,Blister (nonthermal) of unspecified thumb
+67,Zathin,Regrant,"Other superficial bite of breast, left breast, sequela"
+68,Wrapsafe,Alpha,"Myositis ossificans traumatica, unspecified ankle and foot"
+69,Bytecard,Solarbreeze,Malignant neoplasm of frontal lobe
+70,Treeflex,Alphazap,"Toxic effect of corrosive acids and acid-like substances, assault, sequela"
+71,Opela,Y-Solowarm,"Crushing injury of right hip, sequela"
+72,Zontrax,Cookley,"Abrasion, left lower leg, subsequent encounter"
+73,Biodex,Bamity,"Myositis ossificans traumatica, right lower leg"
+74,Ventosanzap,Biodex,Newborn affected by other maternal noxious substances
+75,Opela,Wrapsafe,"Poisoning by other antidysrhythmic drugs, accidental (unintentional)"
+76,Stronghold,Job,Central demyelination of corpus callosum
+77,Span,Alphazap,"Salter-Harris Type II physeal fracture of upper end of unspecified fibula, subsequent encounter for fracture with routine healing"
+78,Fintone,Stronghold,Sprain of unspecified collateral ligament of knee
+79,Kanlam,Rank,"Pathological fracture in other disease, right foot, subsequent encounter for fracture with delayed healing"
+80,Daltfresh,Namfix,"Puncture wound without foreign body of right great toe with damage to nail, initial encounter"
+81,Zoolab,Hatity,"Adverse effect of cardiac-stimulant glycosides and drugs of similar action, initial encounter"
+82,Viva,Bamity,"Follicular lymphoma, unspecified, lymph nodes of axilla and upper limb"
+83,Cookley,Sonair,"Nondisplaced fracture of lower epiphysis (separation) of unspecified femur, subsequent encounter for open fracture type I or II with malunion"
+84,Zaam-Dox,Cardguard,"Disorder of amniotic fluid and membranes, unspecified, unspecified trimester, other fetus"
+85,Zontrax,Flowdesk,Nondisplaced Zone II fracture of sacrum
+86,Konklab,Otcom,Benign neoplasm of cornea
+87,Zaam-Dox,Fixflex,Dietary selenium deficiency
+88,Tin,Hatity,"Nondisplaced fracture of navicular [scaphoid] of right foot, initial encounter for open fracture"
+89,Wrapsafe,Bytecard,"Displaced spiral fracture of shaft of unspecified tibia, subsequent encounter for closed fracture with nonunion"
+90,Zamit,Bytecard,"Pathological fracture in neoplastic disease, other specified site"
+91,Bitwolf,Tin,"Displaced fracture of shaft of fourth metacarpal bone, left hand"
+92,Kanlam,Cardify,"Nondisplaced comminuted fracture of unspecified patella, initial encounter for open fracture type I or II"
+93,Sonair,Vagram,"Puncture wound with foreign body of right cheek and temporomandibular area, subsequent encounter"
+94,Namfix,Temp,"Pathological fracture in other disease, right radius, sequela"
+95,Y-Solowarm,Job,"Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye"
+96,Vagram,Domainer,Corrosion of second degree of right shoulder
+97,Stringtough,Trippledex,Ice-skater colliding with stationary object
+98,Bytecard,Subin,Person boarding or alighting a heavy transport vehicle injured in collision with railway train or railway vehicle
+99,Wrapsafe,Pannier,"Other lesions of median nerve, bilateral upper limbs"
+100,Veribet,Domainer,Influenza due to unidentified influenza virus with other manifestations
+101,Prodder,Y-Solowarm,"Injury of femoral nerve at hip and thigh level, right leg"
+102,Bitwolf,Solarbreeze,"Toxic effect of contact with unspecified venomous animal, assault, subsequent encounter"
+103,Domainer,Prodder,"Toxic effect of contact with unspecified venomous animal, accidental (unintentional)"
+104,Fixflex,Stringtough,"Nondisplaced oblique fracture of shaft of left ulna, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+105,Zoolab,Bitwolf,"Strain of muscle(s) and tendon(s) of anterior muscle group at lower leg level, left leg, sequela"
+106,Lotlux,Span,"Subluxation of metacarpophalangeal joint of left middle finger, subsequent encounter"
+107,Otcom,Toughjoyfax,"Other specified complication of cardiac prosthetic devices, implants and grafts"
+108,Home Ing,Span,"Unspecified fracture of lower end of right humerus, initial encounter for open fracture"
+109,Veribet,Ronstring,Complication to newborn due to (fetal) intrauterine procedure
+110,Konklab,Solarbreeze,"Poisoning by other synthetic narcotics, intentional self-harm, sequela"
+111,Stim,Tampflex,"Occupant of animal-drawn vehicle injured in unspecified transport accident, initial encounter"
+112,Alphazap,Wrapsafe,"Displaced fracture (avulsion) of lateral epicondyle of left humerus, subsequent encounter for fracture with malunion"
+113,Alpha,Stim,"Other injury of flexor muscle, fascia and tendon of other finger at wrist and hand level, subsequent encounter"
+114,Rank,Sub-Ex,"Displaced fracture of trapezium [larger multangular], unspecified wrist, initial encounter for closed fracture"
+115,Solarbreeze,Stim,Osteitis deformans of right thigh
+116,Fix San,Stronghold,"Underdosing of antiparkinsonism drugs and other central muscle-tone depressants, initial encounter"
+117,Subin,Keylex,Schizoid personality disorder
+118,Biodex,Zontrax,"Salter-Harris Type IV physeal fracture of lower end of unspecified femur, initial encounter for closed fracture"
+119,Veribet,Fix San,"Nondisplaced fracture of lateral condyle of right femur, subsequent encounter for open fracture type I or II with malunion"
+120,Sonair,Quo Lux,"Nondisplaced unspecified fracture of unspecified lesser toe(s), subsequent encounter for fracture with delayed healing"
+121,Overhold,Duobam,"Displaced comminuted fracture of shaft of left femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+122,Latlux,Treeflex,"Toxic effect of homologues of benzene, intentional self-harm, subsequent encounter"
+123,Tres-Zap,Stim,"Complex tear of lateral meniscus, current injury"
+124,Overhold,Redhold,"Twins, one liveborn and one stillborn"
+125,Ronstring,Transcof,"Juvenile osteochondrosis of spine, sacral and sacrococcygeal region"
+126,Rank,It,"Acute hematogenous osteomyelitis, unspecified femur"
+127,Flowdesk,Treeflex,Visuospatial deficit and spatial neglect following nontraumatic subarachnoid hemorrhage
+128,Bytecard,Tin,"Passenger in three-wheeled motor vehicle injured in collision with other motor vehicles in traffic accident, initial encounter"
+129,Holdlamis,Stringtough,"Complete traumatic amputation of left shoulder and upper arm, level unspecified, sequela"
+130,Fintone,Prodder,"Unspecified injury of sigmoid colon, sequela"
+131,Konklux,Vagram,"Underdosing of mineralocorticoids and their antagonists, subsequent encounter"
+132,Vagram,Alpha,"Juvenile osteochondrosis of spine, occipito-atlanto-axial region"
+133,Tres-Zap,Viva,Abrasion of left eyelid and periocular area
+134,Tresom,Sub-Ex,"Other injury of thoracic trachea, subsequent encounter"
+135,Daltfresh,Job,"Disorder of teeth and supporting structures, unspecified"
+136,Hatity,Cardify,"Preterm newborn, gestational age 33 completed weeks"
+137,Sub-Ex,Tin,"Underdosing of histamine H2-receptor blockers, sequela"
+138,Stronghold,Mat Lam Tam,"Supervision of pregnancy with history of pre-term labor, third trimester"
+139,Rank,Biodex,"Underdosing of antimycobacterial drugs, initial encounter"
+140,Cardify,Latlux,Adverse effect of unspecified psychodysleptics [hallucinogens]
+141,Domainer,Cookley,"Adverse effect of vitamins, subsequent encounter"
+142,Viva,Zaam-Dox,Furuncle of right upper limb
+143,Biodex,Namfix,"Posterior subluxation of left hip, initial encounter"
+144,Treeflex,Latlux,Drowning and submersion due to fall off other unpowered watercraft
+145,Veribet,Stronghold,"Laceration with foreign body of right little finger with damage to nail, subsequent encounter"
+146,Tresom,Greenlam,"Unspecified fracture of lower end of unspecified tibia, sequela"
+147,Treeflex,Ventosanzap,Injury of ulnar nerve at forearm level
+148,Cookley,Tres-Zap,Accident to nonpowered aircraft causing injury to occupant
+149,Prodder,Trippledex,"Puncture wound without foreign body of right little finger without damage to nail, subsequent encounter"
+150,Solarbreeze,Biodex,"Other complications following immunization, not elsewhere classified, subsequent encounter"
+151,Wrapsafe,Ronstring,"Displaced fracture (avulsion) of lateral epicondyle of left humerus, subsequent encounter for fracture with routine healing"
+152,Hatity,Greenlam,"Nondisplaced transcondylar fracture of left humerus, subsequent encounter for fracture with nonunion"
+153,Konklab,Greenlam,"Fistula, left foot"
+154,Vagram,Home Ing,"Cervical disc disorder with myelopathy, cervicothoracic region"
+155,Wrapsafe,Mat Lam Tam,"Fibrous dysplasia (monostotic), left hand"
+156,Zontrax,Asoka,"Other specified injury of superficial vein at shoulder and upper arm level, left arm"
+157,Bitchip,Tresom,"Struck by falling object on other unpowered watercraft, subsequent encounter"
+158,Cardguard,Zamit,"Gastric contents in larynx causing other injury, initial encounter"
+159,Ventosanzap,Alpha,"Poisoning by other antacids and anti-gastric-secretion drugs, undetermined, sequela"
+160,Solarbreeze,Bamity,"Displaced bimalleolar fracture of right lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+161,Zamit,Latlux,Labor and delivery complicated by vasa previa
+162,Tres-Zap,Hatity,"Nondisplaced fracture of greater trochanter of unspecified femur, subsequent encounter for open fracture type I or II with nonunion"
+163,Cardguard,Ventosanzap,Other atypical virus infections of central nervous system
+164,Latlux,Voyatouch,"Superficial frostbite of unspecified ear, sequela"
+165,Andalax,Kanlam,Other spondylosis with radiculopathy
+166,Veribet,Kanlam,"Tear of articular cartilage of knee, current"
+167,Asoka,Treeflex,"Displaced unspecified fracture of unspecified lesser toe(s), sequela"
+168,Tres-Zap,Temp,"Other specified injury of intercostal blood vessels, right side"
+169,Home Ing,Voyatouch,"Assault by strike by other specified type of sport equipment, sequela"
+170,Cardify,Ventosanzap,"Leakage of coronary artery bypass graft, initial encounter"
+171,Ronstring,It,"Strain of muscle(s) and tendon(s) of anterior muscle group at lower leg level, left leg"
+172,Biodex,Hatity,Resistance to antifungal drug(s)
+173,Rank,Alphazap,"Herpesviral ocular disease, unspecified"
+174,Trippledex,Trippledex,"Unspecified subluxation of unspecified wrist and hand, sequela"
+175,Stronghold,Ronstring,"Other atherosclerosis of unspecified type of bypass graft(s) of the extremities, bilateral legs"
+176,Home Ing,Kanlam,"Nondisplaced fracture of body of scapula, left shoulder, sequela"
+177,Konklab,Bitchip,Other specified intracranial injury with loss of consciousness of 30 minutes or less
+178,Temp,Flowdesk,"Staphylococcal arthritis, knee"
+179,Wrapsafe,Voltsillam,"Psychological abuse complicating pregnancy, childbirth and the puerperium"
+180,Bytecard,It,"Other osteoporosis with current pathological fracture, left femur, subsequent encounter for fracture with nonunion"
+181,Sonsing,Hatity,"Fall from snowboard, initial encounter"
+182,Cardguard,Ronstring,"Senile entropion of right eye, unspecified eyelid"
+183,Sub-Ex,Zontrax,"Pathological fracture in other disease, ulna and radius"
+184,Lotlux,Mat Lam Tam,"Toxic effect of aflatoxin, intentional self-harm"
+185,Rank,Sonsing,"Other injury of muscle, fascia and tendon of other parts of biceps, unspecified arm"
+186,Treeflex,Lotstring,"Complete traumatic metacarpophalangeal amputation of unspecified finger, initial encounter"
+187,Quo Lux,Fix San,"Pedestrian on foot injured in collision with other nonmotor vehicle in nontraffic accident, initial encounter"
+188,Treeflex,Cardguard,"Driver of heavy transport vehicle injured in collision with car, pick-up truck or van in nontraffic accident"
+189,Tresom,Bitwolf,"Maternal care for other abnormalities of pelvic organs, first trimester"
+190,Voltsillam,Holdlamis,"War operations involving explosion of sea-based artillery shell, military personnel, initial encounter"
+191,Job,Bytecard,"Partial traumatic amputation of unspecified midfoot, initial encounter"
+192,Cardguard,Stronghold,"Other specified injury of unspecified muscle and tendon at ankle and foot level, left foot, subsequent encounter"
+193,Wrapsafe,Zamit,"Other nondisplaced fracture of lower end of left humerus, subsequent encounter for fracture with routine healing"
+194,Temp,Viva,"Other superficial injuries of right thumb, subsequent encounter"
+195,Lotlux,Konklab,"Other chondrocalcinosis, left knee"
+196,Konklux,Alpha,Encounter for contraceptive management
+197,Tampflex,Regrant,"Burn of third degree of multiple right fingers (nail), not including thumb, initial encounter"
+198,Zamit,Konklux,"Other mental disorders complicating pregnancy, childbirth, and the puerperium"
+199,Cardguard,Bitwolf,"Salter-Harris Type I physeal fracture of left metatarsal, initial encounter for closed fracture"
+200,Opela,Subin,"Nondisplaced fracture of olecranon process with intraarticular extension of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+201,Trippledex,Wrapsafe,"Poisoning by antiasthmatics, assault, sequela"
+202,Kanlam,Biodex,Other specified injury of blood vessel of left little finger
+203,Ventosanzap,Gembucket,"Activity, basketball"
+204,Bamity,Sonair,Crohn's disease of large intestine with other complication
+205,Home Ing,Viva,Posteruptive color changes of dental hard tissues
+206,Duobam,Flowdesk,"Terrorism involving chemical weapons, civilian injured, sequela"
+207,Sub-Ex,Cardguard,Perforation due to foreign body accidentally left in body following heart catheterization
+208,Bamity,Zamit,Other specified injuries of unspecified foot
+209,Bigtax,Fix San,"Pathological dislocation of knee, not elsewhere classified"
+210,Stim,Tempsoft,Nontraumatic compartment syndrome of right upper extremity
+211,Viva,Otcom,"Type III occipital condyle fracture, unspecified side, initial encounter for open fracture"
+212,Kanlam,Viva,Acute gastric ulcer with perforation
+213,Ronstring,Tresom,"Contusion of left little finger with damage to nail, sequela"
+214,Daltfresh,Domainer,"Nondisplaced comminuted fracture of shaft of right tibia, subsequent encounter for open fracture type I or II with malunion"
+215,Prodder,Zontrax,"Nondisplaced fracture of lunate [semilunar], left wrist, subsequent encounter for fracture with delayed healing"
+216,Zontrax,Biodex,"Displacement of surgically created arteriovenous fistula, initial encounter"
+217,Duobam,Lotstring,"Other superficial bite of other specified part of neck, subsequent encounter"
+218,Konklux,Sonsing,"Insect bite (nonvenomous) of left eyelid and periocular area, subsequent encounter"
+219,Asoka,Daltfresh,"Poisoning by antithyroid drugs, undetermined, initial encounter"
+220,Voyatouch,Sub-Ex,"Osteopathy in diseases classified elsewhere, left hand"
+221,Flexidy,Vagram,"Complete oblique atypical femoral fracture, unspecified leg, subsequent encounter for fracture with nonunion"
+222,Alpha,Regrant,Malignant neoplasm of lateral wall of bladder
+223,Fintone,Temp,"Military operations involving destruction of aircraft due to onboard fire, civilian"
+224,Redhold,Latlux,"Monteggia's fracture of right ulna, initial encounter for closed fracture"
+225,Domainer,Gembucket,Hepatitis A with hepatic coma
+226,Ventosanzap,Biodex,"Nontraumatic intracranial hemorrhage, unspecified"
+227,Sub-Ex,Tampflex,Salter-Harris Type III physeal fracture of lower end of left tibia
+228,Subin,Ronstring,"Unspecified injury of unspecified innominate or subclavian vein, sequela"
+229,Job,Flexidy,"Poisoning by antihyperlipidemic and antiarteriosclerotic drugs, accidental (unintentional), subsequent encounter"
+230,Zamit,Toughjoyfax,Frontal lobe and executive function deficit following cerebral infarction
+231,Konklab,Asoka,"Other fracture of first lumbar vertebra, subsequent encounter for fracture with routine healing"
+232,Sonair,Flowdesk,Aortic arch syndrome [Takayasu]
+233,Greenlam,Regrant,"War operations involving unarmed hand to hand combat, military personnel, initial encounter"
+234,Overhold,Flexidy,"Twin pregnancy, monochorionic/diamniotic"
+235,Greenlam,Voltsillam,"Calcification and ossification of muscle, unspecified"
+236,Tres-Zap,Hatity,"Chronic lymphadenitis, except mesenteric"
+237,Fintone,Fintone,"Stenosis of other vascular prosthetic devices, implants and grafts, sequela"
+238,Konklux,Vagram,Fracture of mandible of other specified site
+239,Voyatouch,Subin,"Driver of pick-up truck or van injured in collision with pedal cycle in nontraffic accident, initial encounter"
+240,Alpha,Bigtax,"Alcohol use complicating pregnancy, first trimester"
+241,Temp,Y-find,"Ultralight, microlight or powered-glider explosion injuring occupant, initial encounter"
+242,Stim,Toughjoyfax,"Nondisplaced Maisonneuve's fracture of left leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+243,Toughjoyfax,Lotstring,"Displaced unspecified fracture of unspecified great toe, subsequent encounter for fracture with nonunion"
+244,Temp,Greenlam,"Corrosion of unspecified degree of multiple sites of right shoulder and upper limb, except wrist and hand, sequela"
+245,Daltfresh,Y-Solowarm,Brachial plexus disorders
+246,Holdlamis,Tresom,"Sprain of tibiofibular ligament of right ankle, sequela"
+247,Regrant,Subin,"Corrosion of second degree of left palm, subsequent encounter"
+248,Keylex,Zaam-Dox,"Fall into swimming pool striking bottom causing other injury, initial encounter"
+249,Otcom,Bigtax,"Partial loss of teeth due to trauma, unspecified class"
+250,Ronstring,Bitchip,Phantom limb syndrome without pain
+251,Wrapsafe,Sub-Ex,"Maternal care for viable fetus in abdominal pregnancy, second trimester"
+252,Viva,Trippledex,Postthrombotic syndrome with other complications
+253,Bytecard,Lotlux,"Ulcerative colitis, unspecified with abscess"
+254,Bamity,Alphazap,Acute salpingitis and oophoritis
+255,Cookley,Duobam,"Fracture of xiphoid process, subsequent encounter for fracture with delayed healing"
+256,Cardify,Bigtax,"Minor laceration of femoral artery, unspecified leg, initial encounter"
+257,Zaam-Dox,Stronghold,"Fistula, left wrist"
+258,Cardguard,Lotlux,"Poisoning by antithyroid drugs, intentional self-harm, initial encounter"
+259,Sonsing,Bytecard,"Lesion of sciatic nerve, left lower limb"
+260,Flowdesk,Zaam-Dox,"Type 1 fracture of sacrum, initial encounter for open fracture"
+261,Stim,Tresom,"Nondisplaced bimalleolar fracture of unspecified lower leg, subsequent encounter for open fracture type I or II with delayed healing"
+262,Ventosanzap,Domainer,"Child sexual abuse, suspected, sequela"
+263,Mat Lam Tam,Sonsing,"Major laceration of thoracic aorta, sequela"
+264,Zathin,Trippledex,Other superficial bite of other part of head
+265,Stim,Tresom,"Adverse effect of angiotensin-converting-enzyme inhibitors, subsequent encounter"
+266,Konklux,Solarbreeze,Acute serous otitis media
+267,Voltsillam,Zoolab,Cerebral infarction due to embolism of other precerebral artery
+268,Cardify,Stim,Pedal cycle driver injured in noncollision transport accident in traffic accident
+269,Lotlux,Tempsoft,"Poisoning by other psychodysleptics [hallucinogens], undetermined, initial encounter"
+270,Holdlamis,Cardify,"Foreign body in nasal sinus, subsequent encounter"
+271,Bigtax,Andalax,"Epigastric swelling, mass or lump"
+272,Alphazap,Andalax,"Nondisplaced fracture of lesser trochanter of unspecified femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+273,Y-find,Home Ing,Corrosions involving 20-29% of body surface
+274,Veribet,Subin,"Other disorders of continuity of bone, left radius"
+275,Tempsoft,Domainer,"Other fracture of unspecified lumbar vertebra, subsequent encounter for fracture with routine healing"
+276,Bigtax,Temp,"Open bite of left ring finger with damage to nail, initial encounter"
+277,Alpha,Transcof,"Poisoning by aspirin, intentional self-harm, subsequent encounter"
+278,Duobam,Stronghold,"Varus deformity, not elsewhere classified, right ankle"
+279,Alphazap,Flowdesk,Malignant neoplasm of overlapping sites of right eye and adnexa
+280,Alpha,Sonair,"Contusion of right index finger with damage to nail, subsequent encounter"
+281,Zaam-Dox,Rank,"Other fracture of shaft of unspecified tibia, initial encounter for open fracture type I or II"
+282,Gembucket,Rank,Malignant neoplasm of left upper limb
+283,Daltfresh,Stringtough,"Dislocation of proximal interphalangeal joint of left little finger, subsequent encounter"
+284,Gembucket,Zontrax,Other atopic dermatitis
+285,Hatity,Sonsing,Unspecified fracture of upper end of unspecified tibia
+286,Bigtax,Tres-Zap,"Contusion of ureter, sequela"
+287,Konklab,Holdlamis,Other gonococcal eye infection
+288,Tampflex,Redhold,"Displaced fracture of shaft of fifth metacarpal bone, right hand, subsequent encounter for fracture with malunion"
+289,Daltfresh,Zamit,"Bent bone of right radius, initial encounter for open fracture type I or II"
+290,Bamity,Solarbreeze,Diabetes mellitus due to underlying condition with hypoglycemia without coma
+291,Toughjoyfax,Tempsoft,"Other chorioretinal inflammations, left eye"
+292,Veribet,Treeflex,Minimal atrophy of maxilla
+293,Flowdesk,Job,Displaced fracture of medial phalanx of left ring finger
+294,Matsoft,Fixflex,"Adverse effect of other synthetic narcotics, subsequent encounter"
+295,Stronghold,Greenlam,"Unspecified open wound of anus, initial encounter"
+296,Lotstring,Kanlam,"Nondisplaced supracondylar fracture with intracondylar extension of lower end of unspecified femur, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+297,Cookley,Viva,"Contracture, unspecified joint"
+298,Zontrax,Keylex,Other specified injuries of vocal cord
+299,Ronstring,Duobam,"Laceration of extensor muscle, fascia and tendon of right middle finger at wrist and hand level, sequela"
+300,Daltfresh,Bytecard,"Puncture wound without foreign body of unspecified part of thorax, initial encounter"
+301,Tin,Kanlam,Non-pressure chronic ulcer of left heel and midfoot with necrosis of bone
+302,Konklab,Bamity,"Underdosing of unspecified nonopioid analgesic, antipyretic and antirheumatic"
+303,Overhold,Stringtough,"Other calcification of muscle, ankle and foot"
+304,Namfix,Job,"Nondisplaced unspecified condyle fracture of lower end of left femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+305,Wrapsafe,Sonair,Kernicterus
+306,Zontrax,Zathin,"Laceration of intrinsic muscle and tendon at ankle and foot level, right foot, initial encounter"
+307,Bamity,Flexidy,"Unspecified injury of flexor muscle, fascia and tendon of right index finger at forearm level, subsequent encounter"
+308,Fixflex,Viva,"Fracture of unspecified part of unspecified clavicle, subsequent encounter for fracture with delayed healing"
+309,Zontrax,Stringtough,Dislocation of T1/T2 thoracic vertebra
+310,Domainer,Voltsillam,Other complications of anesthesia during labor and delivery
+311,Domainer,Namfix,Other specified injury of unspecified blood vessel at wrist and hand of right arm
+312,Vagram,Mat Lam Tam,"Strain of extensor or abductor muscles, fascia and tendons of right thumb at forearm level, sequela"
+313,Bamity,Zaam-Dox,"Poisoning by other hormones and synthetic substitutes, intentional self-harm, initial encounter"
+314,Cardguard,Tres-Zap,Antepartum hemorrhage with disseminated intravascular coagulation
+315,Otcom,Biodex,"Nondisplaced segmental fracture of shaft of left femur, subsequent encounter for open fracture type I or II with malunion"
+316,Asoka,Toughjoyfax,"Injury of extensor or abductor muscles, fascia and tendons of thumb at forearm level"
+317,Bamity,Biodex,Explosion and rupture of pressurized-gas tank
+318,Tin,Fixflex,Unspecified fracture of shaft of unspecified radius
+319,Domainer,Cardguard,Contusion of unspecified eyelid and periocular area
+320,Sub-Ex,Cardify,"Laceration of other specified muscles, fascia and tendons at thigh level, unspecified thigh, subsequent encounter"
+321,Zontrax,Bigtax,"Displaced fracture of left tibial tuberosity, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+322,Opela,Aerified,Corrosion of unspecified degree of right knee
+323,Stim,Zathin,Chronic hepatic failure without coma
+324,Keylex,Treeflex,Other benign neoplasm of skin of lip
+325,Duobam,Ventosanzap,"Effusion, right shoulder"
+326,Ronstring,Greenlam,"Unspecified fracture of shaft of unspecified radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+327,Otcom,Rank,"Acute hematogenous osteomyelitis, humerus"
+328,Overhold,Lotlux,Superficial frostbite of ear
+329,Flexidy,Stim,"Perforation due to foreign body accidentally left in body following unspecified procedure, initial encounter"
+330,Gembucket,Tres-Zap,Superficial injury of scalp
+331,Opela,Lotstring,"Nondisplaced fracture of trapezoid [smaller multangular], right wrist, subsequent encounter for fracture with nonunion"
+332,Fixflex,Treeflex,Acute embolism and thrombosis of deep veins of left upper extremity
+333,Andalax,Aerified,Osteochondral fracture of patella
+334,Pannier,Daltfresh,"Nondisplaced spiral fracture of shaft of right fibula, subsequent encounter for closed fracture with delayed healing"
+335,Zoolab,Duobam,Epidural hemorrhage with loss of consciousness of unspecified duration
+336,Y-Solowarm,Bitchip,"Complete traumatic amputation of right lower leg, level unspecified, initial encounter"
+337,Zontrax,Flowdesk,"Displaced fracture of proximal phalanx of right lesser toe(s), subsequent encounter for fracture with delayed healing"
+338,Solarbreeze,Mat Lam Tam,"Unspecified injury of other flexor muscle, fascia and tendon at forearm level, left arm, subsequent encounter"
+339,Vagram,Andalax,"Unspecified physeal fracture of unspecified metatarsal, subsequent encounter for fracture with routine healing"
+340,Tempsoft,Sonsing,"Other specified injury of ulnar artery at wrist and hand level of unspecified arm, subsequent encounter"
+341,Cookley,Overhold,Unspecified ovarian cysts
+342,Toughjoyfax,Subin,"Unspecified traumatic nondisplaced spondylolisthesis of second cervical vertebra, sequela"
+343,Sonair,Prodder,"Burn of unspecified degree of unspecified site of unspecified lower limb, except ankle and foot, subsequent encounter"
+344,Flexidy,Daltfresh,"Lesion of lateral popliteal nerve, unspecified lower limb"
+345,Prodder,Zathin,"Displaced segmental fracture of shaft of unspecified tibia, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+346,Zoolab,Duobam,"Passenger of ambulance or fire engine injured in traffic accident, initial encounter"
+347,Matsoft,Vagram,"Other injury of flexor muscle, fascia and tendon of left little finger at forearm level"
+348,Konklab,Fintone,"Major laceration of body of pancreas, subsequent encounter"
+349,Konklab,Stronghold,Observation and evaluation of newborn for suspected skin and subcutaneous tissue condition ruled out
+350,Latlux,Fixflex,"Unspecified fracture of the lower end of unspecified radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+351,Holdlamis,Bytecard,"Displaced fracture of glenoid cavity of scapula, left shoulder, sequela"
+352,Y-Solowarm,Zamit,"Nondisplaced spiral fracture of shaft of ulna, unspecified arm, subsequent encounter for closed fracture with delayed healing"
+353,Alpha,Zathin,Myogenic ptosis of bilateral eyelids
+354,Duobam,Toughjoyfax,"Nondisplaced fracture of body of right calcaneus, subsequent encounter for fracture with delayed healing"
+355,Aerified,Greenlam,"Explosion on board fishing boat, subsequent encounter"
+356,Veribet,Kanlam,"Alcohol use, unspecified with alcohol-induced sleep disorder"
+357,Wrapsafe,Zaam-Dox,Rheumatoid lung disease with rheumatoid arthritis of unspecified shoulder
+358,Tin,Wrapsafe,"Congenital musculoskeletal deformities of head, face, spine and chest"
+359,Lotlux,Gembucket,"Car driver injured in noncollision transport accident in traffic accident, subsequent encounter"
+360,Zaam-Dox,Treeflex,"Displacement of unspecified vascular grafts, initial encounter"
+361,Bigtax,Temp,"Type 3 fracture of sacrum, sequela"
+362,Y-Solowarm,Gembucket,"Displacement of cardiac pulse generator (battery), subsequent encounter"
+363,Mat Lam Tam,Veribet,"Avulsion of scalp, subsequent encounter"
+364,Asoka,Prodder,Accidental puncture and laceration of ear and mastoid process during a procedure
+365,Namfix,Latlux,"Pathological fracture in neoplastic disease, right femur, initial encounter for fracture"
+366,Prodder,Opela,Vitamin A deficiency
+367,Y-find,Temp,Encounter for routine gynecological examination
+368,Latlux,Mat Lam Tam,"Toxic effect of venom of other venomous lizard, undetermined"
+369,Sub-Ex,Otcom,"Displaced bimalleolar fracture of unspecified lower leg, sequela"
+370,Transcof,Lotlux,"Strain of extensor muscle, fascia and tendon of right ring finger at forearm level"
+371,Opela,Sonair,"Epidural hemorrhage with loss of consciousness of any duration with death due to other causes prior to regaining consciousness, initial encounter"
+372,Ventosanzap,Tin,"Pathological fracture in neoplastic disease, left radius, subsequent encounter for fracture with routine healing"
+373,Flowdesk,Tresom,"Other injury due to other accident to water-skis, initial encounter"
+374,Sonair,Latlux,Zone II fracture of sacrum
+375,Subin,Fintone,"Dislocation of tarsal joint of unspecified foot, subsequent encounter"
+376,Fintone,It,Solitary plasmacytoma not having achieved remission
+377,Cardguard,Andalax,"Unspecified B-cell lymphoma, intrathoracic lymph nodes"
+378,Tin,Overhold,Chronic post-thoracotomy pain
+379,Subin,Y-find,"Unspecified amblyopia, bilateral"
+380,Voyatouch,Bigtax,Other signs and symptoms in breast
+381,Pannier,Alphazap,Dysphasia following cerebral infarction
+382,Lotlux,Tin,"Other mechanical complication of unspecified internal joint prosthesis, subsequent encounter"
+383,Bamity,Span,"Other war operations occurring after cessation of hostilities, military personnel"
+384,Lotlux,Rank,"Fracture of unspecified part of scapula, left shoulder, subsequent encounter for fracture with nonunion"
+385,Voyatouch,Otcom,"Placenta increta, second trimester"
+386,Gembucket,Flowdesk,"Unspecified physeal fracture of upper end of humerus, unspecified arm, subsequent encounter for fracture with delayed healing"
+387,Tres-Zap,Keylex,"Otitic barotrauma, initial encounter"
+388,Zathin,Holdlamis,"Mild to moderate pre-eclampsia, unspecified trimester"
+389,Lotstring,Ronstring,"Unspecified dislocation of right thumb, initial encounter"
+390,Prodder,It,"Unspecified fracture of shaft of left femur, subsequent encounter for closed fracture with delayed healing"
+391,Mat Lam Tam,Ventosanzap,"Strain of intrinsic muscle, fascia and tendon of left index finger at wrist and hand level, sequela"
+392,Greenlam,Lotlux,"Nondisplaced fracture of olecranon process without intraarticular extension of left ulna, subsequent encounter for open fracture type I or II with routine healing"
+393,Flexidy,Sonsing,"Salter-Harris Type II physeal fracture of phalanx of right toe, initial encounter for closed fracture"
+394,Trippledex,Matsoft,"Injury of median nerve at wrist and hand level of unspecified arm, subsequent encounter"
+395,Quo Lux,Toughjoyfax,Other specified disorders of breast
+396,Quo Lux,Fixflex,Oligospermia
+397,Konklab,Quo Lux,"Contusion of right ear, subsequent encounter"
+398,Flexidy,Regrant,Symptomatic postprocedural ovarian failure
+399,Viva,Cardguard,Insect bite (nonvenomous) of knee
+400,Voyatouch,Tin,"Nondisplaced apophyseal fracture of unspecified femur, initial encounter for open fracture type I or II"
+401,Tempsoft,Stim,"Stress fracture, right toe(s), subsequent encounter for fracture with delayed healing"
+402,Zamit,Bitchip,"Idiopathic chronic gout, unspecified hip, without tophus (tophi)"
+403,Duobam,Asoka,"Assault by unspecified hot objects, subsequent encounter"
+404,Y-Solowarm,Subin,"Poisoning by barbiturates, assault, initial encounter"
+405,Otcom,Sonair,Menopausal and other perimenopausal disorders
+406,Sonair,Flexidy,Abnormal radiologic findings on diagnostic imaging of left kidney
+407,Overhold,Transcof,"Hang-glider crash injuring occupant, subsequent encounter"
+408,Toughjoyfax,Andalax,"Periprosthetic fracture around internal prosthetic right knee joint, initial encounter"
+409,Tresom,Mat Lam Tam,"Injury of left internal carotid artery, intracranial portion, not elsewhere classified with loss of consciousness greater than 24 hours with return to pre-existing conscious level, sequela"
+410,Tempsoft,Y-Solowarm,"Other specified injury of other blood vessels at abdomen, lower back and pelvis level, subsequent encounter"
+411,Y-Solowarm,Wrapsafe,"Major laceration of unspecified innominate or subclavian vein, initial encounter"
+412,Tres-Zap,Konklab,"Other fracture of second metacarpal bone, left hand"
+413,Job,Konklux,"Diffuse traumatic brain injury with loss of consciousness of 1 hour to 5 hours 59 minutes, sequela"
+414,Keylex,Lotstring,Postthrombotic syndrome with ulcer of left lower extremity
+415,Vagram,Sonair,Osseous stenosis of neural canal
+416,Ventosanzap,Veribet,"Unspecified injury of unspecified muscle, fascia and tendon at wrist and hand level, right hand, sequela"
+417,Vagram,Temp,Azoospermia due to extratesticular causes
+418,Vagram,Home Ing,"Hypertensive retinopathy, left eye"
+419,Stronghold,Sonair,Acute embolism and thrombosis of unspecified popliteal vein
+420,It,Otcom,Fracture of body of calcaneus
+421,Zaam-Dox,Keylex,"Dislocation of unspecified part of thorax, subsequent encounter"
+422,Solarbreeze,Pannier,"Poisoning by other antacids and anti-gastric-secretion drugs, undetermined"
+423,Tampflex,Fix San,Superficial injury of neck
+424,Trippledex,Y-Solowarm,Choroideremia
+425,Prodder,Latlux,"Maternal care for fetal problem, unspecified, third trimester, fetus 2"
+426,Otcom,Sub-Ex,"Unspecified superficial injury of left lesser toe(s), sequela"
+427,Transcof,Tampflex,"Person on outside of pick-up truck or van injured in collision with pedal cycle in nontraffic accident, sequela"
+428,Aerified,Home Ing,Other disorders of synovium and tendon
+429,Zoolab,Stringtough,"Displacement of heart valve prosthesis, sequela"
+430,Kanlam,Sonsing,"Other infection due to central venous catheter, initial encounter"
+431,Sub-Ex,Span,"Idiopathic gout, unspecified wrist"
+432,Voyatouch,Redhold,"Pedestrian on skateboard injured in collision with heavy transport vehicle or bus, unspecified whether traffic or nontraffic accident"
+433,Zoolab,Quo Lux,Ulcerative blepharitis
+434,Fix San,Bitchip,"Insect bite (nonvenomous) of unspecified external genital organs, female, subsequent encounter"
+435,Stim,Ventosanzap,"Burn due to sailboat on fire, subsequent encounter"
+436,Redhold,Bigtax,"Benign carcinoid tumor of the small intestine, unspecified portion"
+437,Andalax,Zamit,"Human immunodeficiency virus [HIV] disease complicating pregnancy, childbirth and the puerperium"
+438,Greenlam,Zontrax,"War operations involving explosion of guided missile, military personnel"
+439,Opela,Ronstring,Other disorders of patella
+440,Fixflex,Job,Diabetes mellitus due to underlying condition with periodontal disease
+441,Ventosanzap,Sub-Ex,"Other injury of other intra-abdominal organs, subsequent encounter"
+442,Cardguard,Namfix,Other echinococcosis
+443,Bitwolf,Rank,"Displaced comminuted fracture of shaft of ulna, left arm, subsequent encounter for open fracture type I or II with delayed healing"
+444,Cookley,Aerified,"Corrosion of third degree of unspecified thumb (nail), initial encounter"
+445,Bitwolf,Andalax,"Fracture of radius or ulna following insertion of orthopedic implant, joint prosthesis, or bone plate, unspecified arm"
+446,Greenlam,Sonsing,"Open bite of right upper arm, initial encounter"
+447,Fix San,Opela,"Retrolental fibroplasia, right eye"
+448,Alpha,Opela,Glaucoma secondary to drugs
+449,Temp,Duobam,Complete traumatic amputation at left shoulder joint
+450,Lotlux,Gembucket,Laceration of blood vessel of left little finger
+451,Span,Holdlamis,"Follicular lymphoma, unspecified, lymph nodes of axilla and upper limb"
+452,Cookley,Voltsillam,"Toxic effect of unspecified metal, intentional self-harm, initial encounter"
+453,Aerified,Aerified,"Breakdown (mechanical) of cardiac electrode, initial encounter"
+454,Quo Lux,Stringtough,"Chronic angle-closure glaucoma, unspecified eye, stage unspecified"
+455,Redhold,Cardguard,"Displaced supracondylar fracture with intracondylar extension of lower end of right femur, subsequent encounter for open fracture type I or II with routine healing"
+456,Stringtough,Overhold,Laceration with foreign body of unspecified back wall of thorax with penetration into thoracic cavity
+457,Matsoft,Cookley,"Strain of unspecified muscle(s) and tendon(s) at lower leg level, unspecified leg, sequela"
+458,Job,Stronghold,"Burn of second degree of left shoulder, subsequent encounter"
+459,Greenlam,It,Bullous lichen planus
+460,Viva,Tresom,"Corrosion of unspecified degree of multiple sites of right ankle and foot, subsequent encounter"
+461,Bigtax,Hatity,"Toxic effect of other specified substances, assault, subsequent encounter"
+462,Transcof,Y-Solowarm,"Lymphoblastic (diffuse) lymphoma, lymph nodes of multiple sites"
+463,Daltfresh,Voltsillam,Other specified trauma to perineum and vulva
+464,Kanlam,Stringtough,Cerebral infarction due to unspecified occlusion or stenosis of carotid arteries
+465,Otcom,Fintone,"Other physeal fracture of upper end of right tibia, subsequent encounter for fracture with routine healing"
+466,Kanlam,Tres-Zap,"Primary blast injury of other part of small intestine, subsequent encounter"
+467,Cardguard,Pannier,Car driver injured in collision with fixed or stationary object in nontraffic accident
+468,Stim,Voyatouch,"Vesicoureteral-reflux, unspecified"
+469,Y-find,Holdlamis,"Chronic kidney disease, stage 4 (severe)"
+470,Bigtax,Cardify,Traumatic hemorrhage of right cerebrum with loss of consciousness of 1 hours to 5 hours 59 minutes
+471,Andalax,Pannier,Other disorders of penis
+472,Treeflex,Zathin,Pulmonary infundibular stenosis
+473,Flexidy,Quo Lux,ABO incompatibility with acute hemolytic transfusion reaction
+474,Aerified,Biodex,Nondisplaced fracture of medial malleolus of left tibia
+475,Transcof,Zaam-Dox,"Toxic effect of other halogen derivatives of aliphatic hydrocarbons, assault, sequela"
+476,Domainer,Opela,"Poisoning by penicillins, accidental (unintentional), sequela"
+477,Redhold,Ventosanzap,"Dislocation of unspecified interphalangeal joint of right index finger, subsequent encounter"
+478,Fixflex,Fix San,Other specified disorders of amniotic fluid and membranes
+479,Bitwolf,Quo Lux,"Toxic effect of zinc and its compounds, accidental (unintentional), sequela"
+480,Viva,Kanlam,Unspecified subluxation of right radial head
+481,Konklux,Solarbreeze,"Exudative age-related macular degeneration, left eye, stage unspecified"
+482,Bytecard,Span,Other mechanical complication of intrauterine contraceptive device
+483,Alpha,It,"Jumping or diving into swimming pool striking water surface causing drowning and submersion, sequela"
+484,Subin,Home Ing,Other superficial bite of other finger
+485,Zaam-Dox,Trippledex,"Explosion of blasting material, subsequent encounter"
+486,Matsoft,Gembucket,"Unspecified fracture of upper end of left tibia, subsequent encounter for closed fracture with nonunion"
+487,Cookley,Ventosanzap,"Commercial fixed-wing aircraft crash injuring occupant, subsequent encounter"
+488,Zaam-Dox,Alpha,"Breakdown (mechanical) of implanted electronic neurostimulator, generator, subsequent encounter"
+489,Flexidy,Sonsing,"Displaced oblique fracture of shaft of unspecified radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+490,Fix San,Flexidy,"Stable burst fracture of T11-T12 vertebra, subsequent encounter for fracture with routine healing"
+491,Zoolab,Keylex,Bunionette
+492,Treeflex,Andalax,"Cholesteatoma of external ear, unspecified ear"
+493,Prodder,Veribet,"Nondisplaced osteochondral fracture of left patella, subsequent encounter for closed fracture with delayed healing"
+494,Stringtough,Regrant,"Puncture wound with foreign body, right lower leg, sequela"
+495,Trippledex,Tin,"Unspecified fracture of second metacarpal bone, right hand, subsequent encounter for fracture with nonunion"
+496,Ventosanzap,Voltsillam,Other disturbances of smell and taste
+497,Namfix,Stronghold,"Rheumatoid nodule, left shoulder"
+498,Stringtough,Subin,"Burn of first degree of left hand, unspecified site"
+499,Pannier,Holdlamis,"Fall from, out of or through roof, sequela"
+500,Keylex,Cardify,Erosion and ectropion of cervix uteri
+501,Treeflex,Namfix,"Residual stage of angle-closure glaucoma, right eye"
+502,Tres-Zap,Asoka,Hypoesthesia of skin
+503,Temp,Andalax,Animal-rider or occupant of animal-drawn vehicle injured in collision with streetcar
+504,Holdlamis,Vagram,"Traumatic rupture of volar plate of right index finger at metacarpophalangeal and interphalangeal joint, sequela"
+505,Voltsillam,Gembucket,Anterior synechiae (iris)
+506,Otcom,Toughjoyfax,"Other foreign object in trachea causing other injury, sequela"
+507,Voyatouch,Transcof,"Nondisplaced fracture of neck of left radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+508,Home Ing,Alpha,"Other streptococcal arthritis, left elbow"
+509,Job,Duobam,Underdosing of unspecified agents primarily acting on the respiratory system
+510,Tresom,Stronghold,"External constriction of other finger, subsequent encounter"
+511,Temp,Y-find,"War operations involving unintentional restriction of air and airway, military personnel, sequela"
+512,Latlux,Vagram,"Other specified rheumatoid arthritis, right elbow"
+513,Hatity,Quo Lux,Alcohol dependence with alcohol-induced persisting amnestic disorder
+514,Bamity,Solarbreeze,"Legal intervention involving baton, suspect injured, subsequent encounter"
+515,Latlux,Latlux,"Nondisplaced fracture of greater trochanter of right femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+516,Bitwolf,Alpha,"Osteitis deformans in neoplastic diseases, other site"
+517,Otcom,Domainer,"Crushing injury of larynx and trachea, initial encounter"
+518,Sonair,Treeflex,"Hallucinogen use, unspecified with other specified hallucinogen-induced disorder"
+519,Daltfresh,Duobam,"Obstructed labor due to other malposition and malpresentation, fetus 4"
+520,Sonair,Lotstring,"Corrosion of third degree of unspecified single finger (nail) except thumb, subsequent encounter"
+521,Gembucket,Job,"Traumatic rupture of right radiocarpal ligament, subsequent encounter"
+522,Otcom,Keylex,"Other infective (teno)synovitis, unspecified hip"
+523,Fixflex,Konklux,"Mycotic corneal ulcer, unspecified eye"
+524,Daltfresh,Span,"Poisoning by ganglionic blocking drugs, intentional self-harm, subsequent encounter"
+525,Zamit,Ventosanzap,"Complete traumatic amputation at level between knee and ankle, unspecified lower leg, sequela"
+526,Job,Cardify,Insect bite (nonvenomous) of lower back and pelvis
+527,Alphazap,Prodder,Postprocedural seroma of a digestive system organ or structure following other procedure
+528,Home Ing,Cookley,"Ganglion, other site"
+529,Cardify,Namfix,"Pauciarticular juvenile rheumatoid arthritis, right ankle and foot"
+530,Konklab,Tres-Zap,"Nondisplaced fracture of unspecified radial styloid process, subsequent encounter for closed fracture with delayed healing"
+531,Biodex,Stringtough,"Whole chromosome monosomy, mosaicism (mitotic nondisjunction)"
+532,Latlux,Bamity,"Nondisplaced spiral fracture of shaft of right femur, subsequent encounter for closed fracture with delayed healing"
+533,Vagram,Aerified,"Fracture of ramus of left mandible, subsequent encounter for fracture with nonunion"
+534,Subin,Lotlux,"Complete transverse atypical femoral fracture, right leg"
+535,Rank,Fixflex,"Vesicoureteral-reflux, unspecified"
+536,Quo Lux,Zaam-Dox,"Malignant neoplasm of upper respiratory tract, part unspecified"
+537,Regrant,Veribet,"Unspecified open wound of unspecified part of head, subsequent encounter"
+538,Alphazap,Otcom,Pyothorax without fistula
+539,Bitwolf,Stim,"Unspecified traumatic cataract, unspecified eye"
+540,Daltfresh,Tres-Zap,"Unspecified injury of fallopian tube, unilateral, initial encounter"
+541,Fintone,Domainer,Intentional self-harm by other larger firearm discharge
+542,Flowdesk,Lotlux,"Unspecified epiphora, unspecified lacrimal gland"
+543,Latlux,Solarbreeze,External constriction of scrotum and testes
+544,Asoka,Domainer,"Displaced apophyseal fracture of left femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+545,Stronghold,Flexidy,"Other specified injury of extensor muscle, fascia and tendon of thumb at wrist and hand level"
+546,Mat Lam Tam,Bitwolf,"Calcific tendinitis, multiple sites"
+547,Temp,Stim,"Puncture wound without foreign body of scrotum and testes, initial encounter"
+548,Sonsing,Toughjoyfax,"Disruption of traumatic injury wound repair, subsequent encounter"
+549,Wrapsafe,Solarbreeze,"Nondisplaced fracture of proximal third of navicular [scaphoid] bone of unspecified wrist, subsequent encounter for fracture with nonunion"
+550,Zontrax,Prodder,"Fatigue fracture of vertebra, thoracic region, subsequent encounter for fracture with delayed healing"
+551,Ronstring,Rank,"Other physeal fracture of upper end of radius, unspecified arm, sequela"
+552,Hatity,Cardguard,Conductive and sensorineural hearing loss
+553,Matsoft,Bitchip,"Asphyxiation due to mechanical threat to breathing due to other causes, undetermined, initial encounter"
+554,Stim,Cardguard,"Open bite of right front wall of thorax without penetration into thoracic cavity, subsequent encounter"
+555,Fix San,Toughjoyfax,Cicatricial entropion of left lower eyelid
+556,It,Gembucket,"Nondisplaced segmental fracture of shaft of unspecified femur, initial encounter for open fracture type I or II"
+557,Vagram,Cardguard,"Tension-type headache, unspecified"
+558,Tres-Zap,Bigtax,"Contact with needle (sewing), initial encounter"
+559,Bamity,Fix San,"Pain due to cardiac prosthetic devices, implants and grafts"
+560,Stim,Temp,"Maxillary fracture, left side, subsequent encounter for fracture with delayed healing"
+561,Bamity,Keylex,"Puncture wound without foreign body of right little finger without damage to nail, sequela"
+562,Matsoft,Y-find,Corrosion of unspecified degree of right scapular region
+563,Cardguard,Holdlamis,"Traumatic cerebral edema with loss of consciousness of 6 hours to 24 hours, subsequent encounter"
+564,Toughjoyfax,Keylex,Adverse effect of other hormones and synthetic substitutes
+565,Gembucket,Konklux,"Neoplasm of uncertain behavior of liver, gallbladder and bile ducts"
+566,Voltsillam,Stim,"Displaced fracture of lateral condyle of left humerus, subsequent encounter for fracture with malunion"
+567,Tempsoft,Trippledex,"Displaced articular fracture of head of unspecified femur, subsequent encounter for closed fracture with malunion"
+568,Andalax,Alphazap,"Nondisplaced fracture of olecranon process without intraarticular extension of unspecified ulna, subsequent encounter for closed fracture with routine healing"
+569,Wrapsafe,Bitchip,"Other specified injury of blood vessel of left index finger, initial encounter"
+570,Zamit,Vagram,"Poisoning by androgens and anabolic congeners, accidental (unintentional), initial encounter"
+571,Fintone,Y-find,"Motorcycle rider (driver) (passenger) injured in unspecified traffic accident, sequela"
+572,Span,Voltsillam,"Injury of lateral plantar nerve, right leg"
+573,Voyatouch,Tempsoft,"Other premature separation of placenta, unspecified trimester"
+574,Wrapsafe,Fix San,"Unspecified injury of unspecified tibial artery, left leg, sequela"
+575,Prodder,Matsoft,"Subluxation of metatarsophalangeal joint of left great toe, initial encounter"
+576,Temp,Mat Lam Tam,Crushed between unspecified watercraft and other watercraft or other object due to collision
+577,Alpha,Job,"Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium"
+578,Y-find,Alpha,"Displaced comminuted fracture of shaft of radius, unspecified arm"
+579,Konklab,Trippledex,Non-pressure chronic ulcer of other part of left foot
+580,Sonair,Sonsing,Osseous and subluxation stenosis of intervertebral foramina of lower extremity
+581,Keylex,Quo Lux,"Drowning and submersion due to being washed overboard from water-skis, sequela"
+582,Alphazap,Viva,"Nondisplaced other extraarticular fracture of unspecified calcaneus, sequela"
+583,Alpha,Stronghold,"Unspecified injury of portal vein, subsequent encounter"
+584,Sonair,Fix San,"Traumatic rupture of unspecified ligament of right index finger at metacarpophalangeal and interphalangeal joint, sequela"
+585,Zontrax,Sub-Ex,"Corrosion of third degree of right shoulder, subsequent encounter"
+586,Stim,Cookley,Other pre-existing diabetes mellitus in childbirth
+587,Veribet,Solarbreeze,"Adverse effect of oral contraceptives, initial encounter"
+588,Tempsoft,Ronstring,"Injury of left internal carotid artery, intracranial portion, not elsewhere classified with loss of consciousness of 30 minutes or less, sequela"
+589,Konklab,Bigtax,"Displaced osteochondral fracture of unspecified patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+590,Zamit,Regrant,"Toxic effect of venom of other arthropod, undetermined"
+591,Bigtax,Y-Solowarm,"Nondisplaced fracture of medial condyle of right humerus, subsequent encounter for fracture with nonunion"
+592,Andalax,Holdlamis,"Nondisplaced fracture of lateral cuneiform of unspecified foot, subsequent encounter for fracture with nonunion"
+593,Prodder,Zamit,"Sprain of medial collateral ligament of right knee, subsequent encounter"
+594,Bytecard,Ronstring,"Displaced fracture of right tibial spine, subsequent encounter for closed fracture with delayed healing"
+595,Bitchip,Sonsing,"Toxic effect of unspecified corrosive substance, assault, sequela"
+596,Quo Lux,Mat Lam Tam,Drug-induced gout
+597,Fix San,Toughjoyfax,Unspecified sprain of unspecified toe(s)
+598,Alphazap,Daltfresh,"Displaced fracture of hook process of hamate [unciform] bone, left wrist"
+599,Konklux,Tresom,"Pathological fracture in other disease, right tibia, subsequent encounter for fracture with delayed healing"
+600,Y-Solowarm,Tres-Zap,"Abrasion, right knee"
+601,Domainer,Temp,Idiopathic aseptic necrosis of unspecified femur
+602,Sonsing,Domainer,"Fall from dock, initial encounter"
+603,Y-find,Namfix,"Injury of unspecified nerve at hip and thigh level, unspecified leg, sequela"
+604,Daltfresh,Lotstring,"Glaucoma secondary to other eye disorders, left eye"
+605,Home Ing,Zoolab,"Strain of adductor muscle, fascia and tendon of right thigh"
+606,Overhold,Stringtough,"Unspecified fracture of upper end of unspecified radius, subsequent encounter for closed fracture with nonunion"
+607,Duobam,Aerified,Unspecified complication of heart transplant
+608,Aerified,Treeflex,Verbosity and circumstantial detail obscuring reason for contact
+609,Overhold,Wrapsafe,"Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye"
+610,Cardguard,Fixflex,Postprocedural seroma of skin and subcutaneous tissue following other procedure
+611,Toughjoyfax,Hatity,"Barton's fracture of right radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+612,Biodex,Bigtax,"Burn of unspecified degree of multiple sites of right shoulder and upper limb, except wrist and hand, initial encounter"
+613,Keylex,Bytecard,Abscess of right lower eyelid
+614,Cookley,Trippledex,"Nondisplaced comminuted fracture of shaft of left tibia, subsequent encounter for closed fracture with routine healing"
+615,Stringtough,Bamity,"Nondisplaced other fracture of tuberosity of unspecified calcaneus, subsequent encounter for fracture with routine healing"
+616,Wrapsafe,Bitwolf,"Poisoning by, adverse effect of and underdosing of other systemic anti- infectives and antiparasitics"
+617,Otcom,Voltsillam,"Crushing injury of head, part unspecified, initial encounter"
+618,Cardguard,Flowdesk,"Passenger in heavy transport vehicle injured in collision with other motor vehicles in traffic accident, subsequent encounter"
+619,Zamit,Matsoft,"Breakdown (mechanical) of internal fixation device of bone of left lower leg, initial encounter"
+620,Mat Lam Tam,Toughjoyfax,Bone marrow donor
+621,Zontrax,Vagram,"Other fracture of third thoracic vertebra, initial encounter for open fracture"
+622,Wrapsafe,Cardify,Other mechanical complication of internal fixation device of other bones
+623,Konklab,Zathin,"Burn of second degree of unspecified knee, initial encounter"
+624,Sonair,Job,"Salter-Harris Type I physeal fracture of upper end of radius, left arm, subsequent encounter for fracture with malunion"
+625,Zathin,Namfix,"Aqueous misdirection, right eye"
+626,Lotstring,Tres-Zap,"Other fracture of fifth lumbar vertebra, initial encounter for open fracture"
+627,Quo Lux,Toughjoyfax,"Traumatic subarachnoid hemorrhage with loss of consciousness of 31 minutes to 59 minutes, initial encounter"
+628,Konklab,Sonsing,"Anterior subluxation of unspecified sternoclavicular joint, sequela"
+629,Stringtough,Namfix,"Unspecified injury of muscle, fascia and tendon of long head of biceps, left arm"
+630,Daltfresh,Vagram,Leishmaniasis
+631,Bitwolf,Fixflex,"Salter-Harris Type I physeal fracture of unspecified calcaneus, subsequent encounter for fracture with routine healing"
+632,Bitwolf,Voltsillam,"Toxic effect of carbon monoxide from utility gas, accidental (unintentional)"
+633,Ronstring,Konklux,Other abnormal immunological findings in serum
+634,Job,Home Ing,Unspecified chronic gastritis without bleeding
+635,Prodder,Lotlux,"Contusion of left breast, initial encounter"
+636,Rank,Treeflex,"Contracture, left hip"
+637,Viva,Voyatouch,Aphasia following cerebral infarction
+638,Aerified,Transcof,"Disorder of mineral metabolism, unspecified"
+639,Matsoft,Fixflex,"Unspecified fracture of shaft of left fibula, subsequent encounter for open fracture type I or II with delayed healing"
+640,Zoolab,Cardguard,"Unspecified injury of brachial artery, left side, subsequent encounter"
+641,Overhold,Toughjoyfax,"Jump from burning building or structure in controlled fire, sequela"
+642,Tres-Zap,Tres-Zap,"Displacement of vascular dialysis catheter, initial encounter"
+643,Fix San,Bytecard,Open bite of left great toe without damage to nail
+644,Flowdesk,Sonair,"Pathological fracture in other disease, unspecified ulna and radius, subsequent encounter for fracture with nonunion"
+645,Namfix,Quo Lux,Displacement of cystostomy catheter
+646,Duobam,Konklux,Acute respiratory failure with hypercapnia
+647,Subin,Home Ing,Intraoperative cardiac arrest
+648,Stronghold,Stronghold,LeFort II fracture
+649,Duobam,Trippledex,Other and unspecified atrioventricular block
+650,Bitwolf,Prodder,Laceration without foreign body of left ring finger without damage to nail
+651,Vagram,Daltfresh,"Nondisplaced pilon fracture of unspecified tibia, subsequent encounter for closed fracture with malunion"
+652,Konklux,Bamity,Neonatal conjunctivitis and dacryocystitis
+653,Andalax,Job,Animal-rider injured by fall from or being thrown from horse in noncollision accident
+654,Ventosanzap,Zoolab,"Corrosion of second degree of right palm, initial encounter"
+655,Y-find,Transcof,"Complete oblique atypical femoral fracture, unspecified leg, sequela"
+656,Viva,Fix San,"Lymphedema, not elsewhere classified"
+657,Asoka,Span,"Unspecified fracture of the lower end of unspecified radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+658,Mat Lam Tam,Transcof,Pedestrian on skateboard injured in collision with two- or three-wheeled motor vehicle in traffic accident
+659,Pannier,Cookley,"Major laceration of femoral artery, right leg"
+660,Hatity,Tres-Zap,"Underdosing of unspecified hormones and synthetic substitutes, initial encounter"
+661,Temp,Mat Lam Tam,Chronic graft-versus-host disease
+662,Flowdesk,Transcof,Traumatic rupture of other ligament of left wrist
+663,Span,Opela,"Nondisplaced fracture of third metatarsal bone, unspecified foot, initial encounter for closed fracture"
+664,Daltfresh,Alpha,"Traumatic rupture of volar plate of right ring finger at metacarpophalangeal and interphalangeal joint, subsequent encounter"
+665,Cardify,Toughjoyfax,"Disorders of muscle in diseases classified elsewhere, hand"
+666,Stringtough,Zathin,"Corrosion of first degree of left thigh, initial encounter"
+667,Regrant,Tres-Zap,"Aneurysmal bone cyst, upper arm"
+668,Zoolab,Matsoft,"Salter-Harris Type I physeal fracture of lower end of humerus, right arm, subsequent encounter for fracture with nonunion"
+669,Veribet,Biodex,"Poisoning by unspecified fibrinolysis-affecting drugs, intentional self-harm, initial encounter"
+670,Quo Lux,Veribet,"Osteopathy after poliomyelitis, unspecified hand"
+671,Sonair,Duobam,"Unspecified fracture of head of unspecified femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+672,Quo Lux,Tempsoft,"Other fracture of second metacarpal bone, left hand, subsequent encounter for fracture with delayed healing"
+673,Solarbreeze,Ronstring,"Adverse effect of unspecified agents primarily affecting the cardiovascular system, subsequent encounter"
+674,Andalax,Trippledex,Aneurysm of other precerebral arteries
+675,Treeflex,Flowdesk,"Primary iridocyclitis, unspecified eye"
+676,Stringtough,Tresom,"Nondisplaced comminuted fracture of shaft of left fibula, subsequent encounter for open fracture type I or II with nonunion"
+677,Opela,Y-find,Unspecified fracture of right foot
+678,Flowdesk,Sonsing,"Exposure of implanted urethral bulking agent into urethra, sequela"
+679,Pannier,Domainer,"Breakdown (mechanical) of infusion catheter, sequela"
+680,Bigtax,Tempsoft,"Dislocation of unspecified acromioclavicular joint, 100%-200% displacement, sequela"
+681,Bytecard,Toughjoyfax,Encounter for adjustment or removal of unspecified breast implant
+682,Ronstring,Voltsillam,"Complete traumatic amputation of right forearm, level unspecified"
+683,Greenlam,Viva,"Other placental disorders, third trimester"
+684,Tempsoft,Lotstring,"Nondisplaced bimalleolar fracture of left lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+685,Asoka,Konklux,"Heat exhaustion, unspecified"
+686,Gembucket,Holdlamis,"Other injury of unspecified muscle(s) and tendon(s) at lower leg level, left leg"
+687,Overhold,Zathin,"Nondisplaced fracture of olecranon process without intraarticular extension of unspecified ulna, initial encounter for open fracture type I or II"
+688,Tampflex,Voyatouch,"Contusion of left great toe without damage to nail, subsequent encounter"
+689,Fix San,Asoka,"Contusion of left ring finger without damage to nail, subsequent encounter"
+690,Bitwolf,Redhold,"Unspecified physeal fracture of left metatarsal, subsequent encounter for fracture with malunion"
+691,Matsoft,Solarbreeze,"Displaced bimalleolar fracture of left lower leg, subsequent encounter for open fracture type I or II with malunion"
+692,Cardify,Konklux,"Placenta increta, unspecified trimester"
+693,Kanlam,Voltsillam,"Sprain of metacarpophalangeal joint of right ring finger, subsequent encounter"
+694,Cardguard,Home Ing,"Disruption of traumatic injury wound repair, initial encounter"
+695,Tampflex,Subin,"Unspecified dislocation of unspecified hip, sequela"
+696,Fix San,Home Ing,"Burn of third degree of right hand, unspecified site, initial encounter"
+697,Y-Solowarm,Span,External constriction of hip
+698,Hatity,Gembucket,"Puncture wound without foreign body, unspecified lower leg, subsequent encounter"
+699,Trippledex,Cardguard,"Displaced fracture of lesser trochanter of unspecified femur, subsequent encounter for closed fracture with malunion"
+700,Y-find,Zathin,"Solar retinopathy, left eye"
+701,Subin,Greenlam,Diabetes mellitus due to underlying condition with hypoglycemia
+702,Sonsing,Voltsillam,"Exposure to sofa fire due to unspecified burning material, sequela"
+703,Daltfresh,Y-Solowarm,"Open bite of right thumb without damage to nail, sequela"
+704,Y-find,Ronstring,Disseminated strongyloidiasis
+705,Stringtough,Fixflex,"Accidental discharge of other larger firearm, initial encounter"
+706,Quo Lux,Fix San,"Galeazzi's fracture of right radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+707,Zoolab,Sonsing,"Egg (Oocyte) donor, unspecified"
+708,Sub-Ex,Fixflex,"Fall from, out of or through roof, sequela"
+709,Fixflex,Tempsoft,"Maternal care for other isoimmunization, unspecified trimester, not applicable or unspecified"
+710,Job,Namfix,"Unspecified superficial injury of left eyelid and periocular area, sequela"
+711,Job,Flexidy,"Corrosion of second degree of upper back, initial encounter"
+712,Holdlamis,Matsoft,Accidental puncture and laceration of eye and adnexa during other procedure
+713,Wrapsafe,Konklab,"Nondisplaced fracture of base of other metacarpal bone, initial encounter for closed fracture"
+714,Job,Regrant,"Posterior dislocation of left ulnohumeral joint, subsequent encounter"
+715,Latlux,Ronstring,"Salter-Harris Type I physeal fracture of phalanx of right toe, subsequent encounter for fracture with delayed healing"
+716,Viva,Flowdesk,"Other disorders of patella, right knee"
+717,Lotstring,Sonsing,"Unspecified injury of flexor muscle, fascia and tendon of other finger at wrist and hand level, initial encounter"
+718,Opela,Tampflex,"Military operations involving fragments of improvised explosive device [IED], civilian, sequela"
+719,Andalax,Y-Solowarm,"Unspecified fracture of left calcaneus, subsequent encounter for fracture with delayed healing"
+720,Subin,Konklux,Calcification and ossification of muscle
+721,Tin,Toughjoyfax,"Other foreign object in pharynx causing other injury, subsequent encounter"
+722,Transcof,Tampflex,Monoplegia of lower limb following other cerebrovascular disease affecting left non-dominant side
+723,Tin,Zathin,"Intentional self-harm by unspecified larger firearm discharge, subsequent encounter"
+724,Regrant,Opela,"Other extraarticular fracture of lower end of right radius, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+725,Fixflex,Y-find,"Bilateral femoral hernia, without obstruction or gangrene"
+726,Wrapsafe,Fixflex,"Legal intervention involving injury by machine gun, law enforcement official injured, initial encounter"
+727,Zaam-Dox,Greenlam,"Poisoning by local anesthetics, accidental (unintentional), subsequent encounter"
+728,Sub-Ex,Prodder,Malignant neoplasm of broad ligament
+729,Andalax,Tempsoft,"Nondisplaced fracture of distal phalanx of right middle finger, subsequent encounter for fracture with nonunion"
+730,Lotlux,Treeflex,Laceration with foreign body of unspecified breast
+731,Quo Lux,Span,"Capsular glaucoma with pseudoexfoliation of lens, right eye"
+732,Job,Kanlam,Diverticulitis of large intestine without perforation or abscess without bleeding
+733,Y-Solowarm,Konklux,Person boarding or alighting a heavy transport vehicle injured in collision with two- or three-wheeled motor vehicle
+734,Konklux,Aerified,"Nondisplaced spiral fracture of shaft of unspecified fibula, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+735,Otcom,Vagram,"Complete traumatic amputation of right lower leg, level unspecified, initial encounter"
+736,Fintone,Home Ing,"Unspecified juvenile rheumatoid arthritis, right ankle and foot"
+737,Zathin,Job,Contact with contaminated hypodermic needle
+738,Stronghold,Y-find,Exposure to bed fire due to unspecified burning material
+739,Subin,Span,Burn of second degree of chin
+740,Lotstring,Fixflex,Autoimmune thyroiditis
+741,Solarbreeze,Alphazap,"Laceration of extensor or abductor muscles, fascia and tendons of unspecified thumb at forearm level, subsequent encounter"
+742,Transcof,Tresom,"Juvenile idiopathic scoliosis, lumbar region"
+743,Flowdesk,Trippledex,"Demyelinating disease of central nervous system, unspecified"
+744,Fix San,Otcom,Eclampsia complicating pregnancy
+745,Holdlamis,Treeflex,"Displaced fracture of shaft of fifth metacarpal bone, left hand, initial encounter for open fracture"
+746,Bitchip,Kanlam,Other subluxation of right ulnohumeral joint
+747,It,Tresom,"Nondisplaced transverse fracture of shaft of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+748,Overhold,Zathin,"Leakage of balloon (counterpulsation) device, subsequent encounter"
+749,Sub-Ex,It,Encephalocele
+750,Holdlamis,Ronstring,"Nondisplaced fracture of lunate [semilunar], left wrist, sequela"
+751,Flowdesk,Fixflex,"Partial traumatic amputation of right midfoot, initial encounter"
+752,Home Ing,Mat Lam Tam,"Adhesions and ankylosis of temporomandibular joint, unspecified side"
+753,Zaam-Dox,Tin,"Other specified disorders of bone density and structure, unspecified thigh"
+754,Stim,Konklab,Cholesteatoma of right external ear
+755,Flowdesk,Hatity,Displaced fracture of distal phalanx of left thumb
+756,Keylex,Temp,Toxic optic neuropathy
+757,Pannier,Latlux,Crushing injury of other finger
+758,Opela,Veribet,Pressure ulcer of unspecified elbow
+759,Zontrax,Flowdesk,"Polyhydramnios, third trimester, fetus 2"
+760,Flowdesk,Regrant,"Contact with other powered powered hand tools and household machinery, initial encounter"
+761,Keylex,Gembucket,Laceration without foreign body of left index finger without damage to nail
+762,Mat Lam Tam,Bitwolf,Minor laceration of celiac artery
+763,It,Cookley,"Traumatic cerebral edema with loss of consciousness of 31 minutes to 59 minutes, initial encounter"
+764,Voyatouch,Asoka,"Nondisplaced fracture of lesser tuberosity of unspecified humerus, subsequent encounter for fracture with nonunion"
+765,Overhold,Solarbreeze,Other cicatricial alopecia
+766,Andalax,Sonsing,"Drowning and submersion while in bathtub, undetermined intent, sequela"
+767,Home Ing,Treeflex,"Subluxation of midcarpal joint of unspecified wrist, sequela"
+768,Flexidy,Stim,Systemic inflammatory response syndrome (SIRS) of non-infectious origin with acute organ dysfunction
+769,Span,Lotlux,"Unspecified subluxation of left radial head, initial encounter"
+770,Vagram,Alphazap,"Maternal care for benign tumor of corpus uteri, unspecified trimester"
+771,Y-Solowarm,Cookley,Rheumatoid myopathy with rheumatoid arthritis of hip
+772,Stringtough,Mat Lam Tam,Osteolysis
+773,Alphazap,Fintone,"Puncture wound of abdominal wall without foreign body, left lower quadrant without penetration into peritoneal cavity, subsequent encounter"
+774,Stronghold,Bytecard,"Unspecified corneal deposit, unspecified eye"
+775,Home Ing,Alphazap,"Other specified injury of femoral artery, right leg, sequela"
+776,Voltsillam,Andalax,"Salter-Harris Type I physeal fracture of right metatarsal, subsequent encounter for fracture with routine healing"
+777,Flowdesk,Overhold,"Displaced transcondylar fracture of right humerus, subsequent encounter for fracture with routine healing"
+778,Home Ing,Temp,"Nondisplaced fracture of head of right radius, subsequent encounter for closed fracture with routine healing"
+779,Tin,Tin,Psychological abuse complicating pregnancy
+780,Home Ing,Tampflex,"Displaced fracture of lesser tuberosity of unspecified humerus, sequela"
+781,Zaam-Dox,Latlux,"Other injury of unspecified muscles, fascia and tendons at forearm level, right arm, sequela"
+782,Matsoft,Flexidy,"Unspecified kyphosis, cervical region"
+783,Sub-Ex,Cardguard,"Laceration of flexor muscle, fascia and tendon of left thumb at forearm level"
+784,Y-find,Solarbreeze,"Mature T/NK-cell lymphomas, unspecified, intrathoracic lymph nodes"
+785,Keylex,Stronghold,"Laceration with foreign body of right wrist, subsequent encounter"
+786,Hatity,Namfix,"Complete traumatic metacarpophalangeal amputation of left little finger, subsequent encounter"
+787,Daltfresh,Asoka,"Nondisplaced articular fracture of head of unspecified femur, subsequent encounter for closed fracture with routine healing"
+788,Trippledex,Zamit,"Stenosis of other cardiac prosthetic devices, implants and grafts"
+789,Kanlam,Kanlam,"Displaced comminuted fracture of shaft of left femur, subsequent encounter for closed fracture with nonunion"
+790,Cookley,Cardguard,"Displaced fracture of proximal phalanx of unspecified thumb, subsequent encounter for fracture with routine healing"
+791,Bamity,Subin,"Bitten by duck, subsequent encounter"
+792,Bitchip,Bitwolf,"Person boarding or alighting a car injured in collision with van, sequela"
+793,Alphazap,Stim,Other specified disorders of ear in diseases classified elsewhere
+794,Keylex,Veribet,"Displaced fracture of lower epiphysis (separation) of left femur, subsequent encounter for open fracture type I or II with delayed healing"
+795,Konklab,Konklux,Unspecified water transport accident
+796,Regrant,Duobam,"Unspecified superficial injury of unspecified external genital organs, female, subsequent encounter"
+797,Aerified,Holdlamis,Drug or chemical induced diabetes mellitus with diabetic chronic kidney disease
+798,Rank,Tampflex,"Toxic effect of fusel oil, undetermined, subsequent encounter"
+799,Zoolab,Subin,"Accident to, on or involving ski lift, subsequent encounter"
+800,Matsoft,Ventosanzap,"Other complications specific to multiple gestation, unspecified trimester"
+801,Flexidy,Daltfresh,"Displaced intertrochanteric fracture of unspecified femur, initial encounter for open fracture type I or II"
+802,Sub-Ex,Bitwolf,"Nondisplaced fracture of intermediate cuneiform of right foot, subsequent encounter for fracture with nonunion"
+803,Fix San,Solarbreeze,"Exudative age-related macular degeneration, left eye, with inactive choroidal neovascularization"
+804,Holdlamis,Biodex,Influenza due to unidentified influenza virus with other manifestations
+805,Tres-Zap,Lotstring,"Injury of other nerves at wrist and hand level of left arm, sequela"
+806,Quo Lux,Greenlam,"Unspecified occupant of bus injured in collision with railway train or railway vehicle in nontraffic accident, subsequent encounter"
+807,Tin,Bigtax,Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+808,Zaam-Dox,Pannier,Moderate hypoxic ischemic encephalopathy [HIE]
+809,Vagram,Cookley,"Greenstick fracture of shaft of radius, unspecified arm, subsequent encounter for fracture with nonunion"
+810,Bigtax,Cardify,Anterograde amnesia
+811,Mat Lam Tam,Tres-Zap,"Displaced fracture of body of hamate [unciform] bone, right wrist, subsequent encounter for fracture with malunion"
+812,Redhold,Lotlux,NIHSS score 20
+813,Biodex,Biodex,Postprocedural hematoma of skin and subcutaneous tissue following other procedure
+814,Treeflex,Job,Stenosis of bilateral lacrimal sac
+815,Duobam,Alphazap,"Displaced spiral fracture of shaft of right tibia, subsequent encounter for closed fracture with nonunion"
+816,Andalax,Gembucket,"Other specified injury of unspecified middle and inner ear, subsequent encounter"
+817,Job,Y-find,Cerebral infarction due to embolism of bilateral carotid arteries
+818,Asoka,Regrant,"Unspecified injury of portal vein, initial encounter"
+819,Job,Lotstring,"Displaced fracture of base of fourth metacarpal bone, left hand"
+820,Solarbreeze,Stringtough,"Persistent migraine aura with cerebral infarction, intractable, with status migrainosus"
+821,Rank,Fixflex,Other cervical disc disorders at C6-C7 level
+822,Redhold,Konklab,Ichthyosis vulgaris
+823,Prodder,Stim,"Displaced transverse fracture of shaft of unspecified fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing"
+824,Konklux,Y-find,"Nondisplaced spiral fracture of shaft of unspecified tibia, subsequent encounter for open fracture type I or II with delayed healing"
+825,Opela,Andalax,"Nondisplaced osteochondral fracture of right patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+826,Matsoft,Overhold,"Toxic effect of venom of bees, accidental (unintentional), sequela"
+827,Job,Alpha,Burn of first degree of unspecified foot
+828,Zaam-Dox,Keylex,"Unspecified pedal cyclist injured in collision with other motor vehicles in nontraffic accident, sequela"
+829,Fintone,Sub-Ex,"Person boarding or alighting a pedal cycle injured in collision with railway train or railway vehicle, sequela"
+830,Cardify,Stringtough,"Aneurysmal bone cyst, right ankle and foot"
+831,Zathin,Veribet,"Other specified injury of muscle, fascia and tendon of the posterior muscle group at thigh level, left thigh, sequela"
+832,Zaam-Dox,Hatity,Benign neoplasm of brain and other parts of central nervous system
+833,Overhold,It,Dislocation of proximal interphalangeal joint of finger
+834,Y-find,It,"Displaced unspecified fracture of right lesser toe(s), initial encounter for closed fracture"
+835,Sonair,Home Ing,"Posterior dislocation of unspecified humerus, subsequent encounter"
+836,Job,Cardify,Hydromyelia
+837,Alphazap,Lotstring,"Contusion of right index finger without damage to nail, initial encounter"
+838,Daltfresh,Tres-Zap,"Osteomyelitis of vertebra, sacral and sacrococcygeal region"
+839,Veribet,Bytecard,"Unspecified focal traumatic brain injury with loss of consciousness of 30 minutes or less, sequela"
+840,Solarbreeze,Veribet,"Legal intervention involving other firearm discharge, law enforcement official injured"
+841,Kanlam,Fintone,Other rosacea
+842,Matsoft,Bytecard,"Unspecified injury of intrinsic muscle, fascia and tendon of right little finger at wrist and hand level, initial encounter"
+843,Alpha,Tempsoft,"Avalanche, landslide, or mudslide, initial encounter"
+844,Opela,Overhold,Non-pressure chronic ulcer of unspecified ankle with necrosis of muscle
+845,Home Ing,Cardify,"Posterior dislocation of lens, bilateral"
+846,Zamit,Tin,Other biomechanical lesions of upper extremity
+847,Opela,Greenlam,"Unspecified injury of muscle(s) and tendon(s) of anterior muscle group at lower leg level, left leg, sequela"
+848,Flexidy,Otcom,"Displaced fracture of proximal phalanx of left great toe, subsequent encounter for fracture with nonunion"
+849,Kanlam,Y-Solowarm,"Unspecified physeal fracture of upper end of left tibia, initial encounter for closed fracture"
+850,Sonsing,Alphazap,"Vitreous degeneration, unspecified eye"
+851,Bigtax,Regrant,"Salter-Harris Type II physeal fracture of lower end of left fibula, subsequent encounter for fracture with routine healing"
+852,Stim,Stringtough,Malignant neoplasm of glans penis
+853,Viva,Greenlam,"Nondisplaced fracture of shaft of fifth metacarpal bone, right hand, initial encounter for open fracture"
+854,Latlux,Namfix,"Pregnancy with inconclusive fetal viability, not applicable or unspecified"
+855,Fix San,Regrant,"Disseminated chorioretinal inflammation, generalized, left eye"
+856,Viva,Zamit,"Other fracture of shaft of unspecified tibia, initial encounter for open fracture type I or II"
+857,Viva,Duobam,"Displaced fracture of shaft of second metacarpal bone, right hand, sequela"
+858,Biodex,Treeflex,Encounter for screening for malignant neoplasm of testis
+859,Bytecard,Voyatouch,"Underdosing of androgens and anabolic congeners, subsequent encounter"
+860,Asoka,Solarbreeze,Monoplegia of lower limb following unspecified cerebrovascular disease affecting right dominant side
+861,Tresom,Wrapsafe,Unspecified injury of superficial palmar arch of right hand
+862,Bytecard,Sonsing,"Pathological fracture in other disease, left foot"
+863,Tres-Zap,Transcof,"Discoid lupus erythematosus of unspecified eye, unspecified eyelid"
+864,Voyatouch,Duobam,Erectile dysfunction following interstitial seed therapy
+865,Fintone,Stronghold,"Pedal cycle passenger injured in collision with pedestrian or animal in traffic accident, sequela"
+866,Mat Lam Tam,Voltsillam,Person on outside of ambulance or fire engine injured in traffic accident
+867,Lotlux,Mat Lam Tam,"Greenstick fracture of shaft of right ulna, subsequent encounter for fracture with delayed healing"
+868,Stim,Biodex,Other cysts of jaw
+869,Konklab,Job,"Monoarthritis, not elsewhere classified, right hip"
+870,Veribet,Flowdesk,"Chronic gout due to renal impairment, vertebrae, without tophus (tophi)"
+871,Sub-Ex,Voltsillam,"Hit or struck by falling object due to accident to fishing boat, initial encounter"
+872,Cardify,Lotlux,Hypernasality
+873,Kanlam,Sub-Ex,"Term delivery with preterm labor, second trimester, fetus 1"
+874,Hatity,Y-find,"Poisoning by unspecified agents primarily affecting the cardiovascular system, assault, sequela"
+875,Pannier,Prodder,"Unspecified injury of spleen, sequela"
+876,Zaam-Dox,Konklux,"Burn of first degree of abdominal wall, sequela"
+877,Flexidy,Greenlam,"Infection of amniotic sac and membranes, unspecified, first trimester, not applicable or unspecified"
+878,Subin,Zoolab,"Anterior dislocation of lens, left eye"
+879,Cookley,Bitchip,"Burn of second degree of unspecified site of left lower limb, except ankle and foot, subsequent encounter"
+880,Cookley,Veribet,"Kaschin-Beck disease, shoulder"
+881,Zamit,Lotlux,"Puncture wound without foreign body of left hand, sequela"
+882,Overhold,Biodex,"Poisoning by other antipsychotics and neuroleptics, intentional self-harm, subsequent encounter"
+883,Bitchip,Konklux,"Injury of deep peroneal nerve at ankle and foot level, unspecified leg"
+884,Aerified,Lotstring,"Other myositis, unspecified hand"
+885,Latlux,Mat Lam Tam,"Blister (nonthermal) of unspecified shoulder, subsequent encounter"
+886,Bitwolf,Ronstring,"Displaced oblique fracture of shaft of right tibia, subsequent encounter for closed fracture with nonunion"
+887,Prodder,Hatity,Avulsion of unspecified eye
+888,Hatity,Pannier,"Anaphylactic reaction due to unspecified food, initial encounter"
+889,Flexidy,Voyatouch,Benign neoplasm of unspecified part of unspecified eye
+890,Daltfresh,Wrapsafe,"Displaced spiral fracture of shaft of left tibia, sequela"
+891,Veribet,Bitchip,"War operations involving destruction of aircraft due to onboard fire, military personnel, initial encounter"
+892,Transcof,Lotlux,"Poisoning by phenothiazine antipsychotics and neuroleptics, undetermined, initial encounter"
+893,Trippledex,Stronghold,"Osteitis condensans, hand"
+894,Tampflex,Zaam-Dox,"Nondisplaced fracture of lesser trochanter of right femur, subsequent encounter for open fracture type I or II with routine healing"
+895,Holdlamis,Veribet,Abrasion of other part of head
+896,Stronghold,Viva,"Other specified inflammatory spondylopathies, cervical region"
+897,Zoolab,Aerified,"Superficial foreign body of right middle finger, initial encounter"
+898,Y-find,Tempsoft,"Unspecified fracture of lower end of unspecified femur, subsequent encounter for closed fracture with nonunion"
+899,Bytecard,Aerified,Dieulafoy lesion of intestine
+900,Matsoft,Ventosanzap,"Nondisplaced comminuted fracture of shaft of ulna, unspecified arm, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+901,Sonsing,Subin,Cloacal extrophy of urinary bladder
+902,Duobam,Alpha,"Displaced oblique fracture of shaft of left radius, initial encounter for closed fracture"
+903,Sub-Ex,Tampflex,"Burn of third degree of left knee, subsequent encounter"
+904,Cardguard,Tempsoft,"Other superficial bite of right forearm, initial encounter"
+905,Solarbreeze,Otcom,"Other contact with steam and other hot vapors, subsequent encounter"
+906,Otcom,Holdlamis,"Disturbance of cerebral status of newborn, unspecified"
+907,Quo Lux,Keylex,"Pathological fracture, left finger(s), subsequent encounter for fracture with nonunion"
+908,Sonair,Andalax,Unspecified fracture of shaft of right tibia
+909,Tin,Quo Lux,Acute idiopathic pulmonary hemorrhage in infants
+910,Quo Lux,Wrapsafe,"Bennett's fracture, unspecified hand, initial encounter for open fracture"
+911,Treeflex,Keylex,Hematocolpos
+912,Bytecard,Cookley,Burn of second degree of ankle and foot
+913,Pannier,Flexidy,"Salter-Harris Type IV physeal fracture of upper end of left tibia, subsequent encounter for fracture with delayed healing"
+914,Tin,Tres-Zap,"Dislocation of other parts of lumbar spine and pelvis, subsequent encounter"
+915,Redhold,Matsoft,"Accident to, on or involving ice yacht, initial encounter"
+916,Bytecard,Konklux,"Barton's fracture of unspecified radius, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+917,Overhold,Bitchip,"Adverse effect of otorhinolaryngological drugs and preparations, initial encounter"
+918,Biodex,Mat Lam Tam,"Anterior dislocation of unspecified ulnohumeral joint, initial encounter"
+919,Trippledex,Voltsillam,Toxic erythema
+920,Subin,Cookley,"Dislocation of metacarpophalangeal joint of unspecified finger, subsequent encounter"
+921,Voltsillam,Treeflex,"Glaucoma with increased episcleral venous pressure, left eye"
+922,Tresom,Veribet,Neonatal jaundice associated with preterm delivery
+923,Treeflex,Stim,Stage 1 necrotizing enterocolitis
+924,Tempsoft,Pannier,"Nondisplaced fracture of distal phalanx of left little finger, subsequent encounter for fracture with nonunion"
+925,Konklux,Home Ing,"Minor laceration of abdominal aorta, sequela"
+926,Bytecard,Flowdesk,"Burn of first degree of right thumb (nail), initial encounter"
+927,Daltfresh,Ronstring,"Unspecified subluxation of left middle finger, subsequent encounter"
+928,Toughjoyfax,Flowdesk,Burns involving 90% or more of body surface with 70-79% third degree burns
+929,Ronstring,Job,"Toxic effect of contact with other venomous marine animals, assault, initial encounter"
+930,Alphazap,Y-find,"Other specified arthritis, hip"
+931,Zoolab,Ronstring,"Other bursitis, not elsewhere classified, wrist"
+932,Bamity,Namfix,"Flail chest, initial encounter for open fracture"
+933,Toughjoyfax,Subin,"Cystic meniscus, other lateral meniscus, unspecified knee"
+934,Sonair,Zontrax,Autologous blood donor
+935,Quo Lux,Otcom,"Displaced fracture of epiphysis (separation) (upper) of left femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+936,Stim,Cardguard,"Other injury of other muscle(s) and tendon(s) at lower leg level, left leg, sequela"
+937,Hatity,Cardguard,"Disorders of muscle in diseases classified elsewhere, shoulder"
+938,Temp,Alpha,"Other superficial bite of unspecified finger, subsequent encounter"
+939,Lotlux,Sonsing,"Coma scale, eyes open, spontaneous, in the field [EMT or ambulance]"
+940,Ronstring,Flowdesk,"Drowning and submersion due to being washed overboard from water-skis, initial encounter"
+941,Tempsoft,Tampflex,"Fracture of mandible, unspecified, subsequent encounter for fracture with routine healing"
+942,Y-find,Zoolab,"Pedestrian injured in nontraffic accident involving unspecified motor vehicles, initial encounter"
+943,Zamit,Sonair,Hurler-Scheie syndrome
+944,Holdlamis,Toughjoyfax,Other chronic thyroiditis
+945,Vagram,Lotlux,"Torus fracture of lower end of unspecified ulna, subsequent encounter for fracture with malunion"
+946,Home Ing,Bitwolf,"Laceration of muscle and tendon of back wall of thorax, initial encounter"
+947,Latlux,Zoolab,Abrasion of ear
+948,Asoka,Fintone,Corrosion of first degree of unspecified wrist
+949,Wrapsafe,Tampflex,"Unspecified fracture of upper end of unspecified tibia, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+950,Aerified,Vagram,"Pathological fracture, unspecified humerus, subsequent encounter for fracture with malunion"
+951,Stim,Domainer,"Other specified injury of femoral vein at hip and thigh level, left leg"
+952,Solarbreeze,Aerified,Fracture of third cervical vertebra
+953,It,Treeflex,"Burn of second degree of right lower leg, sequela"
+954,Transcof,Sub-Ex,"Other secondary osteonecrosis, multiple sites"
+955,Flowdesk,Aerified,"Assault by machine gun, initial encounter"
+956,Gembucket,Solarbreeze,"Displaced segmental fracture of shaft of left femur, subsequent encounter for open fracture type I or II with nonunion"
+957,Stim,Zontrax,"Ghost vessels (corneal), unspecified eye"
+958,Ventosanzap,Gembucket,"Unspecified injury of blood vessel of right middle finger, subsequent encounter"
+959,Namfix,Daltfresh,"Other secondary chronic gout, unspecified ankle and foot, with tophus (tophi)"
+960,Domainer,Konklux,Unspecified heterophoria
+961,Biodex,Flexidy,Malignant carcinoid tumor of the ascending colon
+962,Cardify,Stim,"Other specified multiple gestation with two or more monochorionic fetuses, second trimester"
+963,Home Ing,Sonair,Other chronic hematogenous osteomyelitis
+964,Stringtough,Zaam-Dox,"Motorcycle passenger injured in collision with pedestrian or animal in traffic accident, sequela"
+965,Zathin,Konklab,"Underdosing of other systemic antibiotics, sequela"
+966,Matsoft,Tresom,"Sex counseling, unspecified"
+967,Viva,Biodex,"Unspecified diabetes mellitus in pregnancy, unspecified trimester"
+968,Alphazap,Bigtax,"Osteophyte, unspecified joint"
+969,Tresom,Tampflex,"Sprain of unspecified parts of unspecified shoulder girdle, subsequent encounter"
+970,Voyatouch,Matsoft,"Displaced bimalleolar fracture of right lower leg, subsequent encounter for closed fracture with delayed healing"
+971,Asoka,Mat Lam Tam,"Pathological fracture, femur and pelvis"
+972,Sub-Ex,Quo Lux,Other specified noninflammatory disorders of vulva and perineum
+973,Holdlamis,Hatity,"Displaced fracture of fourth metatarsal bone, unspecified foot, sequela"
+974,Hatity,Biodex,Failed school examinations
+975,Flexidy,Zamit,"Unspecified fracture of shaft of right tibia, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+976,Flexidy,Andalax,"Legal intervention, means unspecified, law enforcement official injured, sequela"
+977,Holdlamis,Opela,Person on outside of heavy transport vehicle injured in collision with pedal cycle in traffic accident
+978,Tres-Zap,Regrant,"Contracture, unspecified hip"
+979,Zamit,Cardify,"Military operations involving unspecified weapon of mass destruction [WMD], initial encounter"
+980,Alphazap,Flexidy,"Salter-Harris Type I physeal fracture of lower end of ulna, left arm, subsequent encounter for fracture with delayed healing"
+981,Tampflex,Bamity,"Displaced comminuted fracture of shaft of radius, left arm, subsequent encounter for open fracture type I or II with nonunion"
+982,Konklab,Alphazap,"Major laceration of left external jugular vein, subsequent encounter"
+983,Keylex,Fintone,"Injury of ulnar nerve at forearm level, left arm"
+984,Stim,Tres-Zap,Benign neoplasm of bronchus and lung
+985,Trippledex,Stronghold,Achlorhydria
+986,Wrapsafe,Alpha,"Displaced fracture of greater trochanter of left femur, subsequent encounter for open fracture type I or II with nonunion"
+987,Sub-Ex,Bitchip,"Nondisplaced bimalleolar fracture of unspecified lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+988,Y-Solowarm,Toughjoyfax,"Pathological fracture, pelvis"
+989,Pannier,Flexidy,"Other specified arthritis, unspecified shoulder"
+990,Treeflex,Pannier,Malignant neoplasm of overlapping sites of brain
+991,Mat Lam Tam,Y-find,"Corrosion of unspecified degree of multiple sites of unspecified lower limb, except ankle and foot"
+992,Zontrax,Voyatouch,"Contusion and laceration of right cerebrum with loss of consciousness greater than 24 hours with return to pre-existing conscious level, sequela"
+993,Stim,Vagram,Puncture wound without foreign body of right thumb without damage to nail
+994,Voltsillam,Span,Maternal care for other abnormalities of gravid uterus
+995,Zontrax,Holdlamis,"Burn of third degree of unspecified hand, unspecified site, initial encounter"
+996,Regrant,Job,"Traumatic arthropathy, other specified site"
+997,Stim,Y-find,"Pre-existing type 2 diabetes mellitus, in pregnancy, unspecified trimester"
+998,Zoolab,Tresom,"Terrorism involving other explosions and fragments, terrorist injured, subsequent encounter"
+999,Tampflex,Ventosanzap,Opisthorchiasis
+1000,Transcof,Job,"Unspecified dislocation of left shoulder joint, initial encounter"
