@@ -71,9 +71,7 @@ function Login({ setSession }) {
                           src="https://findicons.com/files/icons/1275/naruto_vol_1/128/uzumaki_naruto.png"
                           alt="logo"
                         />
-                        <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">
-                          We are Team Naruto
-                        </h4>
+                        <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to TeamUP</h4>
                       </div>
                       <form>
                         <p className="mb-4">Please login to your account</p>
