@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function Login({ setSession }) {
+  const navigate = useNavigate()
   const [showModal, setShowModal] = useState(false)
   const [credentials, setCredentials] = useState({
     username: '',
@@ -22,17 +24,19 @@ function Login({ setSession }) {
     } else {
       axios
         .post('/api/user', newUser)
-        .then((data) => console.log(data))
+        .then((data) => {
+          console.log(data)
+          setShowModal(!showModal)
+          setNewUser({
+            username: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+          })
+          navigate('/')
+        })
         .catch((err) => console.log(err))
-
-      setShowModal(!showModal)
-      setNewUser({
-        username: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-      })
     }
   }
 
@@ -42,12 +46,13 @@ function Login({ setSession }) {
       .then((data) => {
         console.log('DATA', data)
         setSession(data)
+        setCredentials({
+          username: '',
+          password: '',
+        })
+        navigate('/')
       })
       .catch((err) => console.log('Err', err))
-    setCredentials({
-      username: '',
-      password: '',
-    })
   }
 
   return (
