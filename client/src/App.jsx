@@ -53,7 +53,7 @@ const App = function App() {
           <Route element={<Success />} path="/success" />
           <Route element={<Cancel />} path="/cancel" />
         </Route>
-        <Route element={<Login />} path="/login" />
+        <Route element={<Login setSession={setSession} />} path="/login" />
       </Routes>
     </BrowserRouter>
   )

@@ -1,4 +1,4 @@
-id,userID,teamID,title,text,cheers
+id,userId,teamId,title,text,cheers
 1,600,442,Winning Streak,consectetur adipiscing elit,161
 2,202,377,Who's the Caboose?,consectetur adipiscing elit,121
 3,524,574,Dead Reckoning,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,947

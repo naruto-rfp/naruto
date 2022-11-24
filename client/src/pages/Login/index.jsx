@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function Login({ setSession }) {
+  const navigate = useNavigate()
   const [showModal, setShowModal] = useState(false)
   const [credentials, setCredentials] = useState({
     username: '',
@@ -16,8 +17,6 @@ function Login({ setSession }) {
     password: '',
   })
 
-  const navigate = useNavigate()
-
   const register = () => {
     console.log(Object.values(newUser))
     if (Object.values(newUser).includes('')) {
@@ -25,17 +24,20 @@ function Login({ setSession }) {
     } else {
       axios
         .post('/api/user', newUser)
-        .then((data) => console.log(data))
-        .catch((err) => console.log(err))
+        .then((data) => {
+          console.log(data)
 
-      setShowModal(!showModal)
-      setNewUser({
-        username: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-      })
+          setShowModal(!showModal)
+          setNewUser({
+            username: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+          })
+
+          navigate('/')
+        })
+        .catch((err) => console.log(err))
     }
   }
 
@@ -44,13 +46,14 @@ function Login({ setSession }) {
       .post('/api/login', credentials)
       .then((data) => {
         setSession(data)
-        return navigate('/')
+        setCredentials({
+          username: '',
+          password: '',
+        })
+
+        navigate('/')
       })
       .catch((err) => console.log('Err', err))
-    setCredentials({
-      username: '',
-      password: '',
-    })
   }
 
   return (
@@ -101,7 +104,7 @@ function Login({ setSession }) {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            onClick={() => login()}
+                            onClick={login}
                           >
                             Log in
                           </button>

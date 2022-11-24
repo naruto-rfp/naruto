@@ -1,4 +1,4 @@
-id,post_id,user_id,content
+id,postId,userId,text
 1,883,848,"Sprain of unspecified site of left knee, sequela"
 2,358,380,"Military operations involving other forms of conventional warfare, military personnel, sequela"
 3,285,797,Dislocation of T6/T7 thoracic vertebra
