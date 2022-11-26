@@ -24,6 +24,8 @@ export default function Store() {
       .catch((err) => console.log(`Error in retrieving skus: ${err}`))
   }, [])
 
+  const handleCheckout = (productId, skuId, sizeUserWants, quantityUserWants) => {}
+
   return (
     // container
     <section className="container">

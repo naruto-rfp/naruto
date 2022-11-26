@@ -1,15 +1,17 @@
 import './store.css'
 import { useState } from 'react'
 import { useStore } from '../../lib/fastContext'
+import ProductModalContent from './Modal'
 
 export default function Card({ id, name, description, photos, price, skus }) {
+  const [productID, setProductId] = useState(null)
+  const [skuID, setSkuID] = useState(null)
   const [modal, setModal] = useStore('modal')
   const [size, setSize] = useState('')
+  const [stock, setStock] = useState(0)
   const [quantity, setQuantity] = useState(0)
-  const [errorMsg, setErrorMsg] = useState(false)
-  const [successMsg, setSuccessMsg] = useState(false)
   const [isActive, setActive] = useState(false)
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(null)
 
   const changeStyle = () => {
     setActive(!isActive)
@@ -21,10 +23,45 @@ export default function Card({ id, name, description, photos, price, skus }) {
     return result
   }
 
-  const handleSizeClick = (userSize, index) => {
+  const getQuantity = (prodId, sizeSelected) => {
+    const row = filterSkus(prodId)
+    // console.log("now we're in getQuantity", row)
+    const selectedQuantity = row.filter((sku) => sku.size === sizeSelected)
+    // console.log('this is selected quantity', selectedQuantity[0].quantity)
+    setSkuID(selectedQuantity[0].id)
+    setStock(selectedQuantity[0].quantity)
+    return selectedQuantity[0].quantity
+  }
+
+  const numDropdown = () => {
+    // set the stock to the last number in the array
+    const arrayToN = Array?.from({ length: stock }, (v, i) => i + 1)
+    // console.log('this is what the array looks like', arrayToN)
+    // return arrayToN
+    return arrayToN?.map((num, index) => {
+      return (
+        <option className="qty-options" value={num} key={index}>
+          {num}
+        </option>
+      )
+    })
+  }
+
+  const handleSizeClick = (userSize, index, productId) => {
     setSize(userSize)
-    console.log('User clicked index ', index)
+    // console.log('User clicked index ', userSize, index)
+    // console.log('SizeID:', productId)
+    setProductId(productId)
+    getQuantity(productId, userSize)
+    // for style changing
     setCurrentIndex(index)
+  }
+
+  const handleCartSubmit = () => {
+    console.log('this is the productId ', productID)
+    console.log('this is the skuId ', skuID)
+    console.log('this is the size selected: ', size)
+    console.log('this is the quantity selected ', quantity)
   }
 
   const handleModalClick = () => {
@@ -32,61 +69,21 @@ export default function Card({ id, name, description, photos, price, skus }) {
     setModal({
       ...modal,
       content: (
-        <div className="modal-container">
-          <div className="modal-image">
-            <img src={photos} alt={name} />
-          </div>
-          <div className="modal-card-info">
-            <div className="modal-product-info">
-              <h1 className="modal-product-name">{name}</h1>
-              <div className="modal-sku-info">SKU ID#: {id}</div>
-            </div>
-            <p className="modal-price">${price}.00</p>
-            <p className="modal-description-title">Product Description</p>
-            <p className="modal-description">{description}</p>
-            <div className="modal-atc-container">
-              <div className="modal-sizes-title">Apparel Sizes</div>
-              <div className="modal-size-container">
-                {skuInfo?.map((sizes, index) => {
-                  return (
-                    <div
-                      className="modal-size-boxes"
-                      onClick={() => {
-                        handleSizeClick(sizes.size, index)
-                      }}
-                      key={sizes.id}
-                      tabIndex={0}
-                      onKeyDown={() => {
-                        handleSizeClick(sizes.size, index)
-                      }}
-                      role="button"
-                    >
-                      {sizes.size}
-                    </div>
-                  )
-                })}
-              </div>
-              <div className="modal-atc-sub-container">
-                <div className="selectdiv">
-                  <select value={quantity} onChange={(event) => setQuantity(event.target.value)}>
-                    <option className="inner-select-text" value="">
-                      SELECT QTY
-                    </option>
-                  </select>
-                </div>
-
-                <button
-                  className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-1/3 bg-gradient-to-r from-blackCoral to-greenYellow"
-                  type="submit"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProductModalContent
+          photos={photos}
+          name={name}
+          id={id}
+          price={price}
+          description={description}
+          skuInfo={skuInfo}
+          currentIndex={currentIndex}
+          handleSizeClick={handleSizeClick}
+          setQuantity={setQuantity}
+          numDropdown={numDropdown}
+          quantity={quantity}
+          stock={stock}
+          handleCartSubmit={handleCartSubmit}
+        />
       ),
     })
   }
@@ -115,5 +112,3 @@ export default function Card({ id, name, description, photos, price, skus }) {
     </div>
   )
 }
-
-// className="inline-block pl-3 pr-5 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded-xl shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-1/3 mb-3 bg-gradient-to-r from-blackCoral to-greenYellow"
