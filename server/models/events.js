@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
+const Teams = require('./teams')
 
 const Events = sequelize.define(
   'events',
@@ -8,6 +9,13 @@ const Events = sequelize.define(
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
+    },
+    teamId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Teams,
+        key: 'id',
+      },
     },
     name: {
       type: DataTypes.STRING,
