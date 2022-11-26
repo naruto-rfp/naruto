@@ -168,7 +168,7 @@ function Login({ setSession }) {
                 className="text-xl font-medium leading-normal text-gray-800"
                 id="exampleModalLabel"
               >
-                Register Here
+                Sign Up
               </h5>
               <button
                 type="button"
@@ -234,7 +234,7 @@ function Login({ setSession }) {
                 type="button"
                 className="px-6
                   py-2.5
-                  bg-purple-600
+                  bg-gradient-to-r from-blackCoral to-greenYellow
                   text-white
                   font-medium
                   text-xs
@@ -253,13 +253,13 @@ function Login({ setSession }) {
                   setShowModal(!showModal)
                 }}
               >
-                Close
+                Cancel
               </button>
               <button
                 type="button"
                 className="px-6
                   py-2.5
-                  bg-blue-600
+                  bg-gradient-to-r from-blackCoral to-greenYellow
                   text-white
                   font-medium
                   text-xs
@@ -278,7 +278,7 @@ function Login({ setSession }) {
                   register()
                 }}
               >
-                Save changes
+                Register User!
               </button>
             </div>
           </div>

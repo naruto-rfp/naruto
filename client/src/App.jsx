@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
@@ -12,6 +12,7 @@ import Cancel from './pages/Store/Cancel'
 import { useStore } from './lib/fastContext'
 
 const App = function App() {
+  const [currentUser, setCurrentUser] = useState('')
   const [session, setSession] = useStore('session')
   const logout = async () => {
     await fetch('/api/session', { method: 'DELETE' }).catch(console.error)
@@ -31,6 +32,7 @@ const App = function App() {
       .then((ses) => {
         // TEMP: remove logging
         console.log(ses)
+        setCurrentUser(ses)
         setSession(ses)
       })
       .catch((err) => {
@@ -44,7 +46,7 @@ const App = function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<PrivateRoutes session={session} />}>
+        <Route element={<PrivateRoutes session={session} currentUser={currentUser} />}>
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile" />
           <Route element={<Store />} path="/store" />
@@ -53,7 +55,12 @@ const App = function App() {
           <Route element={<Success />} path="/success" />
           <Route element={<Cancel />} path="/cancel" />
         </Route>
-        <Route element={<Login setSession={setSession} logout={logout} />} path="/login" />
+        <Route
+          element={
+            <Login setSession={setSession} logout={logout} setCurrentUser={setCurrentUser} />
+          }
+          path="/login"
+        />
       </Routes>
     </BrowserRouter>
   )
