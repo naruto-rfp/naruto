@@ -143,11 +143,5 @@ export default function EditProfileModal({
         </div>
       </div>
     </div>
-    // </div>
-    // <div className="z-50 fixed top-0 left-0 bg-white bg-opacity-50">
-    //   <div className="z-40 fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-auto border-none pointer-events-none">
-    //     <button type="button" onClick={handleEditModalPopUp}>zz</button>
-    //   </div>
-    // </div>
   )
 }
