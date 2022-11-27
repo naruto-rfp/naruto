@@ -1,5 +1,5 @@
-import React, { useEffect, useState, createContext } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect, useState, createContext } from 'react'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
 import Store from './pages/Store'
@@ -14,11 +14,13 @@ import { useStore } from './lib/fastContext'
 const UserContext = createContext()
 
 const App = function App() {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   const [currentUser, setCurrentUser] = useState('')
   const [session, setSession] = useStore('session')
-  const logout = async () => {
-    await fetch('/api/session', { method: 'DELETE', credentials: 'include' }).catch(console.error)
+  const logout = () => {
+    fetch('/api/session', { method: 'DELETE', credentials: 'include' })
+      .then(() => console.log('logged out'))
+      .catch((err) => console.log(err))
     // Redirect to the login page after logging out to force a refresh
     // window.location.assign('/')
     // If want to keep user on the app without hard refresh:
@@ -26,7 +28,7 @@ const App = function App() {
     //
     // TEMP
     console.log('Trying to log out')
-    // navigate('/')
+    navigate('/login')
     setSession(null)
   }
 
@@ -37,11 +39,11 @@ const App = function App() {
       .then((ses) => {
         // TEMP: remove logging
         console.log(ses)
-        // setCurrentUser(ses)
+        setCurrentUser(ses)
         setSession(ses)
       })
       .catch((err) => {
-        console.error(err)
+        console.log(err)
         // setSession('session')
         setSession(null)
       })
@@ -52,7 +54,7 @@ const App = function App() {
     <UserContext.Provider user={currentUser}>
       <BrowserRouter>
         <Routes>
-          <Route element={<PrivateRoutes session={session} />}>
+          <Route element={<PrivateRoutes session={session} logout={logout} />}>
             <Route element={<Home />} path="/" />
             <Route element={<Profile />} path="/profile" />
             <Route element={<Store />} path="/store" />
@@ -62,9 +64,7 @@ const App = function App() {
             <Route element={<Cancel />} path="/cancel" />
           </Route>
           <Route
-            element={
-              <Login setSession={setSession} logout={logout} setCurrentUser={setCurrentUser} />
-            }
+            element={<Login setSession={setSession} setCurrentUser={setCurrentUser} />}
             path="/login"
           />
         </Routes>
