@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { useStore } from '../../../lib/fastContext'
 
-export default function Events({ userTeamsEvents }) {
-  const events = [{name: "Sunset Semi-Finals", status: "Public", date: "Nov 25 2022", location: "Sunset Recreation Center", description: "Come join us this coming Friday to cheer on your favorite team, the Sunset Oceans as they take on the Misson Blues in this year's community league semi-finals!"}]
+export default function Events({ event }) {
+  const [eventTeam, setEventTeam] = useState('')
+
+  useEffect(() => {
+    axios
+      .get(`/api/teams/${event.teamId}`)
+      .then((resp) => setEventTeam(resp.data[0].name))
+  }, [])
 
   //Will modulize modal content later
   const [modal, setModal] = useStore('modal')
@@ -44,12 +51,12 @@ export default function Events({ userTeamsEvents }) {
 
   return (
     <>
-      {events.map((event) => {
-        return (
+      {/* {userTeamsEvents.map((event) => {
+        return ( */}
           <div onClick={handleClick} className="px-4 py-2 w-50 flex flex-col border-2 border-blackCoral/10 rounded-md drop-shadow-lg">
             <div className="flex flex-row py-1">
               <div className="font-bold pr-5">{event.name}</div>
-              <div className="bg-blackCoral/30 rounded-md font-bold">{event.status}</div>
+              <div className="bg-blackCoral/30 rounded-md font-bold">Public</div>
             </div>
             <div className="flex flex-row text-xs py-1">
               <div className="pr-5">{event.date}</div>
@@ -57,8 +64,8 @@ export default function Events({ userTeamsEvents }) {
             </div>
             <div className="text-sm">{event.description}</div>
           </div>
-        )
-      })}
+        {/* )
+      })} */}
     </>
   )
 }

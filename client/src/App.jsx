@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import Checkout from './pages/Checkout'
 import PrivateRoutes from './components/PrivateRoutes'
 import { useStore } from './lib/fastContext'
+import NavBar from './components/NavBar'
 
 const App = function App() {
   const [session, setSession] = useStore('session')
@@ -41,6 +42,7 @@ const App = function App() {
 
   return (
     <BrowserRouter>
+    <NavBar />
       <Routes>
         <Route element={<PrivateRoutes session={session} logout={logout} />}>
           <Route element={<Home />} path="/" />

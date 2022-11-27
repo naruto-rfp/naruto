@@ -4,18 +4,56 @@ import Posts from './FeedComponents/Posts'
 import Events from './FeedComponents/Events'
 
 export default function Feed({ userId }) {
-  // test data
-  const [userPostsTest, setUserPostsTest] = useState([{id: 1, user_id: 1, teamName: 'team1', likes: 120, title: 'Random Test Data1 in feed', content: '1Just some random test data and text adsadsadsadadadadadsdad'}, {id: 2, user_id: 2, teamName: 'team2', likes: 220, title: 'Random Test Data2', content: '2Just some random test data and text adsadsadsadadadadadsdad'}, {id: 3, user_id: 3, teamName: 'team3', likes: 320, title: 'Random Test Data3', content: '3Just some random test data and text adsadsadsadadadadadsdad'}, {id: 4, user_id: 4, teamName: 'team4', likes: 420, title: 'Random Test Data4', content: '4Just some random test data and text adsadsadsadadadadadsdad'}, {id: 5, user_id: 5, teamName: 'team5', likes: 520, title: 'Random Test Data5', content: '5Just some random test data and text adsadsadsadadadadadsdad'}])
-
   const [activeTab, setActiveTab] = useState(1)
   const [userPosts, setUserPosts] = useState([])
+  const [userTeams, setUserTeams] = useState([])
   const [userTeamsEvents, setUserTeamsEvents] = useState([])
+  // test user id
+  const userIdTest = 437
 
   useEffect(() => {
-    axios.get(`/posts/${userId}`)
-      .then((resp) => setUserPosts(resp))
+    axios
+      .get(`/api/posts/${userIdTest}`)
+      .then((resp) => setUserPosts(resp.data))
       .catch((err) => console.log(err))
-  })
+  }, [])
+
+  // get the teamId from coaches, member, and fan table where userId is equal to userId
+  useEffect(() => {
+    const gettest = async () => {
+      const coachTeams = await axios.get(`/api/coaches/teams/${userIdTest}`)
+      const memberTeams = await axios.get(`/api/members/teams/${userIdTest}`)
+      const fanTeams = await axios.get(`/api/fans/teams/${userIdTest}`)
+      await setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data)
+      // await Promise.all(setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data))
+
+      // await userTeams.map((team) => {
+      //   console.log('testing')
+      //   // axios.get(`/api/events/${team.teamId}`)
+      //   // .then((resp) => console.log('event',resp))
+      // })
+    }
+      // axios
+      //   .get(`/api/coaches/teams/${userIdTest}`)
+      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
+      // axios
+      //   .get(`/api/members/teams/${userIdTest}`)
+      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
+      // axios
+      //   .get(`/api/fans/teams/${userIdTest}`)
+      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
+      gettest()
+  }, [])
+
+  useEffect(() => {
+    if (userTeams.length) {
+      axios
+        .get('/api/events', {
+          params: userTeams,
+        })
+        .then((resp) => setUserTeamsEvents(resp.data))
+    }
+  }, [userTeams])
 
   // still need to implement
   const handleTabToggle = (tab) => {
@@ -56,20 +94,17 @@ export default function Feed({ userId }) {
               </button>
             </li>
           </ul>
-{/* <div className="h-"></div> */}
-          {/* <div className="overflow-y-auto"> */}
           <div className="p-3 mt-6 bg-white h-full overflow-y-auto ">
             <div className={activeTab === 1 ? 'block' : 'hidden'}>
-              {
-                userPostsTest.map((post) => {
-                  return <Posts post={post}/>
-                })
-              }
+              {userPosts.map((post) => {
+                return <Posts post={post} />
+              })}
             </div>
-            {/* </div> */}
-
             <div className={activeTab === 2 ? 'block' : 'hidden'}>
-              <Events userTeamsEvents={userTeamsEvents}/>
+              {userTeamsEvents.map((event) => {
+                return <Events event={event} />
+              })}
+              {/* <Events userTeamsEvents={userTeamsEvents}/> */}
               {/* map once the backend is connected */}
             </div>
           </div>

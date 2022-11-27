@@ -5,6 +5,9 @@ const members = require('../controllers/members')
 const fans = require('../controllers/fans')
 const store = require('../controllers/products')
 const cart = require('../controllers/cart')
+const posts = require('../controllers/posts')
+const teams = require('../controllers/teams')
+const events = require('../controllers/events')
 
 const router = express.Router()
 
@@ -61,15 +64,33 @@ router.delete('/cart/:id', cart.deleteCart)
  * Coaches
  */
 router.get('/coaches/:teamID', coaches.getCoaches)
+router.get('/coaches/teams/:userId', coaches.getCoachTeams)
 
 /**
  * Members
  */
 router.get('/members/:teamID', members.getMembers)
+router.get('/members/teams/:userId', members.getMemberTeams)
 
 /**
  * Fans
  */
 router.get('/fans/:teamID', fans.getFans)
+router.get('/fans/teams/:userId', fans.getFanTeams)
+
+/**
+ * Posts
+ */
+router.get('/posts/:userID', posts.getPosts)
+
+/**
+ * Teams
+ */
+router.get('/teams/:teamID', teams.getTeamName)
+
+/**
+ * Events
+ */
+ router.get('/events', events.getPosts)
 
 module.exports = router

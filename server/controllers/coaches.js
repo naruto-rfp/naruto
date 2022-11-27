@@ -39,3 +39,18 @@ exports.getCoaches = (req, res) => {
       }
     })
 }
+
+exports.getCoachTeams = (req, res) => {
+  const { userId } = req.params
+  const { page = 1, pageSize = 10 } = req.query
+
+  // Verify the teramID is a valid teamID
+  if (!userId || Number.isNaN(Number(userId))) {
+    res.status(400).send('Invalid userID')
+    return
+  }
+
+  Coaches.findAll({ attributes: ['teamId'], where: { userId: userId } }).then((resp) => {
+    res.status(200).json(resp)
+  })
+}
