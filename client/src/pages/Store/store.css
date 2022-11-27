@@ -187,7 +187,12 @@
   background-color: #f6f6f6;
 }
 
-.modal-size-boxes:focus {
+/* .modal-size-boxes:focus {
+  border: 1px solid #000000;
+  background-color: #f6f6f6;
+} */
+
+.active {
   border: 1px solid #000000;
   background-color: #f6f6f6;
 }

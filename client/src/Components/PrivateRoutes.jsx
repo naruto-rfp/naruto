@@ -9,7 +9,7 @@ function PrivateRoutes({ session, logout }) {
   return session ? (
     <>
       <Navbar session={session} logout={logout} />
-      <Outlet />
+      <Outlet context={{ currentUserData: session.data }} />
       <Modal />
     </>
   ) : (

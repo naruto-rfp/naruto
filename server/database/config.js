@@ -18,6 +18,7 @@ db.PostComments = require('../models/postComments')
 // Products & Skus Models
 db.Products = require('../models/products')
 db.SKUs = require('../models/skus')
+db.Cart = require('../models/cart')
 
 // ASSOCIATIONS
 // Products (primary key) and SKUs (foreign key) association

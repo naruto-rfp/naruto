@@ -4,6 +4,7 @@ const coaches = require('../controllers/coaches')
 const members = require('../controllers/members')
 const fans = require('../controllers/fans')
 const store = require('../controllers/products')
+const cart = require('../controllers/cart')
 
 const router = express.Router()
 
@@ -18,8 +19,10 @@ router.get('/', (_, res) => {
 router.post('/user', controllers.createUser)
 // Get User Profile by ID
 router.get('/user/:id', controllers.getUser)
-// Change the Stat of the athletes
-router.put('/user/:id/stats', controllers.changeStats)
+// Change the Stat and bio of the athletes
+router.put('/user/:id/edit', controllers.changeProfile)
+// Change Profile Picture of user
+router.put('/user/:id/profilePic', controllers.changeProfilePic)
 
 router.get('/session', controllers.getSession)
 router.post('/login', controllers.login)
@@ -45,6 +48,16 @@ router.get('/skus/id', store.getSkuById)
 router.post('/skus', store.postSkus)
 // Delete SKUs from Database
 router.delete('/skus/:id', store.deleteSkus)
+
+/**
+ * Cart
+ */
+// Retrieve Cart information
+router.get('/cart', cart.getCart)
+// Add Cart information
+router.post('/cart', cart.postCart)
+// Delete Cart information
+router.delete('/cart/:id', cart.deleteCart)
 
 /**
  * Coaches

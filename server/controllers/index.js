@@ -40,8 +40,8 @@ exports.getUser = (req, res) => {
     })
 }
 
-exports.changeStats = (req, res) => {
-  const { speed, reliability, strength, jumping, aerobic } = req.body
+exports.changeProfile = (req, res) => {
+  const { speed, reliability, strength, jumping, aerobic, about } = req.body
   const { id } = req.params
 
   User.update(
@@ -51,11 +51,27 @@ exports.changeStats = (req, res) => {
       strength,
       jumping,
       aerobic,
+      about,
     },
     { where: { id } }
   )
     .then(() => {
       res.status(200).send('User Stat Updated')
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || 'Internal Server Error',
+      })
+    })
+}
+
+exports.changeProfilePic = (req, res) => {
+  const { profilePic } = req.body
+  const { id } = req.params
+
+  User.update({ profilePic }, { where: { id } })
+    .then(() => {
+      res.status(200).send('User Profile Picture changed')
     })
     .catch((err) => {
       res.status(500).send({
