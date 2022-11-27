@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, createContext } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
@@ -11,7 +11,10 @@ import Success from './pages/Store/Success'
 import Cancel from './pages/Store/Cancel'
 import { useStore } from './lib/fastContext'
 
+const UserContext = createContext()
+
 const App = function App() {
+  // const navigate = useNavigate()
   const [currentUser, setCurrentUser] = useState('')
   const [session, setSession] = useStore('session')
   const logout = async () => {
@@ -23,6 +26,7 @@ const App = function App() {
     //
     // TEMP
     setSession(null)
+    // navigate('/')
   }
 
   // Get the user session on intial mounting
@@ -32,7 +36,7 @@ const App = function App() {
       .then((ses) => {
         // TEMP: remove logging
         console.log(ses)
-        setCurrentUser(ses)
+        // setCurrentUser(ses)
         setSession(ses)
       })
       .catch((err) => {
@@ -44,25 +48,27 @@ const App = function App() {
   }, [])
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<PrivateRoutes session={session} currentUser={currentUser} />}>
-          <Route element={<Home />} path="/" />
-          <Route element={<Profile />} path="/profile" />
-          <Route element={<Store />} path="/store" />
-          <Route element={<Team />} path="/team" />
-          <Route element={<Checkout />} path="/checkout" />
-          <Route element={<Success />} path="/success" />
-          <Route element={<Cancel />} path="/cancel" />
-        </Route>
-        <Route
-          element={
-            <Login setSession={setSession} logout={logout} setCurrentUser={setCurrentUser} />
-          }
-          path="/login"
-        />
-      </Routes>
-    </BrowserRouter>
+    <UserContext.Provider user={currentUser}>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<PrivateRoutes session={session} />}>
+            <Route element={<Home />} path="/" />
+            <Route element={<Profile />} path="/profile" />
+            <Route element={<Store />} path="/store" />
+            <Route element={<Team />} path="/team" />
+            <Route element={<Checkout />} path="/checkout" />
+            <Route element={<Success />} path="/success" />
+            <Route element={<Cancel />} path="/cancel" />
+          </Route>
+          <Route
+            element={
+              <Login setSession={setSession} logout={logout} setCurrentUser={setCurrentUser} />
+            }
+            path="/login"
+          />
+        </Routes>
+      </BrowserRouter>
+    </UserContext.Provider>
   )
 }
 

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
+axios.defaults.withCredentials = true
+
 function Login({ setSession }) {
   const navigate = useNavigate()
   const [showModal, setShowModal] = useState(false)
@@ -68,7 +70,7 @@ function Login({ setSession }) {
                       <div className="text-center mx-auto">
                         <img
                           className="mx-auto"
-                          src="https://findicons.com/files/icons/1275/naruto_vol_1/128/uzumaki_naruto.png"
+                          src="../../lib/images/sportsColored.png"
                           alt="logo"
                         />
                         <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to TeamUP</h4>
@@ -128,7 +130,7 @@ function Login({ setSession }) {
                       </form>
                     </div>
                   </div>
-                  <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-r from-blackCoral to-greenYellow">
+                  <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-b from-blackCoral to-greenYellow">
                     <div className="text-white px-4 py-6 md:p-12 md:mx-6">
                       <h4 className="text-xl font-semibold mb-6">
                         The premier site to connect recreational sports teams and fans

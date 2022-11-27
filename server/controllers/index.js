@@ -97,7 +97,6 @@ exports.login = async (req, res) => {
 exports.getSession = (req, res) => {
   // Actual implementation will be done later
   // res.json(req.session.user || null)
-  console.log(req.session.user)
   res.json(req.session.user)
 }
 
