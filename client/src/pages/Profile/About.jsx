@@ -1,8 +1,10 @@
 import axios from 'axios'
 import { useState } from 'react'
+import { useOutletContext } from 'react-router-dom'
 import EditProfileModal from './EditProfileModal'
 
-export default function About({ userData, about, fetchData }) {
+export default function About({ editable, userData, about, fetchData }) {
+  const { currentUserData } = useOutletContext()
   const [modal, setModal] = useState(false)
   const [inputs, setInputs] = useState({
     speed: userData.speed,
@@ -29,23 +31,24 @@ export default function About({ userData, about, fetchData }) {
     e.preventDefault()
     console.log('form submitted!')
     // TODO: should be called based on id
-    axios.put('/api/user/1/edit', inputs).then(() => {
+    axios.put(`/api/user/${currentUserData.id}/edit`, inputs).then(() => {
       setModal(false)
       fetchData()
     })
-    // axios post profile change
   }
 
   return (
     <div>
       {about}
-      <button
-        className="bg-gradient-to-r from-blackCoral to-greenYellow text-white float-right font-bold py-2 px-4 rounded"
-        type="button"
-        onClick={handleEditModalPopUp}
-      >
-        Edit Profile
-      </button>
+      {editable ? (
+        <button
+          className="bg-gradient-to-r from-blackCoral to-greenYellow text-white float-right font-bold py-2 px-4 rounded"
+          type="button"
+          onClick={handleEditModalPopUp}
+        >
+          Edit Profile
+        </button>
+      ) : null}
       {modal ? (
         <EditProfileModal
           modal={modal}

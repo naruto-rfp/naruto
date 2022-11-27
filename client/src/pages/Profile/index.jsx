@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useOutletContext, useParams } from 'react-router-dom'
 import axios from 'axios'
 import RadarChart from './RadarChart'
 import Info from './Info'
 import About from './About'
 
 export default function Profile() {
+  const { currentUserData } = useOutletContext()
   const { id } = useParams()
   const [userData, setUserData] = useState({
     id: null,
@@ -20,24 +21,28 @@ export default function Profile() {
     jumping: 0,
     aerobic: 0,
   })
+  const [editable, setEditable] = useState(false)
 
-  const fetchData = () => {
-    axios.get('/api/user/1').then((results) => {
-      setUserData((prev) => ({
-        ...prev,
-        id,
-        firstName: results.data.firstName,
-        lastName: results.data.lastName,
-        about: results.data.about,
-        email: results.data.email,
-        profilePic: results.data.profilePic,
-        speed: results.data.speed,
-        reliability: results.data.reliability,
-        strength: results.data.strength,
-        jumping: results.data.jumping,
-        aerobic: results.data.aerobic,
-      }))
-    })
+  const fetchData = async () => {
+    const { data } = await axios.get(`/api/user/${id}`)
+    setUserData((prev) => ({
+      ...prev,
+      id,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      about: data.about,
+      email: data.email,
+      profilePic: data.profilePic,
+      speed: data.speed,
+      reliability: data.reliability,
+      strength: data.strength,
+      jumping: data.jumping,
+      aerobic: data.aerobic,
+    }))
+
+    if (data.id === currentUserData.id) {
+      setEditable(true)
+    }
   }
 
   useEffect(() => {
@@ -88,7 +93,12 @@ export default function Profile() {
           </div>
         </section>
         <div className="flex border-solid border-2 border-indigo-600 h-80  justify-center items-center flex-wrap mt-10">
-          <About userData={userData} about={userData.about} fetchData={fetchData} />
+          <About
+            editable={editable}
+            userData={userData}
+            about={userData.about}
+            fetchData={fetchData}
+          />
         </div>
       </div>
     </>
