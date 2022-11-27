@@ -46,7 +46,6 @@ function Login({ setSession }) {
     axios
       .post('/api/login', credentials)
       .then((data) => {
-        console.log('DATA', data)
         setSession(data)
         setCredentials({
           username: '',
@@ -55,6 +54,10 @@ function Login({ setSession }) {
         navigate('/')
       })
       .catch((err) => console.log('Err', err))
+    setCredentials({
+      username: '',
+      password: '',
+    })
   }
 
   return (
@@ -105,7 +108,7 @@ function Login({ setSession }) {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            onClick={() => login()}
+                            onClick={login}
                           >
                             Log in
                           </button>

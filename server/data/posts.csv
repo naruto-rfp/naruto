@@ -1,4 +1,4 @@
-id,userID,teamID,title,text,cheers
+id,userId,teamId,title,text,cheers
 1,600,442,Winning Streak,consectetur adipiscing elit,161
 2,202,377,Who's the Caboose?,consectetur adipiscing elit,121
 3,524,574,Dead Reckoning,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,947
@@ -936,7 +936,7 @@ id,userID,teamID,title,text,cheers
 935,810,69,Robin-B-Hood (Bo bui gai wak),sunt in culpa qui officia deserunt mollit anim id est laborum.,253
 936,194,451,Welcome to Dongmakgol,Lorem ipsum dolor sit amet,533
 937,828,100,American Mullet,sunt in culpa qui officia deserunt mollit anim id est laborum.,363
-938,63,57,My Way Home (Így jöttem) ,Lorem ipsum dolor sit amet,546
+938,63,57,My Way Home (Igy jottem) ,Lorem ipsum dolor sit amet,546
 939,300,972,Shout,Lorem ipsum dolor sit amet,301
 940,217,658,Glitterbug,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,597
 941,152,677,Iron & Silk,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,744
