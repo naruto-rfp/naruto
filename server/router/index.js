@@ -8,6 +8,7 @@ const cart = require('../controllers/cart')
 const posts = require('../controllers/posts')
 const teams = require('../controllers/teams')
 const events = require('../controllers/events')
+const eventComments = require('../controllers/eventComments')
 
 const router = express.Router()
 
@@ -91,6 +92,11 @@ router.get('/teams/:teamID', teams.getTeamName)
 /**
  * Events
  */
- router.get('/events', events.getPosts)
+router.get('/events', events.getPosts)
+
+/**
+ * Event Comments
+ */
+router.get('/eventcomments/:eventId', eventComments.getEventComments)
 
 module.exports = router

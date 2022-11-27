@@ -1,35 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
-const EventComment = function () {
+const EventComment = function ({ comment }) {
+  const [commentUser, setCommentUser] = useState('')
+
+  useEffect(() => {
+    axios.get(`/api/user/${comment.userId}`).then((resp) => setCommentUser(resp.data.username))
+  })
+
   return (
-    <div className=" text-black py-2">
-    <h1>Cheers 100</h1>
-
-    <div className="flex flex-row py-2">
-      <div className="bg-blackCoral/10 rounded-full flex justify-center align-bottom pr-2">
-        <h1>AnonymousElephant</h1>
-      </div>
-      <div className="border border-blackCoral/10 rounded-full flex justify-center ">
-        <h1>Can't wait to go!</h1>
+    <div className="py-2">
+      <div className='divide-y'>
+        <div className="bg-gradient-to-r from-blackCoral to-greenYellow rounded-full font-bold text-xs pr-3 w-auto text-white text-center">{commentUser}</div>
+        <div className='text-lg pb-2'>{comment.text}</div>
       </div>
     </div>
-    <div className="flex flex-row py-2">
-      <div className="bg-blackCoral/10 rounded-full flex justify-center align-bottom pr-2">
-        <h1>BlueOceanChamp</h1>
-      </div>
-      <div className="border border-blackCoral/10 rounded-full flex justify-center py-2">
-        <h1>Oceans will take home the trophy!</h1>
-      </div>
-    </div>
-    <div className="flex flex-row py-2">
-      <div className="bg-blackCoral/10 rounded-full flex justify-center align-bottom pr-2">
-        <h1>RandomDude</h1>
-      </div>
-      <div className="border border-blackCoral/10 rounded-full flex justify-center py-2">
-        <h1>will there be free food?</h1>
-      </div>
-    </div>
-  </div>
   )
 }
 

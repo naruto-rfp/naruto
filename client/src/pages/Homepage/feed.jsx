@@ -18,31 +18,14 @@ export default function Feed({ userId }) {
       .catch((err) => console.log(err))
   }, [])
 
-  // get the teamId from coaches, member, and fan table where userId is equal to userId
   useEffect(() => {
     const gettest = async () => {
       const coachTeams = await axios.get(`/api/coaches/teams/${userIdTest}`)
       const memberTeams = await axios.get(`/api/members/teams/${userIdTest}`)
       const fanTeams = await axios.get(`/api/fans/teams/${userIdTest}`)
       await setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data)
-      // await Promise.all(setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data))
-
-      // await userTeams.map((team) => {
-      //   console.log('testing')
-      //   // axios.get(`/api/events/${team.teamId}`)
-      //   // .then((resp) => console.log('event',resp))
-      // })
     }
-      // axios
-      //   .get(`/api/coaches/teams/${userIdTest}`)
-      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
-      // axios
-      //   .get(`/api/members/teams/${userIdTest}`)
-      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
-      // axios
-      //   .get(`/api/fans/teams/${userIdTest}`)
-      //   .then((resp) => setUserTeams([...userTeams, resp.data]))
-      gettest()
+    gettest()
   }, [])
 
   useEffect(() => {
@@ -54,15 +37,6 @@ export default function Feed({ userId }) {
         .then((resp) => setUserTeamsEvents(resp.data))
     }
   }, [userTeams])
-
-  // still need to implement
-  const handleTabToggle = (tab) => {
-    // reset the current active tab
-    // if userTeamEvents is empty
-     // get request to coaches, member, and fan to get all team id where the current userId exist
-    //  get all the events matching the teamid passed in as param
-    // set the userTeamEvents with the respond events
-  }
 
   return (
     <div>
@@ -104,8 +78,6 @@ export default function Feed({ userId }) {
               {userTeamsEvents.map((event) => {
                 return <Events event={event} />
               })}
-              {/* <Events userTeamsEvents={userTeamsEvents}/> */}
-              {/* map once the backend is connected */}
             </div>
           </div>
         </div>
