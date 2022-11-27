@@ -2,12 +2,15 @@ const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
 
 const SKUs = sequelize.define(
-  'Skus',
+  'skus',
   {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
+    },
+    productId: {
+      type: DataTypes.INTEGER,
     },
     size: {
       type: DataTypes.STRING,

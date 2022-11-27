@@ -1,40 +1,42 @@
 const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
-const Teams = require('./teams')
 
-const Events = sequelize.define(
-  'events',
+const Cart = sequelize.define(
+  'carts',
   {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    teamId: {
+    productId: {
       type: DataTypes.INTEGER,
-      references: {
-        model: Teams,
-        key: 'id',
-      },
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     description: {
       type: DataTypes.TEXT,
-      allowNull: false,
     },
-    date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    location: {
+    photos: {
       type: DataTypes.TEXT,
-      allowNull: false,
+    },
+    defaultPrice: {
+      type: DataTypes.INTEGER,
+    },
+    skuId: {
+      type: DataTypes.INTEGER,
+    },
+    size: {
+      type: DataTypes.STRING,
+    },
+    quantity: {
+      type: DataTypes.INTEGER,
     },
   },
-  { timestamps: false }
+  {
+    timestamps: false,
+  }
 )
 
-module.exports = Events
+module.exports = Cart

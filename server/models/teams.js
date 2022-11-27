@@ -1,7 +1,9 @@
 const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
 
-const Teams = sequelize.define('Teams', {
+const Teams = sequelize.define(
+  'teams',
+  {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -17,9 +19,7 @@ const Teams = sequelize.define('Teams', {
       type: DataTypes.TEXT,
     },
   },
-  {
-    timestamps: false,
-  }
+  { timestamps: false }
 )
 
 module.exports = Teams
