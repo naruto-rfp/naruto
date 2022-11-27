@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize')
 const { sequelize } = require('../database')
 
 const Users = sequelize.define(
-  'Users',
+  'users',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -43,9 +43,7 @@ const Users = sequelize.define(
       type: DataTypes.INTEGER,
     },
   },
-  {
-    timestamps: false,
-  }
+  { timestamps: false }
 )
 
 module.exports = Users

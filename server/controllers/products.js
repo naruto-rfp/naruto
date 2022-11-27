@@ -52,12 +52,12 @@ exports.getSkuById = (req, res) => {
 }
 
 exports.postSkus = (req, res) => {
-  const { id, price, quantity, ProductId } = req.body
+  const { id, price, quantity, productId } = req.body
   SKUs.create({
     id,
     price,
     quantity,
-    ProductId,
+    productId,
   })
     .then((data) => {
       res.status(200).json(data)
