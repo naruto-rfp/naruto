@@ -1,11 +1,4 @@
-import {
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
-  ResponsiveContainer,
-} from 'recharts'
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts'
 
 export default function Radarchart({ reliability, speed, strength, jumping, aerobic }) {
   const data = [
@@ -30,16 +23,21 @@ export default function Radarchart({ reliability, speed, strength, jumping, aero
       value: parseInt(aerobic, 10),
     },
   ]
-  console.log(data);
 
   return (
-    <ResponsiveContainer>
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey="stats" />
-        <PolarRadiusAxis />
-        <Radar dataKey="value" stroke="#c3d350" fill="#e6f14a" fillOpacity={0.6} />
-      </RadarChart>
-    </ResponsiveContainer>
+    <RadarChart
+      width={250}
+      height={250}
+      cx="50%"
+      cy="50%"
+      outerRadius="80%"
+      data={data}
+      margin={{ right: 0, top: 0, left: 0, bottom: 0 }}
+    >
+      <PolarGrid />
+      <PolarAngleAxis dataKey="stats" />
+      <PolarRadiusAxis />
+      <Radar dataKey="value" stroke="#c3d350" fill="#e6f14a" fillOpacity={0.6} />
+    </RadarChart>
   )
 }
