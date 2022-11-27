@@ -3,12 +3,11 @@ import Navbar from './NavBar'
 import Modal from './Modal'
 
 function PrivateRoutes({ session, logout }) {
-  // Auth stuff goes here
   // temp auth
   return session ? (
     <>
       <Navbar session={session} logout={logout} />
-      <Outlet />
+      <Outlet context={{ currentUserData: session.data }} />
       <Modal />
     </>
   ) : (
