@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function Login({ setSession }) {
+  const navigate = useNavigate()
   const [showModal, setShowModal] = useState(false)
   const [credentials, setCredentials] = useState({
     username: '',
@@ -22,17 +24,20 @@ function Login({ setSession }) {
     } else {
       axios
         .post('/api/user', newUser)
-        .then((data) => console.log(data))
-        .catch((err) => console.log(err))
+        .then((data) => {
+          console.log(data)
 
-      setShowModal(!showModal)
-      setNewUser({
-        username: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-      })
+          setShowModal(!showModal)
+          setNewUser({
+            username: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+          })
+
+          navigate('/')
+        })
+        .catch((err) => console.log(err))
     }
   }
 
@@ -40,14 +45,15 @@ function Login({ setSession }) {
     axios
       .post('/api/login', credentials)
       .then((data) => {
-        console.log('DATA', data)
         setSession(data)
+        setCredentials({
+          username: '',
+          password: '',
+        })
+
+        navigate('/')
       })
       .catch((err) => console.log('Err', err))
-    setCredentials({
-      username: '',
-      password: '',
-    })
   }
 
   return (
@@ -66,9 +72,7 @@ function Login({ setSession }) {
                           src="https://findicons.com/files/icons/1275/naruto_vol_1/128/uzumaki_naruto.png"
                           alt="logo"
                         />
-                        <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">
-                          We are Team Naruto
-                        </h4>
+                        <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to TeamUP</h4>
                       </div>
                       <form>
                         <p className="mb-4">Please login to your account</p>
@@ -100,7 +104,7 @@ function Login({ setSession }) {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            onClick={() => login()}
+                            onClick={login}
                           >
                             Log in
                           </button>

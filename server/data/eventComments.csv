@@ -1,4 +1,4 @@
-id,event_id,user_id,content
+id,userId,eventId,text
 1,509,160,"Toxic effect of venom of other North and South American snake, intentional self-harm, subsequent encounter"
 2,932,960,"Unspecified fracture of T11-T12 vertebra, initial encounter for closed fracture"
 3,142,317,"Infection of amniotic sac and membranes, unspecified, second trimester, fetus 2"
