@@ -20,7 +20,7 @@ export default function Items({ cart, setCart }) {
     <div className="item-container">
       {cart.map((item) => {
         return (
-          <>
+          <div className="item-card-container" key={item.name}>
             <div className="item-card">
               <img className="item-photo" src={item.photos} alt={item.name} />
               <div className="item-inner-container">
@@ -31,16 +31,19 @@ export default function Items({ cart, setCart }) {
                 </div>
                 <div className="item-second-row">
                   <div className="sku-info">Product ID # {item.skuId}</div>
-                  <div className="sku-size">Size {item.size}</div>
-                  <div className="sku-quantity">Quantity: {item.quantity}</div>
+                  <div className="sku-size">
+                    <span className="font-medium">Size:</span> {item.size}
+                  </div>
+                  <div className="sku-quantity">
+                    <span className="font-medium">Quantity:</span> {item.quantity}
+                  </div>
                 </div>
               </div>
+              <button type="submit" className="remove-item-btn" onClick={() => removeItem(item.id)}>
+                REMOVE ITEM
+              </button>
             </div>
-
-            <button type="submit" className="remove-item-btn" onClick={() => removeItem(item.id)}>
-              REMOVE ITEM
-            </button>
-          </>
+          </div>
         )
       })}
     </div>
