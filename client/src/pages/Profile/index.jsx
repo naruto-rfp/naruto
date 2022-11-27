@@ -21,7 +21,7 @@ export default function Profile() {
     aerobic: 0,
   })
 
-  useEffect(() => {
+  const fetchData = () => {
     axios.get('/api/user/1').then((results) => {
       setUserData((prev) => ({
         ...prev,
@@ -38,6 +38,10 @@ export default function Profile() {
         aerobic: results.data.aerobic,
       }))
     })
+  }
+
+  useEffect(() => {
+    fetchData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -84,7 +88,7 @@ export default function Profile() {
           </div>
         </section>
         <div className="flex border-solid border-2 border-indigo-600 h-80  justify-center items-center flex-wrap mt-10">
-          <About userData={userData} about={userData.about} />
+          <About userData={userData} about={userData.about} fetchData={fetchData} />
         </div>
       </div>
     </>

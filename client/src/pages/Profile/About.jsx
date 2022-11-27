@@ -1,14 +1,15 @@
+import axios from 'axios'
 import { useState } from 'react'
 import EditProfileModal from './EditProfileModal'
 
-export default function About({ userData, about }) {
+export default function About({ userData, about, fetchData }) {
   const [modal, setModal] = useState(false)
   const [inputs, setInputs] = useState({
     speed: userData.speed,
     reliability: userData.reliability,
+    strength: userData.strength,
     jumping: userData.jumping,
     aerobic: userData.aerobic,
-    strength: userData.strength,
     about: userData.about,
   })
 
@@ -27,12 +28,17 @@ export default function About({ userData, about }) {
   const handleEditProfileSubmit = (e) => {
     e.preventDefault()
     console.log('form submitted!')
+    // TODO: should be called based on id
+    axios.put('/api/user/1/edit', inputs).then(() => {
+      setModal(false)
+      fetchData()
+    })
     // axios post profile change
   }
 
   return (
     <div>
-      about is : {about}
+      {about}
       <button
         className="bg-gradient-to-r from-blackCoral to-greenYellow text-white float-right font-bold py-2 px-4 rounded"
         type="button"
