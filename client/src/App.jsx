@@ -42,7 +42,6 @@ const App = function App() {
 
   return (
     <BrowserRouter>
-    <NavBar />
       <Routes>
         <Route element={<PrivateRoutes session={session} logout={logout} />}>
           <Route element={<Home />} path="/" />
