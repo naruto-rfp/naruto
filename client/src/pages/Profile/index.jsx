@@ -42,24 +42,26 @@ export default function Profile() {
   }, [])
 
   return (
-    <section className="h-full justify-center">
-      <div className="text-gray-600 body-font">
-        <div className="flex justify-center items-center flex-wrap mb-10">
-          <img
-            className="h-64"
-            src="https://media.discordapp.net/attachments/1042931039699488860/1045026016264990740/Naruto_Banner.webp"
-            alt=""
-          />
-        </div>
-        <div className="grid grid-cols-4 gap-4">
-          <div className="items-center text-center bg-darkBlueGray rounded-lg h-96">
-            <Info
-              firstName={userData.firstName}
-              lastName={userData.lastName}
-              profilePic={userData.profilePic}
+    <>
+      <section className="justify-center">
+        <div className="text-gray-600 body-font">
+          <div className="flex justify-center items-center flex-wrap mb-10">
+            <img
+              className="h-64 w-full object-cover"
+              src="https://media.discordapp.net/attachments/1042931039699488860/1045026016264990740/Naruto_Banner.webp"
+              alt=""
             />
           </div>
-          <div className="border-solid border-2 border-indigo-600 items-center text-center h-96">
+        </div>
+      </section>
+      <div className="max-w-6xl mx-auto mt-12">
+        <section className="py-6 flex flex-row gap-4">
+          <Info
+            firstName={userData.firstName}
+            lastName={userData.lastName}
+            profilePic={userData.profilePic}
+          />
+          <div className="bg-white flex-grow-0 rounded-md px-6 py-8">
             <RadarChart
               speed={userData.speed}
               reliability={userData.reliability}
@@ -68,13 +70,23 @@ export default function Profile() {
               aerobic={userData.aerobic}
             />
           </div>
-          <div className="items-center text-center h-96">Followers</div>
-          <div className="items-center text-center h-96">Members</div>
-        </div>
-        <div className="flex justify-center items-center flex-wrap mt-10">
-          <About about={userData.about} />
+
+          <div className="flex-grow rounded-md px-6 py-8 bg-rose-400">
+            <div className="heading text-center">
+              <h1 className="text-xl">Team Members</h1>
+            </div>
+          </div>
+
+          <div className="flex-grow rounded-md px-y py-8 bg-rose-400">
+            <div className="heading text-center">
+              <h1 className="text-xl">Fans</h1>
+            </div>
+          </div>
+        </section>
+        <div className="flex border-solid border-2 border-indigo-600 h-80  justify-center items-center flex-wrap mt-10">
+          <About userData={userData} about={userData.about} />
         </div>
       </div>
-    </section>
+    </>
   )
 }
