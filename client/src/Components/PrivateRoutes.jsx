@@ -1,9 +1,9 @@
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet, Navigate } from 'react-router-dom'
 import Navbar from './NavBar'
 import Modal from './Modal'
 
-function PrivateRoutes({ session, logout, currentUser }) {
-  const navigate = useNavigate()
+function PrivateRoutes({ session, logout }) {
+  // const navigate = useNavigate()
   // Auth stuff goes here
   // temp auth
   return session ? (
@@ -13,7 +13,7 @@ function PrivateRoutes({ session, logout, currentUser }) {
       <Modal />
     </>
   ) : (
-    navigate('/')
+    <Navigate to="/login/" />
   )
 }
 

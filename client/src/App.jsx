@@ -1,4 +1,4 @@
-import { useEffect, useState, createContext } from 'react'
+import React, { useEffect, useState, createContext } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Profile from './pages/Profile'
@@ -18,15 +18,16 @@ const App = function App() {
   const [currentUser, setCurrentUser] = useState('')
   const [session, setSession] = useStore('session')
   const logout = async () => {
-    await fetch('/api/session', { method: 'DELETE' }).catch(console.error)
+    await fetch('/api/session', { method: 'DELETE', credentials: 'include' }).catch(console.error)
     // Redirect to the login page after logging out to force a refresh
     // window.location.assign('/')
     // If want to keep user on the app without hard refresh:
     // ... use react-router-dom to navigate to the login or home page
     //
     // TEMP
-    setSession(null)
+    console.log('Trying to log out')
     // navigate('/')
+    setSession(null)
   }
 
   // Get the user session on intial mounting
