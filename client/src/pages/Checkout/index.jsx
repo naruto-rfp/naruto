@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './checkout.css'
@@ -8,10 +9,17 @@ export default function Checkout() {
   const [tax, setTax] = useState(0)
   const [total, setTotal] = useState(0)
 
+  useEffect(() => {
+    axios
+      .get('/api/cart')
+      .then((data) => console.log('Retrieved data from the cart', data.data))
+      .catch((err) => console.log(err))
+  }, [cart])
+
   return (
     // container
     <>
-      <section className="max-w-6xl mx-auto mt-2 checkout-container">
+      <section className="max-w-6xl mx-auto mt-3 checkout-container">
         <div className="main-cart">
           {cart.length > 0 ? (
             <div className="cart-component">greater than 0</div>

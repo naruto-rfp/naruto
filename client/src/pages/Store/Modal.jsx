@@ -1,21 +1,85 @@
 import './store.css'
 import { Link } from 'react-router-dom'
+import { useState, useCallback } from 'react'
+import axios from 'axios'
+
+// pass initial state to product modal content
+// move state items to product modal content
 
 export default function ProductModalContent({
+  id,
   photos,
   name,
-  id,
   price,
   description,
   skuInfo,
-  currentIndex,
-  handleSizeClick,
-  setQuantity,
-  numDropdown,
-  quantity,
-  stock,
-  handleCartSubmit,
+  filterSkus,
+  products,
 }) {
+  // productID, skuID, size, and quantity for http post request to api/cart
+  const [productID, setProductId] = useState(null)
+  const [skuID, setSkuID] = useState(null)
+  const [size, setSize] = useState('')
+  const [quantity, setQuantity] = useState(0)
+  // stock is for conditionally rendering the <select> and <option> tags
+  const [stock, setStock] = useState(0)
+  // currentIndex is for the style change when user clicks a new size
+  const [currentIndex, setCurrentIndex] = useState(null)
+
+  // helper function to change state items
+  const getQuantity = (prodId, sizeSelected) => {
+    // retrieve the skus that match the product ID
+    const row = filterSkus(prodId)
+    // retrieve the row of sku info based on the user size selected
+    const selectedQuantity = row.filter((sku) => sku.size === sizeSelected)
+    // state item for post request
+    setSkuID(selectedQuantity[0].id)
+    setStock(selectedQuantity[0].quantity)
+  }
+
+  const handleSizeClick = (userSize, index, productId) => {
+    // state items for post request
+    setSize(userSize)
+    setProductId(productId)
+    // helper function to change state items
+    getQuantity(productId, userSize)
+    // for style changing
+    setCurrentIndex(index)
+  }
+
+  const numDropdown = () => {
+    // set the stock to the last number in the array
+    const arrayToN = Array?.from({ length: stock }, (v, i) => i + 1)
+    // return <option> elements for the select drop down menu
+    return arrayToN?.map((num, index) => {
+      return (
+        <option className="qty-options" value={num} key={index}>
+          {num}
+        </option>
+      )
+    })
+  }
+
+  // when user has valid cart and clicks submit
+  const handleCartSubmit = () => {
+    // iterate through the array of products and return the matching object based on productID
+    const result = products.filter((product) => product.id === productID)
+    const productInformation = result[0]
+    // set the properties in the product object
+    productInformation.skuId = skuID
+    productInformation.size = size
+    productInformation.quantity = Number(quantity)
+    // rename the id property to productId
+    productInformation.productId = productInformation.id
+    delete productInformation.id
+    // console.log('this is what I plan to send in the post request', productInformation)
+    // post request to database
+    axios
+      .post('/api/cart', productInformation)
+      .then((data) => console.log('Added to cart successfully:', data.data))
+      .catch((err) => console.log(err))
+  }
+
   return (
     <div className="modal-container">
       <div className="modal-image">

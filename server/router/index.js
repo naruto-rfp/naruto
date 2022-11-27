@@ -4,6 +4,7 @@ const coaches = require('../controllers/coaches')
 const members = require('../controllers/members')
 const fans = require('../controllers/fans')
 const store = require('../controllers/products')
+const cart = require('../controllers/cart')
 
 const router = express.Router()
 
@@ -45,6 +46,16 @@ router.get('/skus/id', store.getSkuById)
 router.post('/skus', store.postSkus)
 // Delete SKUs from Database
 router.delete('/skus/:id', store.deleteSkus)
+
+/**
+ * Cart
+ */
+// Retrieve Cart information
+router.get('/cart', cart.getCart)
+// Add Cart information
+router.post('/cart', cart.postCart)
+// Delete Cart information
+router.delete('/cart/:id', cart.deleteCart)
 
 /**
  * Coaches

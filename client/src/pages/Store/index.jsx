@@ -11,7 +11,7 @@ export default function Store() {
       .get('http://localhost:3000/api/products')
       .then((allProducts) => {
         setProducts(allProducts.data)
-        console.log('this is all the products', allProducts.data)
+        // console.log('this is all the products', allProducts.data)
       })
       .catch((err) => console.log(`Error in retrieving products: ${err}`))
 
@@ -19,12 +19,10 @@ export default function Store() {
       .get('http://localhost:3000/api/skus')
       .then((allSkus) => {
         setSkus(allSkus.data)
-        console.log('this is all the skus', allSkus.data)
+        // console.log('this is all the skus', allSkus.data)
       })
       .catch((err) => console.log(`Error in retrieving skus: ${err}`))
   }, [])
-
-  const handleCheckout = (productId, skuId, sizeUserWants, quantityUserWants) => {}
 
   return (
     // container
@@ -53,6 +51,7 @@ export default function Store() {
               price={defaultPrice}
               key={id}
               skus={skus}
+              products={products}
             />
           )
         })}
