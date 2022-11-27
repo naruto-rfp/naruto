@@ -51,6 +51,7 @@ export default function Store() {
               price={defaultPrice}
               key={id}
               skus={skus}
+              products={products}
             />
           )
         })}

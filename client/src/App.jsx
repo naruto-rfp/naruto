@@ -7,8 +7,6 @@ import Team from './pages/Team'
 import Login from './pages/Login'
 import Checkout from './pages/Checkout'
 import PrivateRoutes from './components/PrivateRoutes'
-import Success from './pages/Store/Success'
-import Cancel from './pages/Store/Cancel'
 import { useStore } from './lib/fastContext'
 
 const App = function App() {
@@ -50,8 +48,6 @@ const App = function App() {
           <Route element={<Store />} path="/store" />
           <Route element={<Team />} path="/team" />
           <Route element={<Checkout />} path="/checkout" />
-          <Route element={<Success />} path="/success" />
-          <Route element={<Cancel />} path="/cancel" />
         </Route>
         <Route element={<Login setSession={setSession} />} path="/login" />
       </Routes>
