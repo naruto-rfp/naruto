@@ -96,6 +96,10 @@ router.get('/posts/:userID', posts.getPosts)
 router.get('/teams/allrelated', teams.getAllRelatedTeamName)
 router.get('/teams/:teamID', teams.getTeamName)
 router.get('/teams/checkteams/:name', teams.checkTeams)
+router.post('/teams/:teamID/changeBannerPic', teams.updateTeamBanner)
+router.post('/teams/:teamID/changeAvatarPic', teams.updateTeamAvatar)
+router.get('/teams/:teamID/posts', teams.getPosts)
+router.get('/teams/:teamID/events', teams.getEvents)
 
 /**
  * Events
