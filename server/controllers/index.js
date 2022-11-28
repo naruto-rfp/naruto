@@ -1,4 +1,6 @@
 const db = require('../database')
+const Members = require('../models/members')
+const Teams = require('../models/teams')
 
 const { User } = db
 
@@ -8,21 +10,26 @@ exports.createUser = (req, res) => {
   const caseUsername = username.toLowerCase()
   const caseEmail = email.toLowerCase()
 
-  User.create({
-    username: caseUsername,
-    firstName,
-    lastName,
-    password,
-    email: caseEmail,
-  })
-    .then((data) => {
-      res.send(data)
+  User.findOne({
+    order: [['id', 'DESC']],
+  }).then((data) => {
+    User.create({
+      id: data.dataValues.id + 1,
+      username: caseUsername,
+      firstName,
+      lastName,
+      password,
+      email: caseEmail,
     })
-    .catch((err) => {
-      res.status(500).send({
-        message: err.message || 'Internal Server Error',
+      .then((results) => {
+        res.status(201).json(results)
       })
-    })
+      .catch((err) => {
+        res.status(500).send({
+          message: err.message || 'Internal Server Error',
+        })
+      })
+  })
 }
 
 exports.getUser = (req, res) => {
@@ -34,7 +41,6 @@ exports.getUser = (req, res) => {
     })
     .catch((err) => {
       console.error(err)
-
       res.status(500).send({
         message: `Error retrieving User with id=${id}`,
       })
@@ -81,6 +87,31 @@ exports.changeProfilePic = (req, res) => {
     })
 }
 
+exports.getUserMembers = (req, res) => {
+  const { id } = req.params
+
+  Members.findAll({
+    where: { userId: id },
+  })
+    .then((results) => {
+      const teamIdMap = results.map((data) => {
+        return data.dataValues.teamId
+      })
+      Teams.findAll({
+        where: { id: teamIdMap },
+      })
+        .then((teamResults) => {
+          res.status(200).json(teamResults)
+        })
+        .catch((err1) => {
+          res.status(500).send(`Error Retrieving from Teams database, ${err1}`)
+        })
+    })
+    .catch((err2) => {
+      res.status(500).send(`Error retrieving from Members database, ${err2}`)
+    })
+}
+
 exports.login = async (req, res) => {
   const { username, password } = req.body
 
@@ -114,10 +145,6 @@ exports.login = async (req, res) => {
 exports.getSession = (req, res) => {
   // Actual implementation will be done later
   // res.json(req.session.user || null)
-  req.session.user = {
-    id: 1,
-    username: 'test',
-  }
   res.json(req.session.user)
 }
 

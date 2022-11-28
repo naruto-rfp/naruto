@@ -49,7 +49,9 @@ export default function Feed({ userId }) {
                 href="#"
                 onClick={() => setActiveTab(1)}
                 className={`${
-                  activeTab === 1 ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white' : 'bg-blackCoral/10'
+                  activeTab === 1
+                    ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white'
+                    : 'bg-blackCoral/10'
                 } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
               >
                 Posts
@@ -61,7 +63,9 @@ export default function Feed({ userId }) {
                 href="#"
                 onClick={() => setActiveTab(2)}
                 className={`${
-                  activeTab === 2 ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white' : 'bg-blackCoral/10'
+                  activeTab === 2
+                    ? 'bg-gradient-to-r from-blackCoral to-greenYellow text-white'
+                    : 'bg-blackCoral/10'
                 } inline-block px-4 py-2 text-gray-600 bg-white rounded shadow`}
               >
                 Events

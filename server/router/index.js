@@ -27,6 +27,8 @@ router.get('/user/:id', controllers.getUser)
 router.put('/user/:id/edit', controllers.changeProfile)
 // Change Profile Picture of user
 router.put('/user/:id/profilePic', controllers.changeProfilePic)
+// Retreive teams that Users are fan of
+router.get('/user/:id/members', controllers.getUserMembers)
 
 router.get('/session', controllers.getSession)
 router.post('/login', controllers.login)
