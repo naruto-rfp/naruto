@@ -154,3 +154,10 @@ exports.logout = (req, res) => {
   })
   res.status(200).send('Session Destroyed')
 }
+
+
+exports.checkUsers = (req, res) => {
+  User.findAll({ where: { username: req.params.username } }).then((resp) => {
+    res.status(200).json(resp)
+  })
+}
