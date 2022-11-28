@@ -49,7 +49,7 @@ export default function Checkout() {
                 <div className="unitprice-column">UNIT PRICE</div>
                 <div className="total-price-column">TOTAL PRICE</div>
               </div>
-              <Items cart={cart} setCart={setCart} />
+              <Items cart={cart} setCart={setCart} setSubtotal={setSubtotal} setTax={setTax} />
             </>
           ) : (
             <div>
