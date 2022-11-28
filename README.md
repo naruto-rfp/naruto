@@ -2,7 +2,7 @@
 
 ## About
 
-This project comprises of a social media web application dedicated for intramural and recreational sports users in the local community.
+This project comprises of a social media web application dedicated for intramural and recreational sports users in the local community. Users can register and login, create a profile, interact online via posts, multimedia, and cheers (likes), join sports common-interest groups, and make purchases via the store.
 
 This project was built with:
 

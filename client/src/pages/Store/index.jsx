@@ -26,14 +26,14 @@ export default function Store() {
     // container
     <section className="container">
       <div className="banner">
-        <h4>Community Store</h4>
+        <h4>TeamUP Community Store</h4>
         <h1>Local Community Training Jerseys</h1>
         <p>
           Browse through our collection of mens&#39; and womens&#39; sports apparel and get ready
-          for the next big game. Whether you&#39;re playing or watching your favorite sport,
-          Community Sports has been delivering quality sports gear from your local teams since 2022.
-          We&#39;ve partnered with the represented teams to provide you a safe and easy way to make
-          purchases all from the comfort of your home.
+          for the next big game. Whether you&#39;re playing or watching your favorite sport, TeamUP
+          has been delivering quality sports gear from your local teams since 2022. We&#39;ve
+          partnered with the represented teams to provide you a safe and easy way to make purchases
+          all from the comfort of your home.
         </p>
       </div>
       {/* row */}

@@ -54,8 +54,6 @@ exports.getPosts = (req, res) => {
     return
   }
 
-  // Retrieve the posts from the database for the specified teamID and
-  // only within the specified page and pageSize
   Posts.findAll({
     where: { teamId: teamID },
     offset: (page - 1) * pageSize,
@@ -75,8 +73,6 @@ exports.getEvents = (req, res) => {
     return
   }
 
-  // Retrieve the posts from the database for the specified teamID and
-  // only within the specified page and pageSize
   Events.findAll({
     where: { teamId: teamID },
     offset: (page - 1) * pageSize,
