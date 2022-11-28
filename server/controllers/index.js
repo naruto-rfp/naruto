@@ -14,7 +14,7 @@ exports.createUser = (req, res) => {
     order: [['id', 'DESC']],
   }).then((data) => {
     User.create({
-      id: data.dataValues.id + 1,
+      // id: data.dataValues.id + 1,
       username: caseUsername,
       firstName,
       lastName,
@@ -154,7 +154,6 @@ exports.logout = (req, res) => {
   })
   res.status(200).send('Session Destroyed')
 }
-
 
 exports.checkUsers = (req, res) => {
   User.findAll({ where: { username: req.params.username } }).then((resp) => {
