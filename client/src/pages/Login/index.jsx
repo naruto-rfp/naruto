@@ -20,29 +20,6 @@ function Login({ setSession }) {
     password: '',
   })
 
-  const register = () => {
-    console.log(Object.values(newUser))
-    if (Object.values(newUser).includes('')) {
-      // window.alert('please fill in all necessary information!')
-    } else {
-      axios
-        .post('/api/user', newUser)
-        .then((data) => {
-          console.log(data)
-          setShowModal(!showModal)
-          setNewUser({
-            username: '',
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-          })
-          navigate('/')
-        })
-        .catch((err) => console.log(err))
-    }
-  }
-
   const login = () => {
     axios
       .post('/api/login', credentials)
@@ -59,6 +36,29 @@ function Login({ setSession }) {
       username: '',
       password: '',
     })
+  }
+
+  const register = () => {
+    console.log(Object.values(newUser))
+    if (Object.values(newUser).includes('')) {
+      // window.alert('please fill in all necessary information!')
+    } else {
+      axios
+        .post('/api/user', newUser)
+        .then((data) => {
+          setSession(data)
+          setShowModal(!showModal)
+          setNewUser({
+            username: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+          })
+          navigate('/')
+        })
+        .catch((err) => console.log(err))
+    }
   }
 
   return (
@@ -136,12 +136,12 @@ function Login({ setSession }) {
                         The premier site to connect recreational sports teams and fans
                       </h4>
                       <p className="text-sm">
-                        Welcome to Community Sports, the best community for the recreational sports
-                        fan. We support recreational adult leagues, intramural leagues, and much
-                        more! Keep up to date with all the latest news on your favorite teams and
-                        shop our selection of local jerseys. In addition, our platform makes it easy
-                        for coaches to manage their teams through event creation, rsvp management,
-                        and posting team dues. A real one stop shop for all involved in your local
+                        Welcome to TeamUP, the best community for the recreational sports fan. We
+                        support recreational adult leagues, intramural leagues, and much more! Keep
+                        up to date with all the latest news on your favorite teams and shop our
+                        selection of local jerseys. In addition, our platform makes it easy for
+                        coaches to manage their teams through event creation, rsvp management, and
+                        posting team dues. A real one stop shop for all involved in your local
                         sports community.
                       </p>
                     </div>

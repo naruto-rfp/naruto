@@ -59,57 +59,50 @@ export default function Profile() {
   }, [])
 
   return (
-    <>
+    <div className="max-w-6xl mx-auto mt-12">
       <section className="justify-center">
         <div className="text-gray-600 body-font">
           <div className="flex justify-center items-center flex-wrap mb-10">
             <img
               className="h-64 w-full object-cover"
-              src="https://media.discordapp.net/attachments/1042931039699488860/1045026016264990740/Naruto_Banner.webp"
+              src="https://cdn.printnetwork.com/production/assets/themes/5966561450122033bd4456f8/imageLocker/5f175ecbe41d5c65b28737ba/blog/blog-description/1647901378358_soccer_banners.jpeg"
               alt=""
             />
           </div>
         </div>
       </section>
-      <div className="max-w-6xl mx-auto mt-12">
-        <section className="py-6 flex flex-row gap-4">
-          <Info
-            firstName={userData.firstName}
-            lastName={userData.lastName}
-            profilePic={userData.profilePic}
-            fetchData={fetchData}
-            editable={editable}
-          />
-          <div className="bg-white flex-grow-0 rounded-md px-6 py-8">
-            <RadarChart
-              speed={userData.speed}
-              reliability={userData.reliability}
-              strength={userData.strength}
-              jumping={userData.jumping}
-              aerobic={userData.aerobic}
-            />
-          </div>
-
-          <div className="flex-grow rounded-md px-6 py-8 bg-rose-400">
-            <div className="heading text-center">
-              <h1 className="text-xl">Teams following</h1>
-            </div>
-          </div>
-
-          <div className="flex-grow rounded-md px-y py-8 bg-rose-400 overflow-y-auto">
-            <div className="heading text-center">
-              <h1 className="text-xl">Teams member of</h1>
-              <Members memberData={memberData} />
-            </div>
-          </div>
-        </section>
-        <About
-          editable={editable}
-          userData={userData}
-          about={userData.about}
+      <section className="py-6 flex flex-row gap-4">
+        <Info
+          firstName={userData.firstName}
+          lastName={userData.lastName}
+          profilePic={userData.profilePic}
           fetchData={fetchData}
+          editable={editable}
         />
-      </div>
-    </>
+        <div className="bg-white flex-grow-0 rounded-md px-6 py-8">
+          <RadarChart
+            speed={userData.speed}
+            reliability={userData.reliability}
+            strength={userData.strength}
+            jumping={userData.jumping}
+            aerobic={userData.aerobic}
+          />
+        </div>
+
+        {/* <div className="flex-grow rounded-md px-6 py-8 bg-rose-400">
+          <div className="heading text-center">
+            <h1 className="text-xl">Teams following</h1>
+          </div>
+        </div> */}
+
+        <div className="flex-grow rounded-md px-y py-8 bg-gray-300 overflow-y-auto">
+          <div className="heading text-center">
+            <h1 className="text-xl">Teams member of</h1>
+            <Members memberData={memberData} />
+          </div>
+        </div>
+      </section>
+      <About editable={editable} userData={userData} about={userData.about} fetchData={fetchData} />
+    </div>
   )
 }

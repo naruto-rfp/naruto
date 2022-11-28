@@ -8,7 +8,6 @@ import Login from './pages/Login'
 import Checkout from './pages/Checkout'
 import PrivateRoutes from './components/PrivateRoutes'
 import { useStore } from './lib/fastContext'
-import NavBar from './components/NavBar'
 
 // const UserContext = createContext()
 
@@ -42,7 +41,7 @@ const App = function App() {
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile/:id" />
           <Route element={<Store />} path="/store" />
-          <Route element={<Team />} path="/team/:id" />
+          <Route element={<Team />} path="/team" />
           <Route element={<Checkout />} path="/checkout" />
         </Route>
         <Route
