@@ -18,6 +18,12 @@ const Teams = sequelize.define(
     about: {
       type: DataTypes.TEXT,
     },
+    teamAvatarPic: {
+      type: DataTypes.STRING,
+    },
+    teamBannerPic: {
+      type: DataTypes.STRING,
+    },
   },
   { timestamps: false }
 )
