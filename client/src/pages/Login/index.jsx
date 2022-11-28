@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import logo from '../../lib/images/sports-colored.png'
+
+axios.defaults.withCredentials = true
 
 function Login({ setSession }) {
   const navigate = useNavigate()
@@ -26,15 +29,14 @@ function Login({ setSession }) {
         .post('/api/user', newUser)
         .then((data) => {
           console.log(data)
-
           setShowModal(!showModal)
           setNewUser({
             username: '',
             firstName: '',
             lastName: '',
             email: '',
+            password: '',
           })
-
           navigate('/')
         })
         .catch((err) => console.log(err))
@@ -50,10 +52,13 @@ function Login({ setSession }) {
           username: '',
           password: '',
         })
-
         navigate('/')
       })
       .catch((err) => console.log('Err', err))
+    setCredentials({
+      username: '',
+      password: '',
+    })
   }
 
   return (
@@ -67,11 +72,7 @@ function Login({ setSession }) {
                   <div className="lg:w-6/12 px-4 md:px-0">
                     <div className="md:p-12 md:mx-6">
                       <div className="text-center mx-auto">
-                        <img
-                          className="mx-auto"
-                          src="https://findicons.com/files/icons/1275/naruto_vol_1/128/uzumaki_naruto.png"
-                          alt="logo"
-                        />
+                        <img className="mx-auto" src={logo} alt="logo" />
                         <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to TeamUP</h4>
                       </div>
                       <form>
@@ -129,7 +130,7 @@ function Login({ setSession }) {
                       </form>
                     </div>
                   </div>
-                  <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-r from-blackCoral to-greenYellow">
+                  <div className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-b from-blackCoral to-greenYellow">
                     <div className="text-white px-4 py-6 md:p-12 md:mx-6">
                       <h4 className="text-xl font-semibold mb-6">
                         The premier site to connect recreational sports teams and fans
@@ -169,7 +170,7 @@ function Login({ setSession }) {
                 className="text-xl font-medium leading-normal text-gray-800"
                 id="exampleModalLabel"
               >
-                Register Here
+                Sign Up
               </h5>
               <button
                 type="button"
@@ -235,7 +236,7 @@ function Login({ setSession }) {
                 type="button"
                 className="px-6
                   py-2.5
-                  bg-purple-600
+                  bg-gradient-to-r from-blackCoral to-greenYellow
                   text-white
                   font-medium
                   text-xs
@@ -254,13 +255,13 @@ function Login({ setSession }) {
                   setShowModal(!showModal)
                 }}
               >
-                Close
+                Cancel
               </button>
               <button
                 type="button"
                 className="px-6
                   py-2.5
-                  bg-blue-600
+                  bg-gradient-to-r from-blackCoral to-greenYellow
                   text-white
                   font-medium
                   text-xs
@@ -279,7 +280,7 @@ function Login({ setSession }) {
                   register()
                 }}
               >
-                Save changes
+                Register User!
               </button>
             </div>
           </div>

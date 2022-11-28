@@ -36,7 +36,6 @@ exports.getUser = (req, res) => {
     })
     .catch((err) => {
       console.error(err)
-
       res.status(500).send({
         message: `Error retrieving User with id=${id}`,
       })
@@ -141,10 +140,6 @@ exports.login = async (req, res) => {
 exports.getSession = (req, res) => {
   // Actual implementation will be done later
   // res.json(req.session.user || null)
-  req.session.user = {
-    id: 1,
-    username: 'test',
-  }
   res.json(req.session.user)
 }
 
