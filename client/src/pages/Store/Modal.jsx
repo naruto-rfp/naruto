@@ -103,7 +103,7 @@ export default function ProductModalContent({
                     index === currentIndex ? 'active modal-size-boxes' : 'modal-size-boxes'
                   }
                   onClick={() => {
-                    handleSizeClick(sizes.size, index, sizes.ProductId)
+                    handleSizeClick(sizes.size, index, sizes.productId)
                   }}
                   key={sizes.id}
                   tabIndex={0}

@@ -14,13 +14,14 @@ export default function Card({ id, name, description, photos, price, skus, produ
 
   // given a productID, filter through all skus (from get request and saved in state) and find the matching array of objects of skus
   const filterSkus = (prodId) => {
-    const result = skus?.filter((row) => row.ProductId === prodId)
-    // console.log(`this is skus for product id ${id}:`, result)
+    const result = skus?.filter((row) => row.productId === prodId)
+    console.log(`this is skus for product id ${id}:`, result)
     return result
   }
 
   const handleModalClick = () => {
     const skuInfo = filterSkus(id)
+    console.log('this is skuInfo', skuInfo)
     setModal({
       ...modal,
       content: (
