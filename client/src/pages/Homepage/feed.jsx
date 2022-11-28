@@ -40,7 +40,7 @@ export default function Feed({ userId }) {
 
   return (
     <div>
-      <div className="container mx-auto mt-12">
+      <div className="container mt-12">
         <div className="flex flex-col items-left justify-center max-w-xl">
           <ul className="flex space-x-2">
             <li>
