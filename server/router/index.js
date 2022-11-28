@@ -91,9 +91,9 @@ router.get('/posts/:userID', posts.getPosts)
 /**
  * Teams
  */
+router.get('/teams/allrelated', teams.getAllRelatedTeamName)
 router.get('/teams/:teamID', teams.getTeamName)
 router.get('/teams/checkteams/:name', teams.checkTeams)
-// router.get('/teams', teams.getTeamName)
 
 /**
  * Events

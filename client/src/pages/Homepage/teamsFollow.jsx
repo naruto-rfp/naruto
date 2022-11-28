@@ -21,7 +21,7 @@ export default function TeamsFollow({ userId }) {
 
   return (
     <div className="h-1/3 w-full drop-shadow-lg pt-6 overflow-y-auto">
-      <div className="pb-2">Teams Follow</div>
+      <div className="bg-gradient-to-r from-blackCoral to-greenYellow text-white pb-3 text-center rounded-md">Teams Follow</div>
       {testData.map((data) => {
         return (
           // add specific team id to link route later

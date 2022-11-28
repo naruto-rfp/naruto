@@ -16,6 +16,10 @@ export default function SearchBar() {
         axios
           .get(`/api/teams/checkteams/${searchText}`)
           .then((respp) => navigate(`/team/${respp.data[0].id}`))
+          .catch((err) => {
+            console.log('No Such Name')
+            setSearchText('')
+          })
       }
     })
   }
