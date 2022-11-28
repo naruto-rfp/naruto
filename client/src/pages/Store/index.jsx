@@ -8,14 +8,14 @@ export default function Store() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/products')
+      .get('/api/products')
       .then((allProducts) => {
         setProducts(allProducts.data)
       })
       .catch((err) => console.log(`Error in retrieving products: ${err}`))
 
     axios
-      .get('http://localhost:3000/api/skus')
+      .get('/api/skus')
       .then((allSkus) => {
         setSkus(allSkus.data)
       })
