@@ -2,13 +2,10 @@ import axios from 'axios'
 import './items.css'
 
 export default function Items({ cart, setCart }) {
-  console.log("this is what's in the cart", cart)
-
   const removeItem = (id) => {
-    console.log('before removing item from state', cart)
+    // filter the cart, remove the item the user wants to remove
     const filteredCart = cart.filter((cartItem) => cartItem.id !== id)
     setCart(filteredCart)
-    console.log('after removing item from state', cart)
 
     axios
       .delete(`api/cart/${id}`)
