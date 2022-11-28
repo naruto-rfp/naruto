@@ -6,10 +6,10 @@ export default function Items({ cart, setCart, setSubtotal, setTax }) {
     // filter the cart, remove the item the user wants to remove
     const filteredCart = cart.filter((cartItem) => cartItem.id !== id)
     setCart(filteredCart)
+    // calculate the subtotal for the sidebar
     const sub = filteredCart.reduce((acc, obj) => {
       return acc + obj.defaultPrice * obj.quantity
     }, 0)
-    console.log('this is the new subtotal:', sub)
     setSubtotal(sub)
     setTax(sub * 0.1)
 
