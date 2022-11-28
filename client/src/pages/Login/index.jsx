@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import logo from '../../lib/images/sports-colored.png'
 
 axios.defaults.withCredentials = true
 
@@ -71,11 +72,7 @@ function Login({ setSession }) {
                   <div className="lg:w-6/12 px-4 md:px-0">
                     <div className="md:p-12 md:mx-6">
                       <div className="text-center mx-auto">
-                        <img
-                          className="mx-auto"
-                          src="../../lib/images/sportsColored.png"
-                          alt="logo"
-                        />
+                        <img className="mx-auto" src={logo} alt="logo" />
                         <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to TeamUP</h4>
                       </div>
                       <form>
