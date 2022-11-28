@@ -5,6 +5,10 @@ const members = require('../controllers/members')
 const fans = require('../controllers/fans')
 const store = require('../controllers/products')
 const cart = require('../controllers/cart')
+const posts = require('../controllers/posts')
+const teams = require('../controllers/teams')
+const events = require('../controllers/events')
+const eventComments = require('../controllers/eventComments')
 
 const router = express.Router()
 
@@ -29,6 +33,8 @@ router.get('/user/:id/members', controllers.getUserMembers)
 router.get('/session', controllers.getSession)
 router.post('/login', controllers.login)
 router.post('/logout', controllers.logout)
+
+router.get('/user/checkuser/:username', controllers.checkUsers)
 
 /**
  * Products
@@ -65,15 +71,40 @@ router.delete('/cart/:id', cart.deleteCart)
  * Coaches
  */
 router.get('/coaches/:teamID', coaches.getCoaches)
+router.get('/coaches/teams/:userId', coaches.getCoachTeams)
 
 /**
  * Members
  */
 router.get('/members/:teamID', members.getMembers)
+router.get('/members/teams/:userId', members.getMemberTeams)
 
 /**
  * Fans
  */
 router.get('/fans/:teamID', fans.getFans)
+router.get('/fans/teams/:userId', fans.getFanTeams)
+
+/**
+ * Posts
+ */
+router.get('/posts/:userID', posts.getPosts)
+
+/**
+ * Teams
+ */
+router.get('/teams/allrelated', teams.getAllRelatedTeamName)
+router.get('/teams/:teamID', teams.getTeamName)
+router.get('/teams/checkteams/:name', teams.checkTeams)
+
+/**
+ * Events
+ */
+router.get('/events', events.getPosts)
+
+/**
+ * Event Comments
+ */
+router.get('/eventcomments/:eventId', eventComments.getEventComments)
 
 module.exports = router

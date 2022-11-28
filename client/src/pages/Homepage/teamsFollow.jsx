@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 //pass in teamsFollow as prop
-export default function TeamsFollow() {
+export default function TeamsFollow({ userId }) {
   const testData = [{team: "49ers", banner: 'https://preview.redd.it/nasqgycd7q681.jpg?auto=webp&s=f060c836481a3aaae3bd1d6b29a3ae0529bcfc0b'}, {team: "Warriors", banner: 'https://external-preview.redd.it/x_O3ZIY_JM225HtAXfeEOGTYQR_dizhetHXZWxgTrDo.jpg?auto=webp&s=2f49ab329900cbfaccf22e086d52840fa32f2d8b'}, {team: "Giants", banner: 'http://images6.fanpop.com/image/photos/38000000/Naruto-banner-anime-38006985-851-315.png'}]
 
+  const userIdTest = 702
+
+  const [teamsPlayFor, setTeamsPlayFor] = useState([])
+
+  useEffect(() => {
+    const getTeamName = async () => {
+      const teamArray = await axios.get(`/api/members/teams/${userIdTest}`)
+      const teamNames = await axios.get('/api/teams', { params: teamArray.data })
+      // console.log(teamNames)
+    }
+    getTeamName()
+  })
+
   return (
-    <div className="h-100 w-full drop-shadow-lg">
-      <div className="pb-2">Following</div>
+    <div className="h-1/3 w-full drop-shadow-lg pt-6 overflow-y-auto">
+      <div className="bg-gradient-to-r from-blackCoral to-greenYellow text-white pb-3 text-center rounded-md">Teams Follow</div>
       {testData.map((data) => {
         return (
           // add specific team id to link route later
