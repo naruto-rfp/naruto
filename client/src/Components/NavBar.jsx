@@ -10,8 +10,8 @@ export default function NavBar({ session, logout }) {
         <Link to="/">
           <li className={liStyle}>Home</li>
         </Link>
-        <Link to={`/profile`}>
-        {/* <Link to={`/profile/${session.data.id}`}> */}
+        {/* <Link to={`/profile`}> */}
+        <Link to={`/profile/${session.data.id}`}>
           <li className={liStyle}>Profile</li>
         </Link>
         <Link to="/team">
