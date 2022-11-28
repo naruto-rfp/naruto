@@ -44,7 +44,7 @@ const App = function App() {
       <Routes>
         <Route element={<PrivateRoutes session={session} logout={logout} />}>
           <Route element={<Home />} path="/" />
-          <Route element={<Profile />} path="/profile" />
+          <Route element={<Profile />} path="/profile/:id" />
           <Route element={<Store />} path="/store" />
           <Route element={<Team />} path="/team" />
           <Route element={<Checkout />} path="/checkout" />
