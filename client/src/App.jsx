@@ -41,7 +41,7 @@ const App = function App() {
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile/:id" />
           <Route element={<Store />} path="/store" />
-          <Route element={<Team />} path="/team" />
+          <Route element={<Team />} path="/team/:teamId" />
           <Route element={<Checkout />} path="/checkout" />
         </Route>
         <Route

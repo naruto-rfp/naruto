@@ -103,10 +103,13 @@ exports.updateTeamAvatar = (req, res) => {
 }
 
 exports.getAllRelatedTeamName = (req, res) => {
-  // console.log(req.query)
   const queryId = []
-  for (const key in req.query) {
+  const idValues = []
+  for (let key in req.query) {
     queryId.push(req.query[key])
   }
-  // Teams.findAll({ where: { id: {[Op.or]: queryId.teamId } }}).then((resp) => res.status(200).json(resp))
+  for (let i = 0; i < queryId.length; i++) {
+    idValues.push(queryId[i]['teamId'])
+  }
+  Teams.findAll({ where: { id: {[Op.or]: idValues } }}).then((resp) => res.status(200).json(resp))
 }

@@ -2,33 +2,32 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-//pass in teamsFollow as prop
 export default function TeamsFollow({ userId }) {
-  const testData = [{team: "49ers", banner: 'https://preview.redd.it/nasqgycd7q681.jpg?auto=webp&s=f060c836481a3aaae3bd1d6b29a3ae0529bcfc0b'}, {team: "Warriors", banner: 'https://external-preview.redd.it/x_O3ZIY_JM225HtAXfeEOGTYQR_dizhetHXZWxgTrDo.jpg?auto=webp&s=2f49ab329900cbfaccf22e086d52840fa32f2d8b'}, {team: "Giants", banner: 'http://images6.fanpop.com/image/photos/38000000/Naruto-banner-anime-38006985-851-315.png'}]
+  const testData = [{id: 558, name: 'Tres-Zap', members: 20, fans: 250, banner:'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNwb3J0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'}]
 
-  const userIdTest = 702
-
-  const [teamsPlayFor, setTeamsPlayFor] = useState([])
+  const [teamsFollow, setTeamsFollow] = useState([])
 
   useEffect(() => {
-    const getTeamName = async () => {
-      const teamArray = await axios.get(`/api/members/teams/${userIdTest}`)
-      const teamNames = await axios.get('/api/teams', { params: teamArray.data })
-      // console.log(teamNames)
-    }
-    getTeamName()
-  })
+    axios.get(`/api/fans/teams/${userId}`).then((res) => {
+      axios
+        .get('/api/teams/allrelated', { params: res.data })
+        .then((resp) => setTeamsFollow(resp.data))
+    })
+  }, [])
 
   return (
     <div className="h-1/3 w-full drop-shadow-lg pt-6 overflow-y-auto">
-      <div className="bg-gradient-to-r from-blackCoral to-greenYellow text-white pb-3 text-center rounded-md">Teams Follow</div>
-      {testData.map((data) => {
+      <div className="bg-gradient-to-r from-blackCoral to-greenYellow text-white pb-3 text-center">Teams Follow</div>
+      {/* hardcoded test data instead of teamsFollow state */}
+      {testData.map((team) => {
         return (
-          // add specific team id to link route later
-          <Link to="/team">
+          <Link to={`/team/${team.id}`}>
             <div className="h-30 py-1 relative">
-              <img src={data.banner} alt="banner" className="rounded-lg h-full grayscale" />
-              <div className="absolute left-0 top-0 bg-gradient-to-r from-blackCoral to-greenYellow/70 rounded-lg">{data.team}</div>
+              <img src={team.banner} alt="banner" className="h-20 w-full overflow-hidden rounded-sm" />
+              <div className="absolute left-10 top-5 flex flex-col">
+                <div className="text-white font-bold">{team.name}</div>
+                <div className="text-white text-sm">{team.members} Members {team.fans} Fans</div>
+              </div>
             </div>
           </Link>
         )

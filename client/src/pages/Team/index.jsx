@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useCallback, useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useStore } from '../../lib/fastContext'
 import ChangeBannerPic from './ChangeBannerPic'
@@ -10,6 +11,7 @@ import TeamEvent from './TeamEvent'
 import EditIcon from '../../assets/icons/pen-to-square.svg'
 
 export default function Team() {
+  const { teamId } = useParams()
   const [activeTab, setActiveTab] = useState('posts')
   const [loading, setLoading] = useState(true)
   const [teamData, setTeamData] = useState(null)
@@ -36,9 +38,9 @@ export default function Team() {
   }, [modal, setModal, teamData])
 
   const fetchData = async () => {
-    const { data: team } = await axios.get('/api/teams/1')
-    const { data: posts } = await axios.get(`/api/teams/1/posts?page=${page}`)
-    const { data: events } = await axios.get(`/api/teams/1/events?page=${page}`)
+    const { data: team } = await axios.get(`/api/teams/${teamId}`)
+    const { data: posts } = await axios.get(`/api/teams/${teamId}/posts?page=${page}`)
+    const { data: events } = await axios.get(`/api/teams/${teamId}/events?page=${page}`)
     setTeamData(team[0])
     setTeamPosts(posts)
     setTeamEvents(events)
