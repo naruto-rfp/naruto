@@ -14,7 +14,7 @@ exports.createUser = (req, res) => {
     order: [['id', 'DESC']],
   }).then((data) => {
     User.create({
-      // id: data.dataValues.id + 1,
+      id: data.dataValues.id + 1,
       username: caseUsername,
       firstName,
       lastName,
