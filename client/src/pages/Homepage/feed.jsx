@@ -6,23 +6,37 @@ import Events from './FeedComponents/Events'
 export default function Feed({ userId }) {
   const [activeTab, setActiveTab] = useState(1)
   const [userPosts, setUserPosts] = useState([])
+  const [userTeams, setUserTeams] = useState([])
   const [userTeamsEvents, setUserTeamsEvents] = useState([])
+  // test user id
+  const userIdTest = 437
 
   useEffect(() => {
     axios
-      .get(`/posts/${userId}`)
-      .then((resp) => setUserPosts(resp))
+      .get(`/api/posts/${userIdTest}`)
+      .then((resp) => setUserPosts(resp.data))
       .catch((err) => console.log(err))
   }, [])
 
-  // still need to implement
-  const handleTabToggle = (tab) => {
-    // reset the current active tab
-    // if userTeamEvents is empty
-    // get request to coaches, member, and fan to get all team id where the current userId exist
-    //  get all the events matching the teamid passed in as param
-    // set the userTeamEvents with the respond events
-  }
+  useEffect(() => {
+    const gettest = async () => {
+      const coachTeams = await axios.get(`/api/coaches/teams/${userIdTest}`)
+      const memberTeams = await axios.get(`/api/members/teams/${userIdTest}`)
+      const fanTeams = await axios.get(`/api/fans/teams/${userIdTest}`)
+      await setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data)
+    }
+    gettest()
+  }, [])
+
+  useEffect(() => {
+    if (userTeams.length) {
+      axios
+        .get('/api/events', {
+          params: userTeams,
+        })
+        .then((resp) => setUserTeamsEvents(resp.data))
+    }
+  }, [userTeams])
 
   return (
     <div>
@@ -58,14 +72,16 @@ export default function Feed({ userId }) {
               </button>
             </li>
           </ul>
-          <div className="p-3 mt-6 bg-white h-full">
+          <div className="p-3 mt-6 bg-white h-full overflow-y-auto ">
             <div className={activeTab === 1 ? 'block' : 'hidden'}>
-              <Posts userPosts={userPosts} />
-              {/* map once the backend is connected */}
+              {userPosts.map((post) => {
+                return <Posts post={post} />
+              })}
             </div>
             <div className={activeTab === 2 ? 'block' : 'hidden'}>
-              <Events userTeamsEvents={userTeamsEvents} />
-              {/* map once the backend is connected */}
+              {userTeamsEvents.map((event) => {
+                return <Events event={event} />
+              })}
             </div>
           </div>
         </div>
