@@ -90,7 +90,7 @@ Built by <a href="https://github.com/lgoodcode">Lawrence Good</a>
 
 |                                                                    Store                                                                    |                                                                  Checkout                                                                   |
 | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/104607182/204375311-46964077-6412-4e08-aeee-f2965707722a.gif" height="165" width="350"> | <img src="https://user-images.githubusercontent.com/104607182/204375405-ac4ae1e9-dff0-4386-a510-85e170068a76.gif" height="165" width="350"> |
+| <img src="https://user-images.githubusercontent.com/104607182/204375311-46964077-6412-4e08-aeee-f2965707722a.gif" height="215" width="350"> | <img src="https://user-images.githubusercontent.com/104607182/204375405-ac4ae1e9-dff0-4386-a510-85e170068a76.gif" height="215" width="350"> |
 
 <b>Features</b>
 
