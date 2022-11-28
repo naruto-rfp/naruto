@@ -23,7 +23,6 @@ exports.checkTeams = (req, res) => {
 }
 
 exports.getAllRelatedTeamName = (req, res) => {
-  // console.log(req.query)
   const queryId = []
   const idValues = []
   for (let key in req.query) {

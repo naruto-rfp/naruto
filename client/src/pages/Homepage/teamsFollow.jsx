@@ -5,12 +5,10 @@ import { Link } from 'react-router-dom'
 export default function TeamsFollow({ userId }) {
   const testData = [{id: 558, name: 'Tres-Zap', members: 20, fans: 250, banner:'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNwb3J0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'}]
 
-  const userIdTest = 702
-
   const [teamsFollow, setTeamsFollow] = useState([])
 
   useEffect(() => {
-    axios.get(`/api/fans/teams/${userIdTest}`).then((res) => {
+    axios.get(`/api/fans/teams/${userId}`).then((res) => {
       axios
         .get('/api/teams/allrelated', { params: res.data })
         .then((resp) => setTeamsFollow(resp.data))

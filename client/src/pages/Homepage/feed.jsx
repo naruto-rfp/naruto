@@ -8,21 +8,19 @@ export default function Feed({ userId }) {
   const [userPosts, setUserPosts] = useState([])
   const [userTeams, setUserTeams] = useState([])
   const [userTeamsEvents, setUserTeamsEvents] = useState([])
-  // test user id
-  const userIdTest = 437
 
   useEffect(() => {
     axios
-      .get(`/api/posts/${userIdTest}`)
+      .get(`/api/posts/${userId}`)
       .then((resp) => setUserPosts(resp.data))
       .catch((err) => console.log(err))
   }, [])
 
   useEffect(() => {
     const gettest = async () => {
-      const coachTeams = await axios.get(`/api/coaches/teams/${userIdTest}`)
-      const memberTeams = await axios.get(`/api/members/teams/${userIdTest}`)
-      const fanTeams = await axios.get(`/api/fans/teams/${userIdTest}`)
+      const coachTeams = await axios.get(`/api/coaches/teams/${userId}`)
+      const memberTeams = await axios.get(`/api/members/teams/${userId}`)
+      const fanTeams = await axios.get(`/api/fans/teams/${userId}`)
       await setUserTeams(coachTeams.data, memberTeams.data, fanTeams.data)
     }
     gettest()
