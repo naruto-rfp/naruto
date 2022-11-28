@@ -18,8 +18,87 @@ This project was built with:
 - [Blue Ocean](#blue-ocean)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+    - [Login / Authentication](#login--authentication)
+    - [Home Page](#home-page)
+    - [Profile Page](#profile-page)
+    - [Team Page](#team-page)
+    - [Store and Checkout](#store-and-checkout)
   - [Getting Started](#getting-started)
+  - [Environment Variables](#environment-variables)
   - [Contributors](#contributors)
+
+## Features
+
+### Login / Authentication
+
+| Login Screen
+:-:
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+
+<b>Features</b>
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+Built by <a href="https://github.com/cmfung">Connor Fung</a>
+
+### Home Page
+
+| Home Feed
+:-:
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+
+<b>Features</b>
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+Built by <a href="https://github.com/KevZhang11">Kevin Zhang</a>
+
+### Profile Page
+
+| Individual Profile
+:-:
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+
+<b>Features</b>
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+Built by <a href="https://github.com/keewook2">Kee Wook Lee</a>
+
+### Team Page
+
+| Team Profile
+:-:
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+
+<b>Features</b>
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+Built by <a href="https://github.com/lgoodcode">Lawrence Good</a>
+
+### Store and Checkout
+
+|                                                             Store                                                              |                                                            Checkout                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://user-images.githubusercontent.com/104607182/204189544-1e6f1d4d-1629-4a6c-8e32-ad4bfbc35bd2.png" width="300"> | <img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="300"> |
+
+<b>Features</b>
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+Built by <a href="https://github.com/quyencodes">Quyen Hoang</a>
 
 ## Getting Started
 
@@ -35,21 +114,25 @@ This project was built with:
    ```bash
    PORT='YOUR PORT HERE'
    ```
-4. To run the server with webpack dev server
+4. To run the application in local development environment
    ```bash
-   npm run dev-server
+   npm run dev:client
    (open another terminal)
-   npm run start:server
+   npm run dev:server
    ```
-5. To run the server in development environment without webpack dev server
-   ```bash
-   npm run dev
-   ```
-6. To run the server in deployed environment
+5. To run the application in deployed environment
    ```
    npm run build
    npm run start
    ```
+
+## Environment Variables
+
+`PORT` - The port that the express server will run on <em>(default: 3000)</em>\
+`DB_HOST` - The host name / address of the PostgreSQL database\
+`DB_USER` - The user of the PostgreSQL database\
+`DB_PASS` - The password to the PostgreSQL database\
+`DB_DATABASE` - The name of the PostgreSQL database
 
 ## Contributors
 

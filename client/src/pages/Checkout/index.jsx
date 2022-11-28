@@ -14,13 +14,11 @@ export default function Checkout() {
       .get('/api/cart')
       .then((cartInfo) => {
         setCart(cartInfo.data)
-        console.log('Retrieved data from the cart', cartInfo.data)
         // set sidebar content
         // calculate the subtotal for the sidebar
         const sub = cartInfo.data?.reduce((acc, obj) => {
           return acc + obj.defaultPrice * obj.quantity
         }, 0)
-        console.log('this is subtotal:', sub)
         setSubtotal(sub)
         setTax(sub * 0.1)
       })
