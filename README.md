@@ -34,7 +34,7 @@ This project was built with:
 
 | Login Screen
 :-:
-<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="400">|
+<img src="https://user-images.githubusercontent.com/101534035/204376135-5d04dc92-e0d8-4969-9cac-bf3a7c853064.gif" width="400">|
 
 <b>Features</b>
 
