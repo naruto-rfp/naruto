@@ -4,6 +4,7 @@ import axios from 'axios'
 import RadarChart from './RadarChart'
 import Info from './Info'
 import About from './About'
+import Members from './Members'
 
 export default function Profile() {
   const { currentUserData } = useOutletContext()
@@ -21,6 +22,7 @@ export default function Profile() {
     jumping: 0,
     aerobic: 0,
   })
+  const [memberData, setMemberData] = useState([])
   const [editable, setEditable] = useState(false)
 
   const fetchData = async () => {
@@ -45,8 +47,14 @@ export default function Profile() {
     }
   }
 
+  const fetchMemberData = async () => {
+    const { data } = await axios.get(`/api/user/${id}/members`)
+    setMemberData(data)
+  }
+
   useEffect(() => {
     fetchData()
+    fetchMemberData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -69,6 +77,8 @@ export default function Profile() {
             firstName={userData.firstName}
             lastName={userData.lastName}
             profilePic={userData.profilePic}
+            fetchData={fetchData}
+            editable={editable}
           />
           <div className="bg-white flex-grow-0 rounded-md px-6 py-8">
             <RadarChart
@@ -82,24 +92,23 @@ export default function Profile() {
 
           <div className="flex-grow rounded-md px-6 py-8 bg-rose-400">
             <div className="heading text-center">
-              <h1 className="text-xl">Team Members</h1>
+              <h1 className="text-xl">Teams following</h1>
             </div>
           </div>
 
-          <div className="flex-grow rounded-md px-y py-8 bg-rose-400">
+          <div className="flex-grow rounded-md px-y py-8 bg-rose-400 overflow-y-auto">
             <div className="heading text-center">
-              <h1 className="text-xl">Fans</h1>
+              <h1 className="text-xl">Teams member of</h1>
+              <Members memberData={memberData} />
             </div>
           </div>
         </section>
-        <div className="flex border-solid border-2 border-indigo-600 h-80  justify-center items-center flex-wrap mt-10">
-          <About
-            editable={editable}
-            userData={userData}
-            about={userData.about}
-            fetchData={fetchData}
-          />
-        </div>
+        <About
+          editable={editable}
+          userData={userData}
+          about={userData.about}
+          fetchData={fetchData}
+        />
       </div>
     </>
   )

@@ -1,4 +1,6 @@
 const db = require('../database')
+const Members = require('../models/members')
+const Teams = require('../models/teams')
 
 const { User } = db
 
@@ -77,6 +79,31 @@ exports.changeProfilePic = (req, res) => {
       res.status(500).send({
         message: err.message || 'Internal Server Error',
       })
+    })
+}
+
+exports.getUserMembers = (req, res) => {
+  const { id } = req.params
+
+  Members.findAll({
+    where: { userId: id },
+  })
+    .then((results) => {
+      const teamIdMap = results.map((data) => {
+        return data.dataValues.teamId
+      })
+      Teams.findAll({
+        where: { id: teamIdMap },
+      })
+        .then((teamResults) => {
+          res.status(200).json(teamResults)
+        })
+        .catch((err1) => {
+          res.status(500).send(`Error Retrieving from Teams database, ${err1}`)
+        })
+    })
+    .catch((err2) => {
+      res.status(500).send(`Error retrieving from Members database, ${err2}`)
     })
 }
 
