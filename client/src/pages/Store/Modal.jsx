@@ -142,7 +142,7 @@ export default function ProductModalContent({
               data-mdb-ripple-color="light"
               onClick={handleCartSubmit}
             >
-              Add To Cart
+              <Link to="/store">Add To Cart</Link>
             </button>
           </div>
         </div>

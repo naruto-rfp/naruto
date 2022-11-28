@@ -32,6 +32,7 @@ psql -U postgres -d blueocean -c "\copy products FROM './products.csv' DELIMITER
 
 echo "Importing skus data..."
 psql -U postgres -d blueocean -c "\copy skus FROM './skus.csv' DELIMITER ',' CSV HEADER;" &
+"\copy skus (id, size, quantity, \"productId\") FROM './skus.csv' DELIMITER ',' CSV HEADER;"
 
 wait # Wait for all background jobs to finish
 echo 'Done!'
