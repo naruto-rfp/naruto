@@ -10,10 +10,10 @@ export default function Items({ cart, setCart }) {
     setCart(filteredCart)
     console.log('after removing item from state', cart)
 
-    // axios
-    //   .delete(`api/cart/${id}`)
-    //   .then((deletedProduct) => console.log('Successfully deleted deletedProduct', deletedProduct))
-    //   .catch((err) => console.log(err))
+    axios
+      .delete(`api/cart/${id}`)
+      .then((deletedProduct) => console.log('Successfully deleted deletedProduct', deletedProduct))
+      .catch((err) => console.log(err))
   }
 
   return (

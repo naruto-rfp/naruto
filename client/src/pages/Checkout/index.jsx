@@ -36,10 +36,7 @@ export default function Checkout() {
             <>
               <div className="cart-banner">
                 <h1 className="good-cart-h1">YOUR CART</h1>
-                <button
-                  type="submit"
-                  className="checkout-btn bg-gradient-to-b text-white from-blackCoral to-greenYellow"
-                >
+                <button type="submit" className="checkout-btn text-white  bg-blackCoral">
                   <a
                     href="https://github.com/naruto-rfp/naruto"
                     target="_blank"

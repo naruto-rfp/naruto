@@ -15,7 +15,7 @@
   font-size: 14px;
   padding: 0.5rem 2rem 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  /* border-radius: 6px; */
 }
 
 .checkout-container {
