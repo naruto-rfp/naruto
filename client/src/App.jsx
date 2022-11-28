@@ -42,12 +42,14 @@ const App = function App() {
 
   return (
     <BrowserRouter>
+        <NavBar />
       <Routes>
         <Route element={<PrivateRoutes session={session} logout={logout} />}>
           <Route element={<Home />} path="/" />
           <Route element={<Profile />} path="/profile/:id" />
           <Route element={<Store />} path="/store" />
-          <Route element={<Team />} path="/team" />
+          {/* <Route element={<Team />} path="/team" /> */}
+          <Route element={<Team />} path="/team/:id" />
           <Route element={<Checkout />} path="/checkout" />
         </Route>
         <Route element={<Login setSession={setSession} />} path="/login" />

@@ -32,6 +32,8 @@ router.get('/session', controllers.getSession)
 router.post('/login', controllers.login)
 router.post('/logout', controllers.logout)
 
+router.get('/user/checkuser/:username', controllers.checkUsers)
+
 /**
  * Products
  */
@@ -90,6 +92,8 @@ router.get('/posts/:userID', posts.getPosts)
  * Teams
  */
 router.get('/teams/:teamID', teams.getTeamName)
+router.get('/teams/checkteams/:name', teams.checkTeams)
+// router.get('/teams', teams.getTeamName)
 
 /**
  * Events

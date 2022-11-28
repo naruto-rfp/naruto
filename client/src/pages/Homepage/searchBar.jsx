@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function SearchBar() {
   const [searchText, setSearchText] = useState('')
   const navigate = useNavigate()
 
   const handleSearch = function (e) {
-    // will need to route the search to the team or profile page
     e.preventDefault()
-    if (searchText.trim()) {
-      navigate(`/team/${searchText}`)
-    } else {
-      navigate('/team')
-    }
+
+    axios.get(`/api/user/checkuser/${searchText}`).then((resp) => {
+      if (resp.data.length) {
+        navigate(`/profile/${resp.data[0].id}`)
+      } else {
+        axios
+          .get(`/api/teams/checkteams/${searchText}`)
+          .then((respp) => navigate(`/team/${respp.data[0].id}`))
+      }
+    })
   }
 
   return (
