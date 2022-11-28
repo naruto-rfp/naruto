@@ -26,7 +26,7 @@ export default function Radarchart({ reliability, speed, strength, jumping, aero
 
   return (
     <RadarChart
-      width={250}
+      width={500}
       height={250}
       cx="50%"
       cy="50%"
