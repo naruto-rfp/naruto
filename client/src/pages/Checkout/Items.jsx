@@ -1,11 +1,17 @@
 import axios from 'axios'
 import './items.css'
 
-export default function Items({ cart, setCart }) {
+export default function Items({ cart, setCart, setSubtotal, setTax }) {
   const removeItem = (id) => {
     // filter the cart, remove the item the user wants to remove
     const filteredCart = cart.filter((cartItem) => cartItem.id !== id)
     setCart(filteredCart)
+    const sub = filteredCart.reduce((acc, obj) => {
+      return acc + obj.defaultPrice * obj.quantity
+    }, 0)
+    console.log('this is the new subtotal:', sub)
+    setSubtotal(sub)
+    setTax(sub * 0.1)
 
     axios
       .delete(`api/cart/${id}`)
