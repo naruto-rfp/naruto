@@ -10,21 +10,26 @@ exports.createUser = (req, res) => {
   const caseUsername = username.toLowerCase()
   const caseEmail = email.toLowerCase()
 
-  User.create({
-    username: caseUsername,
-    firstName,
-    lastName,
-    password,
-    email: caseEmail,
-  })
-    .then((data) => {
-      res.send(data)
+  User.findOne({
+    order: [['id', 'DESC']],
+  }).then((data) => {
+    User.create({
+      id: data.dataValues.id + 1,
+      username: caseUsername,
+      firstName,
+      lastName,
+      password,
+      email: caseEmail,
     })
-    .catch((err) => {
-      res.status(500).send({
-        message: err.message || 'Internal Server Error',
+      .then((results) => {
+        res.status(201).json(results)
       })
-    })
+      .catch((err) => {
+        res.status(500).send({
+          message: err.message || 'Internal Server Error',
+        })
+      })
+  })
 }
 
 exports.getUser = (req, res) => {
