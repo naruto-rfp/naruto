@@ -48,7 +48,7 @@ Built by <a href="https://github.com/cmfung">Connor Fung</a>
 
 | Home Feed
 :-:
-<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="400">|
 
 <b>Features</b>
 
@@ -62,7 +62,7 @@ Built by <a href="https://github.com/KevZhang11">Kevin Zhang</a>
 
 | Individual Profile
 :-:
-<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="400">|
 
 <b>Features</b>
 
@@ -76,7 +76,7 @@ Built by <a href="https://github.com/keewook2">Kee Wook Lee</a>
 
 | Team Profile
 :-:
-<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="350">|
+<img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="400">|
 
 <b>Features</b>
 
@@ -88,15 +88,15 @@ Built by <a href="https://github.com/lgoodcode">Lawrence Good</a>
 
 ### Store and Checkout
 
-|                                                             Store                                                              |                                                            Checkout                                                            |
-| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/104607182/204189544-1e6f1d4d-1629-4a6c-8e32-ad4bfbc35bd2.png" width="300"> | <img src="https://user-images.githubusercontent.com/104607182/204184072-b662e755-5ad3-441a-a142-55c80d5132bb.png" width="300"> |
+|                                                                    Store                                                                    |                                                                  Checkout                                                                   |
+| :-----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://user-images.githubusercontent.com/104607182/204375311-46964077-6412-4e08-aeee-f2965707722a.gif" height="165" width="350"> | <img src="https://user-images.githubusercontent.com/104607182/204375405-ac4ae1e9-dff0-4386-a510-85e170068a76.gif" height="165" width="350"> |
 
 <b>Features</b>
 
-- Bullet point 1
-- Bullet point 2
-- Bullet point 3
+- Product cards that change style on hover and will display a modal when clicked
+- Pop-up modal that displays product & sku information, and allows a user to add an item to their cart
+- Checkout page that displays all items in user's cart and dynamically calculates total
 
 Built by <a href="https://github.com/quyencodes">Quyen Hoang</a>
 
