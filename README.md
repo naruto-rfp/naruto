@@ -88,9 +88,9 @@ Built by <a href="https://github.com/lgoodcode">Lawrence Good</a>
 
 ### Store and Checkout
 
-|                                                                    Store                                                                    |                                                                  Checkout                                                                   |
-| :-----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/104607182/204375311-46964077-6412-4e08-aeee-f2965707722a.gif" height="215" width="350"> | <img src="https://user-images.githubusercontent.com/104607182/204375405-ac4ae1e9-dff0-4386-a510-85e170068a76.gif" height="215" width="350"> |
+|Store Page|Checkout Page|
+:---------:|:------------:
+<img src="https://user-images.githubusercontent.com/104607182/204375311-46964077-6412-4e08-aeee-f2965707722a.gif" height="250" width="400"> | <img src="https://user-images.githubusercontent.com/104607182/204375405-ac4ae1e9-dff0-4386-a510-85e170068a76.gif" height="250" width="400">
 
 <b>Features</b>
 
