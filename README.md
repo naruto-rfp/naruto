@@ -1,4 +1,4 @@
-# Blue Ocean
+# TeamUP
 
 ## About
 
@@ -15,7 +15,7 @@ This project was built with:
 
 ## Table of Contents
 
-- [Blue Ocean](#blue-ocean)
+- [TeamUP](#teamup)
   - [About](#about)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
