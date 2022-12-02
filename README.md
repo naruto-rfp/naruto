@@ -51,7 +51,7 @@ Built by <a href="https://github.com/cmfung">Connor Fung</a>
 
 <b>Features</b> -->
 
-- Home feed has sporting events and posts, they have the ability to interact with posts with comments or cheers (likes)
+- Home feed has sporting events and posts, users have the ability to interact with posts with comments or cheers (likes)
 - Search bar that will navigate users to the appropriate profile or team they are interested in
 
 Built by <a href="https://github.com/KevZhang11">Kevin Zhang</a>
@@ -78,7 +78,7 @@ Built by <a href="https://github.com/keewook2">Kee Wook Lee</a>
 <!-- <b>Features</b> -->
 
 - Pages dedicated for each recreational team and contains the essential information of each team: banner, team picture, name, all fans and team members
-- Teams privileges set up so that a team can create posts and events; team members and fans can interact with posts and RSVP for events
+- Teams privileges set up so that a team can only change their own profile, create posts and events; team members and fans can interact with posts and RSVP for events
 
 Built by <a href="https://github.com/lgoodcode">Lawrence Good</a>
 
